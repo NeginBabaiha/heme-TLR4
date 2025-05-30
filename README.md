@@ -28,26 +28,10 @@ This project serves as a reference for anyone interested in **knowledge graph cu
 heme-TLR4-kg/
 │
 ├── README.md               # This file
-├── LICENSE                 # MIT License
-├── environment.yml         # Conda environment for dependencies
 │
 ├── data/
-│   ├── raw/                # Original BEL files, input articles
-│   └── processed/          # Cleaned and validated BEL triples, gene lists
-│
-├── notebooks/
-│   ├── 01_curation.ipynb   # BEL curation and preprocessing
-│   ├── 02_graph_import.ipynb # Load BEL into Neo4j
-│   └── 03_enrichment.ipynb # Enrichment analysis
+│   ├── original-hemeKG/                # Original BEL files, input articles
+│   └── cleaned-original-hemKG/          # Cleaned and validated BEL triples, gene lists
 │
 ├── src/
-│   ├── bel_utils.py        # BEL file validation and formatting
-│   ├── graph_loader.py     # Neo4j loader script
-│   └── enrichment_tools.py # DAVID API tools for enrichment
-│
-├── results/
-│   ├── figures/            # Network visualizations and pathway plots
-│   └── tables/             # Summary tables from enrichment
-│
-└── docs/
-    └── supplementary/      # Supplementary materials and extra files
+│   └── ebel_upload.ipynb # Neo4j loader script
