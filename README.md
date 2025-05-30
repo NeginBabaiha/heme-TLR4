@@ -30,8 +30,8 @@ heme-TLR4-kg/
 ├── README.md               # This file
 │
 ├── data/
-│   ├── original-hemeKG/                # Original BEL files, input articles
-│   └── cleaned-original-hemKG/          # Cleaned and validated BEL triples, gene lists
+│   ├── original-hemeKG/                # Original BEL files, input articles ( https://github.com/hemekg )
+│   └── cleaned-original-hemKG/          # Cleaned and validated BEL triples
 │
 ├── src/
 │   └── ebel_upload.ipynb # Neo4j loader script
