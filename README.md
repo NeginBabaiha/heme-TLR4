@@ -36,4 +36,4 @@ heme-TLR4-kg/
 │   └── neo4j-dump/                     # Neo4j dump file
 │
 ├── src/
-│   └── ebel_upload.ipynb # Neo4j loader script
+│   └── ebel_upload.ipynb               # Neo4j loader script
