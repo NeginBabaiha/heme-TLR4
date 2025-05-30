@@ -30,7 +30,7 @@ heme-TLR4-kg/
 ├── README.md               # This file
 │
 ├── data/
-│   ├── original-hemeKG/                # Original BEL files, input articles ( https://github.com/hemekg )
+│   ├── original-hemeKG/                # Original BEL files, input articles ([GitHub](https://github.com/hemekg))
 │   └── cleaned-original-hemKG/          # Cleaned and validated BEL triples
 │
 ├── src/
