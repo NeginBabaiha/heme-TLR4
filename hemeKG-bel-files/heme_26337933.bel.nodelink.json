@@ -1,0 +1,1149 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_26337933.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_26337933.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Humans with severe PE have increased arginase-1 and decreased plasma L-arginine concentrations.[14]",
+      "key": "6b64454feb242f5ee4fb60b7139298f9",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Table 3 shows a significant increase in the median value for the plasma biomarker of hemolysis, arginase-1 in patients with PE+TR+ by pairwise comparison using the Kruskal-Wallis test.",
+      "key": "bb57b8c4d6cf8598d4cc9038966b6466",
+      "line": 120,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Table 3 shows a significant increase in the median value for the plasma biomarker of hemolysis, arginase-1 in patients with PE+TR+ by pairwise comparison using the Kruskal-Wallis test.",
+      "key": "2e34881b4d757d553cbc0571116b686e",
+      "line": 122,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Humans with severe PE have increased arginase-1 and decreased plasma L-arginine concentrations.[14]",
+      "key": "25297467e63808bef16c9396192466a0",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Humans with severe PE have increased arginase-1 and decreased plasma L-arginine concentrations.[14]",
+      "key": "680ce271f22e385dd8141f786417561e",
+      "line": 93,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "leukocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "We hypothesize acute moderate to severe PE causes turbulent flow across the tricuspid and pulmonic valves and in the pulmonary tree, causing rupture of a small percentage of red cells in or immediately proximal to or within the pulmonary vascular tree.",
+      "key": "a9e5b66dbeef09a39ac792ef73943ade",
+      "line": 143,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Humans with severe PE have increased arginase-1 and decreased plasma L-arginine concentrations.[14]",
+      "key": "0e2b0464d11624784c49a2ee5950eb55",
+      "line": 93,
+      "relation": "negativeCorrelation",
+      "source": 1,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "The median values and associated interquartile ranges for hmox-1 and haptoglobin show that patients with PE+TR+ had lower expression of these genes compared with patients who were PE+TR− or PE−",
+      "key": "9d94ea091cab23fe9fbfe178ca8eda48",
+      "line": 105,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "leukocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "The inverse correlation between hmox-1 expression in circulating leukocytes and the TR jet velocity in patients with acute PE was significant (r2=0.45, p <0.001), but this significance was absent in patients without PE (r2=0.01, P=0.52).",
+      "key": "d319a6837c12f83cdb270e166f512bdc",
+      "line": 132,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "The median values and associated interquartile ranges for hmox-1 and haptoglobin show that patients with PE+TR+ had lower expression of these genes compared with patients who were PE+TR− or PE−",
+      "key": "378c411e3ef648bde43e44f2d99a8609",
+      "line": 106,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "The cyclooxygenase-2 gene was not significantly different between groups and had no correlation with the TR jet velocity in patients with PE (R2=0.03).",
+      "key": "1982bb9d43612a1e5ada0b692865032f",
+      "line": 113,
+      "relation": "causesNoChange",
+      "source": 9,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Table 3 shows a significant increase in the median value for the plasma biomarker of hemolysis, arginase-1 in patients with PE+TR+ by pairwise comparison using the Kruskal-Wallis test.",
+      "key": "a56c886b42f7bccbb604ee32bb32a676",
+      "line": 122,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "The median values and associated interquartile ranges for hmox-1 and haptoglobin show that patients with PE+TR+ had lower expression of these genes compared with patients who were PE+TR− or PE−",
+      "key": "5ddd4986a0ad911d009b57e16c9e1f35",
+      "line": 105,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "leukocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "The inverse correlation between hmox-1 expression in circulating leukocytes and the TR jet velocity in patients with acute PE was significant (r2=0.45, p <0.001), but this significance was absent in patients without PE (r2=0.01, P=0.52).",
+      "key": "b1ce366f33c63c8ddbe605d7edec8642",
+      "line": 132,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "The median values and associated interquartile ranges for hmox-1 and haptoglobin show that patients with PE+TR+ had lower expression of these genes compared with patients who were PE+TR− or PE−",
+      "key": "e9bb5bc0e57a0290e13957c44a846e2d",
+      "line": 106,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Table 3 shows a significant increase in the median value for the plasma biomarker of hemolysis, arginase-1 in patients with PE+TR+ by pairwise comparison using the Kruskal-Wallis test.",
+      "key": "c7735e19fabce3b14184b4f498332724",
+      "line": 120,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "leukocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "We hypothesize acute moderate to severe PE causes turbulent flow across the tricuspid and pulmonic valves and in the pulmonary tree, causing rupture of a small percentage of red cells in or immediately proximal to or within the pulmonary vascular tree.",
+      "key": "36a6e6097ded66bcb4dda4b612ae04ef",
+      "line": 143,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 8
+    },
+    {
+      "key": "6ece7525da07ab71d7649b57c785a2ed",
+      "relation": "partOf",
+      "source": 5,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "leukocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Release of hemoglobin (and ultimately heme), and arginase-1 into the plasma results in binding of nitric oxide and also reduction in L-arginine, respectively, causing a relative reduction in vasodilatory effect.[14,29]",
+      "key": "57c15b44ff61a91dcaad83aa8cfc25fa",
+      "line": 151,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "leukocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Release of hemoglobin (and ultimately heme), and arginase-1 into the plasma results in binding of nitric oxide and also reduction in L-arginine, respectively, causing a relative reduction in vasodilatory effect.[14,29]",
+      "key": "49af144810f6546c91914bf063e4fcaf",
+      "line": 152,
+      "relation": "decreases",
+      "source": 5,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "leukocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pulmonary Embolism",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Homo sapiens",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bonkovsky HL",
+          "Courtney M",
+          "Kline JA",
+          "Steuerwald NM",
+          "Watts JA"
+        ],
+        "date": "2015-10-01",
+        "first": "Kline JA",
+        "identifier": "26337933",
+        "journal": "Thrombosis research",
+        "last": "Bonkovsky HL",
+        "name": "Leukocyte expression of heme oxygenase-1 [hmox1] varies inversely with severity of tricuspid regurgitation in acute pulmonary embolism.",
+        "namespace": "pubmed",
+        "pages": "769-74",
+        "volume": "136"
+      },
+      "evidence": "Release of hemoglobin (and ultimately heme), and arginase-1 into the plasma results in binding of nitric oxide and also reduction in L-arginine, respectively, causing a relative reduction in vasodilatory effect.[14,29]",
+      "key": "83fd363c220c89980eb7cf83f41e1a95",
+      "line": 151,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 5
+    },
+    {
+      "key": "9dc6b9c0ab1b5d5532262f1d7b3558f8",
+      "relation": "partOf",
+      "source": 0,
+      "target": 2
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"nitric oxide\")",
+      "concept": {
+        "name": "nitric oxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "da5a3d810aacb9c4649ec7df3b5f60d3"
+    },
+    {
+      "bel": "a(CHEBI:L-arginine)",
+      "concept": {
+        "name": "L-arginine",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "859feed00c6f470a53c6607cd8bddccc"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"nitric oxide\"), p(HGNC:HBB))",
+      "function": "Complex",
+      "id": "1052d74ebe745b3ec48e29d1988092ea",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"nitric oxide\")",
+          "concept": {
+            "name": "nitric oxide",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "da5a3d810aacb9c4649ec7df3b5f60d3"
+        },
+        {
+          "bel": "p(HGNC:HBB)",
+          "concept": {
+            "name": "HBB",
+            "namespace": "HGNC"
+          },
+          "function": "Protein",
+          "id": "15ee95d6d880d241c742461c7f432f15"
+        }
+      ]
+    },
+    {
+      "bel": "g(HGNC:PTGS2)",
+      "concept": {
+        "name": "PTGS2",
+        "namespace": "HGNC"
+      },
+      "function": "Gene",
+      "id": "80396b9beb413b0df85d7ab0983e0764"
+    },
+    {
+      "bel": "p(HGNC:ARG1)",
+      "concept": {
+        "name": "ARG1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "5416b564f91296a9bf4f568a38766b9d"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "concept": {
+        "name": "HBB",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "15ee95d6d880d241c742461c7f432f15"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "concept": {
+        "name": "HMOX1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "d8af6078f1872edbf59623df2a9fa1c2"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "concept": {
+        "name": "HP",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "b50c4eb6f38e0c1d3d5a1b3d5dcba1e1"
+    },
+    {
+      "bel": "path(MESH:\"Pulmonary Embolism\")",
+      "concept": {
+        "name": "Pulmonary Embolism",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "820791d4e28842fa8c30f2fe7bf60e2b"
+    },
+    {
+      "bel": "path(MESH:\"Tricuspid Valve Insufficiency\")",
+      "concept": {
+        "name": "Tricuspid Valve Insufficiency",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "fa5e4a2ed63266fbeeab5d040d5bde25"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "concept": {
+        "name": "Hemolysis",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "db35e96a4ebe03cdd6b1198b498e07f0"
+    }
+  ]
+}

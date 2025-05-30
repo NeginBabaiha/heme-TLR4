@@ -1,0 +1,4136 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_24464629.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_24464629.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "As a component of hemoglobin, free heme is released when hemolysis or extensive cell damage occur which results in inflammatory response.",
+      "key": "309f67f1a2e645cfb14ff305cf850742",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme is generated by intra- and extra-vascular hemolysis or extensive cell damage [14, 15].",
+      "key": "3d8378ce74f6e67b3c7e752c869b8fe4",
+      "line": 121,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme is a dangerous molecule which can be recognized and degenerated by stress-responsive enzyme oxygenase- 1 (HO-1) [16] which plays an essential role in host defense against heme.",
+      "key": "cd90362e192c9fb35fb0eeb1be610015",
+      "line": 128,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 7
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme has been proved possess pro-inflammatory activities, such as leukocyte activation, migration and infiltration, adhesion molecules activation, and cytokines and acute phase proteins induction [17, 18].",
+      "key": "8d13d1af7347d4c10bd1fb0d8e6aafef",
+      "line": 135,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme has been proved possess pro-inflammatory activities, such as leukocyte activation, migration and infiltration, adhesion molecules activation, and cytokines and acute phase proteins induction [17, 18].",
+      "key": "86adef82bdb57309bd04d2d04a7751ec",
+      "line": 136,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme has been proved possess pro-inflammatory activities, such as leukocyte activation, migration and infiltration, adhesion molecules activation, and cytokines and acute phase proteins induction [17, 18].",
+      "key": "af73b4161e575ada6663f7ca5f5e9511",
+      "line": 137,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "ELISA analysis displayed that the concentration of IL-1b in culture supernatants was significantly enhanced after stimulated by heme and PPIX.",
+      "key": "215e256141bf39b44fb6284b0c41fdfe",
+      "line": 148,
+      "relation": "increases",
+      "source": 0,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The effect of heme on IL-1b production initiated as early as 4 h after stimulation and displayed strict time- and dose-dependent manner (Fig. 1a– d).",
+      "key": "54800e41542463f43c40ad838738e905",
+      "line": 157,
+      "relation": "increases",
+      "source": 0,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results demonstrate that heme could efficiently induce maturation and secretion of IL-1b in macrophages and primarily suggested that heme participates in immune response.",
+      "key": "c1512916f5abc88d3c36d51a15323314",
+      "line": 166,
+      "relation": "increases",
+      "source": 0,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Western blotting results showed that the p10 active form of caspase-1 was detected in macrophages incubated with heme for 12 h.",
+      "key": "bcfa6b662f1d4dcdc1bb6d60b766ebc5",
+      "line": 174,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 10,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induces maturation and secretion of IL-1b in macrophages through activating caspase-1 (Fig. 2a).",
+      "key": "c0e08787501d667cd3b0f1d84ed19548",
+      "line": 181,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 10,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results demonstrate that free heme induces IL-1b through activating NLRP3 inflammasome via ASC and suggest that free heme plays an essential role in inflammation response as a dangerous signal.",
+      "key": "2fd4abe175fd9de1f61d713d1090e2ce",
+      "line": 203,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 13,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results strongly suggest that heme activates NLRP3 through P2X receptors, especially P2X4R and P2X7R.",
+      "key": "5825566354882ce017c5b94b5572c340",
+      "line": 233,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results strongly suggest that heme activates NLRP3 through P2X receptors, especially P2X4R and P2X7R.",
+      "key": "5996df72154b764f805c9575524c14c3",
+      "line": 234,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "0af1bf0e0655d86add05046385b7eecc",
+      "line": 256,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme plays an essential role in kidney inflammation via regulating NLRP3-Caspase-1-IL-1b axis.",
+      "key": "1ec863ea5eda5d373efc8c55bd34d942",
+      "line": 267,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "As a component of hemoglobin, free heme is released when hemolysis or extensive cell damage occur which results in inflammatory response.",
+      "key": "a78765f91fc1cab82d601bd661befa00",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "IL-1b participates in a robust inflammatory response.",
+      "key": "0a397be9705de7e748a16ad730c36f49",
+      "line": 116,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Kidney inflammation is the major pathologic process of chronic kidney disease (CKD) and acute kidney injury (AKI) which cause significant morbidity and mortality in the general population [1].",
+      "key": "97fc7553a7ad253b84ad41a1a0ba581c",
+      "line": 102,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Kidney inflammation is the major pathologic process of chronic kidney disease (CKD) and acute kidney injury (AKI) which cause significant morbidity and mortality in the general population [1].",
+      "key": "9f77b3a6e6359df7ed09279df29708f5",
+      "line": 103,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induced activation of NLRP3-Caspase-1-IL-1b axis is involved in kidney inflammation in mice UUO model and that heme serves as a dangerous factor participates in this process.",
+      "key": "583da9631754dc6b5ce7cbed7dc23059",
+      "line": 245,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induced activation of NLRP3-Caspase-1-IL-1b axis is involved in kidney inflammation in mice UUO model and that heme serves as a dangerous factor participates in this process.",
+      "key": "615a7a9a92160605ad233d562e279a69",
+      "line": 246,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induced activation of NLRP3-Caspase-1-IL-1b axis is involved in kidney inflammation in mice UUO model and that heme serves as a dangerous factor participates in this process.",
+      "key": "a1897127fb5c3f5db4a06db28b8a5c73",
+      "line": 247,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme plays an essential role in kidney inflammation via regulating NLRP3-Caspase-1-IL-1b axis.",
+      "key": "01da7b8d6e132c98aa633617e2701555",
+      "line": 267,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Kidney inflammation is the major pathologic process of chronic kidney disease (CKD) and acute kidney injury (AKI) which cause significant morbidity and mortality in the general population [1].",
+      "key": "7b0a438fdee7f3609c1baa234fc0697f",
+      "line": 102,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Kidney inflammation is the major pathologic process of chronic kidney disease (CKD) and acute kidney injury (AKI) which cause significant morbidity and mortality in the general population [1].",
+      "key": "b73ab3bfa5cbb5faf1dbab63df35a35a",
+      "line": 103,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "As a component of inflammasome, NLRP3 is the best characterized member of NLRs, which recruits and activates caspase-1 via the adapter molecule ASC (apoptosis- associated speck-like protein containing caspase activation and recruitment domain) [8, 9].",
+      "key": "f11bc68c2070fe78e3486ca640ea3a05",
+      "line": 111,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "As a component of inflammasome, NLRP3 is the best characterized member of NLRs, which recruits and activates caspase-1 via the adapter molecule ASC (apoptosis- associated speck-like protein containing caspase activation and recruitment domain) [8, 9].",
+      "key": "f66b21b515aaa19fe1cf01c6f7bc3044",
+      "line": 111,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "IL-1b participates in a robust inflammatory response.",
+      "key": "dee41033af3a410e7fe966c4d5df3604",
+      "line": 116,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme is generated by intra- and extra-vascular hemolysis or extensive cell damage [14, 15].",
+      "key": "6b5c9487d5afb1766ded5bae79418ae0",
+      "line": 121,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme is a dangerous molecule which can be recognized and degenerated by stress-responsive enzyme oxygenase- 1 (HO-1) [16] which plays an essential role in host defense against heme.",
+      "key": "7dd8da5cea55900a0d497347fa1106ab",
+      "line": 128,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 0,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme has been proved possess pro-inflammatory activities, such as leukocyte activation, migration and infiltration, adhesion molecules activation, and cytokines and acute phase proteins induction [17, 18].",
+      "key": "286d623b63efb1dce554a3a686d7734a",
+      "line": 135,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme has been proved possess pro-inflammatory activities, such as leukocyte activation, migration and infiltration, adhesion molecules activation, and cytokines and acute phase proteins induction [17, 18].",
+      "key": "03805ebfbed944c6331d47964a65d3f0",
+      "line": 136,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Free heme has been proved possess pro-inflammatory activities, such as leukocyte activation, migration and infiltration, adhesion molecules activation, and cytokines and acute phase proteins induction [17, 18].",
+      "key": "9a8288cf66ccbcdbb005c49d2032e02c",
+      "line": 137,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Knockdown of ASC significantly inhibits the secretion of IL-1b, which primarily suggests that Inflammation/ASC axis is involved in the heme-mediated maturation and secretion of IL-1b (Fig. 2b).",
+      "key": "9f505a88e99623554dc18f9cf37184c1",
+      "line": 190,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 16,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "As expected, NLRP3+/+ macrophages were efficiently stimulated to secrete IL-1b by heme, and displayed dose-dependent (up to 40 lM) manner.",
+      "key": "500c87684d57b7a70ca46a63013bb0d8",
+      "line": 196,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 13,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results demonstrate that free heme induces IL-1b through activating NLRP3 inflammasome via ASC and suggest that free heme plays an essential role in inflammation response as a dangerous signal.",
+      "key": "78f2ec701d2e88ead8eed331bef50c26",
+      "line": 204,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 13,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Western blotting showed that deficiency of P2X7R partially inhibited the secretion of mature IL-1b that heme induced (Fig. 3c).",
+      "key": "2f7b55683c7159b9000fe0438a380249",
+      "line": 218,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Therefore, knockdown of P2X4R and double knockdown of P2X7R plus P2X4R were performed by shRNA in macrophages and the result showed that P2X4R knockdown also partially inhibit the heme induced IL-1b secretion and double knockdown of P2X7R plus P2X4R almost completely depressed the IL-1b secretion (Fig. 3d).",
+      "key": "a22831bd5b215303fd8f6580ebff8090",
+      "line": 227,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induced activation of NLRP3-Caspase-1-IL-1b axis is involved in kidney inflammation in mice UUO model and that heme serves as a dangerous factor participates in this process.",
+      "key": "b71eda14374df2b7e6e9c3de7dda3863",
+      "line": 247,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "019d8f84cfcc6cf2337363f99b1b27cb",
+      "line": 260,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "ELISA analysis displayed that the concentration of IL-1b in culture supernatants was significantly enhanced after stimulated by heme and PPIX.",
+      "key": "7c14d8ae4dc51a347cca9833b5369c54",
+      "line": 149,
+      "relation": "increases",
+      "source": 1,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Western blotting results showed that the p10 active form of caspase-1 was detected in macrophages incubated with heme for 12 h.",
+      "key": "0043d199190f248ccd14fbcb3543608e",
+      "line": 174,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induces maturation and secretion of IL-1b in macrophages through activating caspase-1 (Fig. 2a).",
+      "key": "035c6e22c64aeec4406e83d55db54bf4",
+      "line": 181,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induces maturation and secretion of IL-1b in macrophages through activating caspase-1 (Fig. 2a).",
+      "key": "faa90ac3c0d91affac30a90675d58c73",
+      "line": 182,
+      "relation": "increases",
+      "source": 10,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induced activation of NLRP3-Caspase-1-IL-1b axis is involved in kidney inflammation in mice UUO model and that heme serves as a dangerous factor participates in this process.",
+      "key": "680aa061286176b1068695bf72a948da",
+      "line": 246,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "3ad36152bc144b5631e9693a57428f2f",
+      "line": 259,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Knockdown of ASC significantly inhibits the secretion of IL-1b, which primarily suggests that Inflammation/ASC axis is involved in the heme-mediated maturation and secretion of IL-1b (Fig. 2b).",
+      "key": "fa250fbbb3ef7147d1eaf8404a9f1064",
+      "line": 190,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "As expected, NLRP3+/+ macrophages were efficiently stimulated to secrete IL-1b by heme, and displayed dose-dependent (up to 40 lM) manner.",
+      "key": "9913395db4175fb1128fdae103121449",
+      "line": 196,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results demonstrate that free heme induces IL-1b through activating NLRP3 inflammasome via ASC and suggest that free heme plays an essential role in inflammation response as a dangerous signal.",
+      "key": "c3aa37b675e7bf09557f1d92f1037697",
+      "line": 204,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results demonstrate that free heme induces IL-1b through activating NLRP3 inflammasome via ASC and suggest that free heme plays an essential role in inflammation response as a dangerous signal.",
+      "key": "34e1474e2303a862f422ef03005b892c",
+      "line": 203,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Furthermore, P2X7R was reported that participates in NLRP3 activation in renal inflammation and injury induced by high-fat diet [29].",
+      "key": "1c62b6f9563af5e1f93bb427e8ffd154",
+      "line": 212,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results strongly suggest that heme activates NLRP3 through P2X receptors, especially P2X4R and P2X7R.",
+      "key": "82f54fbaa4d5c80390d9be601c04aaa5",
+      "line": 235,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results strongly suggest that heme activates NLRP3 through P2X receptors, especially P2X4R and P2X7R.",
+      "key": "7b975f4dff06a2ada338b67f513e1ee8",
+      "line": 236,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results suggest that heme induced activation of NLRP3-Caspase-1-IL-1b axis is involved in kidney inflammation in mice UUO model and that heme serves as a dangerous factor participates in this process.",
+      "key": "16176ff508ce451ddec5aec109d22c90",
+      "line": 245,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "25b5d4f8bfca9245473c83ff59d7cc73",
+      "line": 258,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Furthermore, P2X7R was reported that participates in NLRP3 activation in renal inflammation and injury induced by high-fat diet [29].",
+      "key": "1d5bcf888fcd7b79c34ae59b5aa57b69",
+      "line": 212,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 13,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results strongly suggest that heme activates NLRP3 through P2X receptors, especially P2X4R and P2X7R.",
+      "key": "d809db224ce4a0f41407a9d5e7845ddc",
+      "line": 235,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 13,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Western blotting showed that deficiency of P2X7R partially inhibited the secretion of mature IL-1b that heme induced (Fig. 3c).",
+      "key": "e12aad603348f9012094aa17bb95ad72",
+      "line": 218,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results strongly suggest that heme activates NLRP3 through P2X receptors, especially P2X4R and P2X7R.",
+      "key": "5cbd8e25bd9c17bc07c5a921d9f7ca90",
+      "line": 233,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "Therefore, knockdown of P2X4R and double knockdown of P2X7R plus P2X4R were performed by shRNA in macrophages and the result showed that P2X4R knockdown also partially inhibit the heme induced IL-1b secretion and double knockdown of P2X7R plus P2X4R almost completely depressed the IL-1b secretion (Fig. 3d).",
+      "key": "cb415d005944b38561f37c3332adf8b4",
+      "line": 227,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results strongly suggest that heme activates NLRP3 through P2X receptors, especially P2X4R and P2X7R.",
+      "key": "d3aa403760e2e24186a723baca21fc42",
+      "line": 234,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "These results strongly suggest that heme activates NLRP3 through P2X receptors, especially P2X4R and P2X7R.",
+      "key": "2427e1ec6bec6ad07894678cb45948d7",
+      "line": 236,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 13,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "b5727437fbddeab5c6a0ee940b7c7676",
+      "line": 256,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "b422679066c908abcf6112d0229d1b5b",
+      "line": 257,
+      "relation": "decreases",
+      "source": 11,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "d0616d4019e54ca1c7b99172ebfc485c",
+      "line": 258,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "4d0c482c44f8ff5e91528c90cd1c5c31",
+      "line": 259,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "12 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Fu W",
+          "Ji Z",
+          "Li Q",
+          "Li W",
+          "Wang Y",
+          "Yan J",
+          "Yao J",
+          "Zhou Z"
+        ],
+        "date": "2014-07-01",
+        "first": "Li Q",
+        "identifier": "24464629",
+        "journal": "Cell biochemistry and biophysics",
+        "last": "Li W",
+        "name": "Heme induces IL-1β secretion through activating NLRP3 in kidney inflammation.",
+        "namespace": "pubmed",
+        "pages": "495-502",
+        "volume": "69"
+      },
+      "evidence": "The results showed that enforced HO-1 could efficiently decline the heme level in the lysates of ligated kidneys, and inhibit kidney inflammation characterized by down-regulation of NLRP3-Caspase- 1-IL-1b axis.",
+      "key": "057c83dfddc1e22e885b620a693046d9",
+      "line": 260,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 12
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "a(CHEBI:protoporphyrin)",
+      "concept": {
+        "name": "protoporphyrin",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "1bf94d257510d706cb369fb31c320914"
+    },
+    {
+      "bel": "a(MESH:\"Cell Adhesion Molecules\")",
+      "concept": {
+        "name": "Cell Adhesion Molecules",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "8f9c2f3217f187cb6562bdccae9c0dc8"
+    },
+    {
+      "bel": "a(MESH:Cytokines)",
+      "concept": {
+        "name": "Cytokines",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "0d3c01297f25a34285f54b350178a231"
+    },
+    {
+      "bel": "bp(GO:\"inflammatory response\")",
+      "concept": {
+        "name": "inflammatory response",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "abd32f6c5cca606061975532840db260"
+    },
+    {
+      "bel": "bp(GO:\"leukocyte activation\")",
+      "concept": {
+        "name": "leukocyte activation",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "fd7f9d1c276f778e2dfa443c87e25b87"
+    },
+    {
+      "bel": "p(HGNC:CASP1)",
+      "concept": {
+        "name": "CASP1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "757e8982730dda44190069437655a3cf"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "concept": {
+        "name": "HMOX1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "d8af6078f1872edbf59623df2a9fa1c2"
+    },
+    {
+      "bel": "p(HGNC:IL1B)",
+      "concept": {
+        "name": "IL1B",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "cca08112d9fcf1a31015f1dbfc30b04c"
+    },
+    {
+      "bel": "p(HGNC:NLRP3)",
+      "concept": {
+        "name": "NLRP3",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "cce21ae03f3747819d71e4388a5f97c7"
+    },
+    {
+      "bel": "p(MGI:Casp1)",
+      "concept": {
+        "name": "Casp1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "8bbfb99eda6d510c34c4e0a6a3903a2a"
+    },
+    {
+      "bel": "p(MGI:Hmox1)",
+      "concept": {
+        "name": "Hmox1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "fb7611ec6ea54aba146bae72045c53e6"
+    },
+    {
+      "bel": "p(MGI:Il1b)",
+      "concept": {
+        "name": "Il1b",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "d3c8a0f2556b008ddf2008821247671a"
+    },
+    {
+      "bel": "p(MGI:Nlrp3)",
+      "concept": {
+        "name": "Nlrp3",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "e384f8f78cbc30604fdc82c32a528538"
+    },
+    {
+      "bel": "p(MGI:P2rx4)",
+      "concept": {
+        "name": "P2rx4",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "4c3d4cda339b695fc267a6ae861bf4e7"
+    },
+    {
+      "bel": "p(MGI:P2rx7)",
+      "concept": {
+        "name": "P2rx7",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "77250faeb2718dc7e2807eeb91e26bfc"
+    },
+    {
+      "bel": "p(MGI:Pycard)",
+      "concept": {
+        "name": "Pycard",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "94dd9025c6d1d585da95a6e67f786cb8"
+    },
+    {
+      "bel": "path(HP:\"Acute kidney injury\")",
+      "concept": {
+        "name": "Acute kidney injury",
+        "namespace": "HP"
+      },
+      "function": "Pathology",
+      "id": "de4bdac974d7a718815692445c57a02e"
+    },
+    {
+      "bel": "path(HP:\"Chronic kidney disease\")",
+      "concept": {
+        "name": "Chronic kidney disease",
+        "namespace": "HP"
+      },
+      "function": "Pathology",
+      "id": "4a04bdf3e45d842230ccbcc401152403"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "concept": {
+        "name": "Hemolysis",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "db35e96a4ebe03cdd6b1198b498e07f0"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "concept": {
+        "name": "Inflammation",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "10cd96fd4056a5e6c27264e0130e89f9"
+    }
+  ]
+}

@@ -1,0 +1,2973 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_29212341.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_29212341.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "High ferroportin levels were measured in macrophages upon heme overload and erythrophagocytosis (12, 13, 31, 32, 37) and in hemolytic murine models of b-thalassemia and phenylhydrazineinduced hemolytic anemia (11, 22, 34).",
+      "key": "7523aa4580f15448f0cebbcd7cce3a9a",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "These data suggested that during severe hemolysis, heme mediated ferroportin induction and low hepcidin in HbS mice (11) served to elevate systemic iron availability, required to sustain high erythropoietic demands in these mice.",
+      "key": "f7e769d0f44a435d74c49d6ef2e6e095",
+      "line": 113,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Our in vivo observations could be recapitulated in isolated macrophages, which upon stimulation with heme (25 lM; 16 h) demonstrated increased ferroportin mRNA and protein expression (Fig. 4A, B) and a significant decrease in the intracellular iron pool (2.2-fold; p < 0.01) (Fig. 4C).",
+      "key": "e19b5315380ea410f59055eeca8325de",
+      "line": 124,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "So far, our results established that in the conditions of acute and chronic heme overload, macrophages acquired high ferroportin expression and an efficient iron export.",
+      "key": "02a6c182dca7e922821d8c02500e6513",
+      "line": 144,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Under heme overload conditions, macrophages acquire an iron phenotype characterized by low intracellular iron and high ferroportin expression.",
+      "key": "e996056a50a843582c9991ce23ff58d5",
+      "line": 245,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Our in vivo observations could be recapitulated in isolated macrophages, which upon stimulation with heme (25 lM; 16 h) demonstrated increased ferroportin mRNA and protein expression (Fig. 4A, B) and a significant decrease in the intracellular iron pool (2.2-fold; p < 0.01) (Fig. 4C).",
+      "key": "a2b86f9c21f044cfe6b09ef55fa9a97d",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 23
+    },
+    {
+      "key": "5551ab67298c5dc6cf612c7c9c00af1b",
+      "relation": "partOf",
+      "source": 5,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "In a time-line experiment, we showed that heme loading of macrophages decreased the expression of heme–hemopexin complex receptor and transferrin receptor 1 (TfR1) (Fig. 4D), while ferritin levels remained largely unchanged except for an increase in ferritin levels at 16 h post-treatment (Fig. 4D).",
+      "key": "9696f15591b9a8dd323f5aa6fa6043dc",
+      "line": 134,
+      "relation": "decreases",
+      "source": 5,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "In a time-line experiment, we showed that heme loading of macrophages decreased the expression of heme–hemopexin complex receptor and transferrin receptor 1 (TfR1) (Fig. 4D), while ferritin levels remained largely unchanged except for an increase in ferritin levels at 16 h post-treatment (Fig. 4D).",
+      "key": "ac631491cebb6511b6bfefc71ee247e2",
+      "line": 135,
+      "relation": "decreases",
+      "source": 5,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "In a time-line experiment, we showed that heme loading of macrophages decreased the expression of heme–hemopexin complex receptor and transferrin receptor 1 (TfR1) (Fig. 4D), while ferritin levels remained largely unchanged except for an increase in ferritin levels at 16 h post-treatment (Fig. 4D).",
+      "key": "d64aad29f7c790df069d91fb66f9fe7c",
+      "line": 137,
+      "relation": "increases",
+      "source": 5,
+      "target": 17
+    },
+    {
+      "key": "9c668f76574b367dcbd2ea7554c69fb4",
+      "relation": "partOf",
+      "source": 5,
+      "target": 11
+    },
+    {
+      "key": "e7d5adbd3ebaf857923f86901f4a4873",
+      "relation": "partOf",
+      "source": 5,
+      "target": 14
+    },
+    {
+      "key": "e3fa5bf271875ccb6bdd5f830b71407b",
+      "relation": "partOf",
+      "source": 5,
+      "target": 13
+    },
+    {
+      "key": "e9bfaf10bfa41cc7a48308a5f4f9bbfd",
+      "relation": "partOf",
+      "source": 5,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We show that heme, in a concentration range found during hemolytic episodes, increases intracellular ROS production and consequentially signals for ferroportin induction and subsequent iron export from the macrophages.",
+      "key": "bc5121e3f0788432917d1174c9a7309c",
+      "line": 236,
+      "relation": "increases",
+      "source": 5,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Under heme overload conditions, macrophages acquire an iron phenotype characterized by low intracellular iron and high ferroportin expression.",
+      "key": "b60d9185a1abde287621cecbcfa71ec7",
+      "line": 244,
+      "relation": "negativeCorrelation",
+      "source": 5,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "High ferroportin levels were measured in macrophages upon heme overload and erythrophagocytosis (12, 13, 31, 32, 37) and in hemolytic murine models of b-thalassemia and phenylhydrazineinduced hemolytic anemia (11, 22, 34).",
+      "key": "ce571ceebf004c4c6aa478056a3fabed",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "These data suggested that during severe hemolysis, heme mediated ferroportin induction and low hepcidin in HbS mice (11) served to elevate systemic iron availability, required to sustain high erythropoietic demands in these mice.",
+      "key": "44c76fd7fe8a4ec854764702ae1a9eb8",
+      "line": 113,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Our in vivo observations could be recapitulated in isolated macrophages, which upon stimulation with heme (25 lM; 16 h) demonstrated increased ferroportin mRNA and protein expression (Fig. 4A, B) and a significant decrease in the intracellular iron pool (2.2-fold; p < 0.01) (Fig. 4C).",
+      "key": "3f961025c775f5fe3557201dd60e5ffa",
+      "line": 124,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "So far, our results established that in the conditions of acute and chronic heme overload, macrophages acquired high ferroportin expression and an efficient iron export.",
+      "key": "dd848dfd87f4012b55e81c254fb3133f",
+      "line": 144,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Under heme overload conditions, macrophages acquire an iron phenotype characterized by low intracellular iron and high ferroportin expression.",
+      "key": "d11999839841959ef11c433f60c480bc",
+      "line": 245,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "High ferroportin levels were measured in macrophages upon heme overload and erythrophagocytosis (12, 13, 31, 32, 37) and in hemolytic murine models of b-thalassemia and phenylhydrazineinduced hemolytic anemia (11, 22, 34).",
+      "key": "1e4d7dd2bcb45f8c032f0d01a9d8dcf2",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 8
+    },
+    {
+      "key": "5858a1ecc1e9216cb5cdb37e43d9b2ab",
+      "relation": "partOf",
+      "source": 21,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "These data suggested that during severe hemolysis, heme mediated ferroportin induction and low hepcidin in HbS mice (11) served to elevate systemic iron availability, required to sustain high erythropoietic demands in these mice.",
+      "key": "3404637e6db789b1b3330dda69b63170",
+      "line": 114,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that simulation of macrophages with LPS resulted in significant reduction in ferroportin mRNA and protein expression and enhanced intracellular iron deposition throughout all time points tested (Fig. 5A–D).",
+      "key": "23ac3f78a0445088f889db8a9ca8cfa2",
+      "line": 154,
+      "relation": "negativeCorrelation",
+      "source": 21,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "This dramatically contrasts the iron phenotype that develops in response to LPS, hallmarked by high intracellular iron levels and low ferroportin expression (10, 20, 48).",
+      "key": "fb52a6ebb60c5af17a8dc2a9d374f795",
+      "line": 253,
+      "relation": "negativeCorrelation",
+      "source": 21,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Our study provides evidence that the increase in cellular oxidant levels, as a result of NADPH oxidase activity, was responsible for ferroportin induction by heme.",
+      "key": "127e03357fbc0c608ddb4176a9b1caf4",
+      "line": 260,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 9,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "High ferroportin levels were measured in macrophages upon heme overload and erythrophagocytosis (12, 13, 31, 32, 37) and in hemolytic murine models of b-thalassemia and phenylhydrazineinduced hemolytic anemia (11, 22, 34).",
+      "key": "f59897ac16771039c7d8e34df8ddca6a",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "In addition, ferroportin undergoes post-translational control by the systemic iron regulator, hepcidin, whereby binding of hepcidin to ferroportin causes its internalization and degradation, leading to iron retention within the cells (21, 41).",
+      "key": "b5196a0208049feef9246d76197ebcf6",
+      "line": 104,
+      "relation": "increases",
+      "source": 16,
+      "target": 21,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "key": "8fa86f2e6b470b22bd5bf677c063e3eb",
+      "relation": "partOf",
+      "source": 18,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "These data suggested that during severe hemolysis, heme mediated ferroportin induction and low hepcidin in HbS mice (11) served to elevate systemic iron availability, required to sustain high erythropoietic demands in these mice.",
+      "key": "5cdcded636e1572d9d842390aa935514",
+      "line": 114,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that simulation of macrophages with LPS resulted in significant reduction in ferroportin mRNA and protein expression and enhanced intracellular iron deposition throughout all time points tested (Fig. 5A–D).",
+      "key": "0f3a73f2e55844f6bdba1262335db33b",
+      "line": 155,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "This dramatically contrasts the iron phenotype that develops in response to LPS, hallmarked by high intracellular iron levels and low ferroportin expression (10, 20, 48).",
+      "key": "c6ef9115abba1048249103efc51b1b97",
+      "line": 252,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We confirmed that the redox active iron, which is derived from heme catabolism in macrophages, is capable of catalyzing ROS formation (Fig. 7A) (19).",
+      "key": "1fb9e3ed7f48fcc3518543b0e02a20b8",
+      "line": 176,
+      "relation": "increases",
+      "source": 1,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Under heme overload conditions, macrophages acquire an iron phenotype characterized by low intracellular iron and high ferroportin expression.",
+      "key": "8c09b02ff70215d7bf2a9c727227e5a0",
+      "line": 244,
+      "relation": "negativeCorrelation",
+      "source": 1,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Our in vivo observations could be recapitulated in isolated macrophages, which upon stimulation with heme (25 lM; 16 h) demonstrated increased ferroportin mRNA and protein expression (Fig. 4A, B) and a significant decrease in the intracellular iron pool (2.2-fold; p < 0.01) (Fig. 4C).",
+      "key": "1a0572cc310a111556b4e675624b4e7e",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 23,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that simulation of macrophages with LPS resulted in significant reduction in ferroportin mRNA and protein expression and enhanced intracellular iron deposition throughout all time points tested (Fig. 5A–D).",
+      "key": "61fdded445fb404ec80ca5323d1c01ed",
+      "line": 153,
+      "relation": "negativeCorrelation",
+      "source": 23,
+      "target": 6
+    },
+    {
+      "key": "b95c12056196657cdf2db287a665ce3d",
+      "relation": "partOf",
+      "source": 20,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that simulation of macrophages with LPS resulted in significant reduction in ferroportin mRNA and protein expression and enhanced intracellular iron deposition throughout all time points tested (Fig. 5A–D).",
+      "key": "cb806cade5c87ccbdec5f206a23746d7",
+      "line": 153,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that simulation of macrophages with LPS resulted in significant reduction in ferroportin mRNA and protein expression and enhanced intracellular iron deposition throughout all time points tested (Fig. 5A–D).",
+      "key": "ab48d175845ee6477f5097e9dc2138b3",
+      "line": 154,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "This dramatically contrasts the iron phenotype that develops in response to LPS, hallmarked by high intracellular iron levels and low ferroportin expression (10, 20, 48).",
+      "key": "2af0a494dee8476cca6e061e29dfe402",
+      "line": 253,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that simulation of macrophages with LPS resulted in significant reduction in ferroportin mRNA and protein expression and enhanced intracellular iron deposition throughout all time points tested (Fig. 5A–D).",
+      "key": "9df900ef3c6e2e69e7b0d6f428f9aab6",
+      "line": 155,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "This dramatically contrasts the iron phenotype that develops in response to LPS, hallmarked by high intracellular iron levels and low ferroportin expression (10, 20, 48).",
+      "key": "bcb3b7e33784b807279b15bbfd41b797",
+      "line": 252,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "By contrast, treatment of macrophages with PPIX failed to increase the ROS production and ferroportin expression, implying that iron within the heme moiety was required for the observed effects (Fig. 7B).",
+      "key": "1e56a3ff4f160822bc245c65a87b9d2f",
+      "line": 163,
+      "relation": "causesNoChange",
+      "source": 7,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "By contrast, treatment of macrophages with PPIX failed to increase the ROS production and ferroportin expression, implying that iron within the heme moiety was required for the observed effects (Fig. 7B).",
+      "key": "fcce21c32e3d5b666488bd7f42b1de87",
+      "line": 164,
+      "relation": "causesNoChange",
+      "source": 7,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "In contrast, PPIX treatment of macrophages was capable of inducing Hmox-1 expression (Fig. 7C), indicating that PPIX was taken up by macrophages and catabolized (13).",
+      "key": "181cab354fd287db2949eaf9e7d32aaa",
+      "line": 170,
+      "relation": "increases",
+      "source": 7,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that NAC treatment scavenged ROS production and, more importantly, it counteracted ferroportin induction by heme (Fig. 8B, C).",
+      "key": "73400fe31b0c5cffb8721419104838ed",
+      "line": 203,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We show that heme, in a concentration range found during hemolytic episodes, increases intracellular ROS production and consequentially signals for ferroportin induction and subsequent iron export from the macrophages.",
+      "key": "b3ec7ab84a771beee62581f76e409b73",
+      "line": 237,
+      "relation": "increases",
+      "source": 10,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Expectedly, and in line with previous report (13), treatment of macrophages with DFO abolished ferroportin and ferritin induction by heme, whereas TfR1 expression was lowered upon heme and combined treatment with heme and DFO (Fig. 7D).",
+      "key": "462ff804c715a32aa733da680ead4a8d",
+      "line": 185,
+      "relation": "decreases",
+      "source": 0,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Expectedly, and in line with previous report (13), treatment of macrophages with DFO abolished ferroportin and ferritin induction by heme, whereas TfR1 expression was lowered upon heme and combined treatment with heme and DFO (Fig. 7D).",
+      "key": "2ae18e028848aec4a1ebc4706e4e85b8",
+      "line": 186,
+      "relation": "decreases",
+      "source": 0,
+      "target": 17
+    },
+    {
+      "key": "192bedba92b78eb9e7998de83020fa89",
+      "relation": "partOf",
+      "source": 0,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Expectedly, and in line with previous report (13), treatment of macrophages with DFO abolished ferroportin and ferritin induction by heme, whereas TfR1 expression was lowered upon heme and combined treatment with heme and DFO (Fig. 7D).",
+      "key": "af899d8d94e4cbd32ccb0c30ef76a77f",
+      "line": 187,
+      "relation": "decreases",
+      "source": 11,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that cotreatment of macrophages with heme and apocynin (Fig. 7E), as well as with heme and allopurinol (Fig. 7F), fully prevented ferroportin induction by heme. These data revealed that inhibiting superoxide at its production site is an effective way to counteract heme-mediated ferroportin induction.",
+      "key": "3125fe434586770c03fd6044c2703e69",
+      "line": 196,
+      "relation": "decreases",
+      "source": 14,
+      "target": 21
+    },
+    {
+      "key": "9346fee461592c2a015703ae0ec495a5",
+      "relation": "partOf",
+      "source": 4,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that cotreatment of macrophages with heme and apocynin (Fig. 7E), as well as with heme and allopurinol (Fig. 7F), fully prevented ferroportin induction by heme. These data revealed that inhibiting superoxide at its production site is an effective way to counteract heme-mediated ferroportin induction.",
+      "key": "0bf7256208d6b8c9d2f18a9e070f1e48",
+      "line": 197,
+      "relation": "decreases",
+      "source": 13,
+      "target": 21
+    },
+    {
+      "key": "b3eeba3a3a894b596e334d207ae0fa36",
+      "relation": "partOf",
+      "source": 3,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that NAC treatment scavenged ROS production and, more importantly, it counteracted ferroportin induction by heme (Fig. 8B, C).",
+      "key": "13bf636b1a87272999f01b099cb3fd66",
+      "line": 203,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that NAC treatment scavenged ROS production and, more importantly, it counteracted ferroportin induction by heme (Fig. 8B, C).",
+      "key": "b18f242f17adc8961b2ff63222f4b090",
+      "line": 204,
+      "relation": "decreases",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "key": "0302ef49fa2927b557f8fcef9998cb6e",
+      "relation": "partOf",
+      "source": 2,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "In parallel to ferroportin, the expression of Hmox-1 was increased by heme-triggered ROS production and its induction was prevented by the combined treatment with NAC and heme (Fig. 8B).",
+      "key": "d875bc429087eae41aa5037e115ece83",
+      "line": 211,
+      "relation": "decreases",
+      "source": 12,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Similarly, the induction of Hmox1 by heme was abolished by cotreatment with NAC and heme, supporting our in vitro findings (Fig. 8D).",
+      "key": "2987320ed9d64734647f4de33cd3f76d",
+      "line": 226,
+      "relation": "decreases",
+      "source": 12,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that increase in ferroportin mRNA and protein expression by heme was effectively prevented in mice receiving combined treatment of NAC and heme (Fig. 8D, E).",
+      "key": "c78061a4fb44e0044e0aaf15e9bf4cec",
+      "line": 218,
+      "relation": "decreases",
+      "source": 12,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "We showed that increase in ferroportin mRNA and protein expression by heme was effectively prevented in mice receiving combined treatment of NAC and heme (Fig. 8D, E).",
+      "key": "3b4bd28e4bb49469f8e30692e9f9e973",
+      "line": 219,
+      "relation": "decreases",
+      "source": 12,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "16 hours post-treatment",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Alan B",
+          "Lai D",
+          "Leopold K",
+          "Tangudu NK",
+          "Vettorazzi S",
+          "Vinchi F",
+          "Vujić Spasić M",
+          "Wörle K"
+        ],
+        "date": "2018-08-10",
+        "first": "Tangudu NK",
+        "identifier": "29212341",
+        "journal": "Antioxidants & redox signaling",
+        "last": "Vujić Spasić M",
+        "name": "Scavenging Reactive Oxygen Species Production Normalizes Ferroportin Expression and Ameliorates Cellular and Systemic Iron Disbalances in Hemolytic Mouse Model.",
+        "namespace": "pubmed",
+        "pages": "484-499",
+        "volume": "29"
+      },
+      "evidence": "Our study provides evidence that the increase in cellular oxidant levels, as a result of NADPH oxidase activity, was responsible for ferroportin induction by heme.",
+      "key": "08793512c8d7a026b54a4a10f6817cda",
+      "line": 260,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 21
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"desferrioxamine B\")",
+      "concept": {
+        "name": "desferrioxamine B",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "14b27bd1f3ddf3c6f717c632a22bdff7"
+    },
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "concept": {
+        "name": "iron(2+)",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "be7ed197cc239803fafad58c7dc415ba"
+    },
+    {
+      "bel": "a(CHEBI:acetylcysteine)",
+      "concept": {
+        "name": "acetylcysteine",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "29fcc762deff60bd6b81859f93cc9056"
+    },
+    {
+      "bel": "a(CHEBI:allopurinol)",
+      "concept": {
+        "name": "allopurinol",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "29072ef3defa1b9a194e8adb555411b2"
+    },
+    {
+      "bel": "a(CHEBI:apocynin)",
+      "concept": {
+        "name": "apocynin",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "8719772d103c88ca87b26aa8a094b226"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "a(CHEBI:lipopolysaccharide)",
+      "concept": {
+        "name": "lipopolysaccharide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "9d74ac839ff5ff882ee29395de5ecb86"
+    },
+    {
+      "bel": "a(CHEBI:protoporphyrin)",
+      "concept": {
+        "name": "protoporphyrin",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "1bf94d257510d706cb369fb31c320914"
+    },
+    {
+      "bel": "a(HM:erythrophagocytosis)",
+      "concept": {
+        "name": "erythrophagocytosis",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "8ce8d901aa15f2f7dd6b44b96ea0ee2f"
+    },
+    {
+      "bel": "a(MESH:\"NADPH Oxidase\")",
+      "concept": {
+        "name": "NADPH Oxidase",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "6ecd1a266d0c05f718812642312bb6bf"
+    },
+    {
+      "bel": "a(MESH:\"Reactive Oxygen Species\")",
+      "concept": {
+        "name": "Reactive Oxygen Species",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "dd0e798c738472fa8ffb9fa88a2eacc7"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"desferrioxamine B\"), a(CHEBI:heme))",
+      "function": "Complex",
+      "id": "4292e5860b1d91b5176cf31fdede1fe7",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"desferrioxamine B\")",
+          "concept": {
+            "name": "desferrioxamine B",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "14b27bd1f3ddf3c6f717c632a22bdff7"
+        },
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:acetylcysteine), a(CHEBI:heme))",
+      "function": "Complex",
+      "id": "6edb295718e233a8e422e2e9a6ba7202",
+      "members": [
+        {
+          "bel": "a(CHEBI:acetylcysteine)",
+          "concept": {
+            "name": "acetylcysteine",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "29fcc762deff60bd6b81859f93cc9056"
+        },
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:allopurinol), a(CHEBI:heme))",
+      "function": "Complex",
+      "id": "39a9de392d054a65beba5eec34755d45",
+      "members": [
+        {
+          "bel": "a(CHEBI:allopurinol)",
+          "concept": {
+            "name": "allopurinol",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "29072ef3defa1b9a194e8adb555411b2"
+        },
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:apocynin), a(CHEBI:heme))",
+      "function": "Complex",
+      "id": "feb7adb75e4362ed9abe491b22b6e42d",
+      "members": [
+        {
+          "bel": "a(CHEBI:apocynin)",
+          "concept": {
+            "name": "apocynin",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "8719772d103c88ca87b26aa8a094b226"
+        },
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), p(MGI:Hpx))",
+      "function": "Complex",
+      "id": "b18d8af4f313181151d9292267b9e610",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        },
+        {
+          "bel": "p(MGI:Hpx)",
+          "concept": {
+            "name": "Hpx",
+            "namespace": "MGI"
+          },
+          "function": "Protein",
+          "id": "31e4aedd4a04f422b4b3ddab695d1968"
+        }
+      ]
+    },
+    {
+      "bel": "complex(p(MGI:Hamp), p(MGI:Slc40a1))",
+      "function": "Complex",
+      "id": "0f1f220638a307a73612ec2f2886c54a",
+      "members": [
+        {
+          "bel": "p(MGI:Hamp)",
+          "concept": {
+            "name": "Hamp",
+            "namespace": "MGI"
+          },
+          "function": "Protein",
+          "id": "f76caf498f735fa1f89a9e9bc42b5c09"
+        },
+        {
+          "bel": "p(MGI:Slc40a1)",
+          "concept": {
+            "name": "Slc40a1",
+            "namespace": "MGI"
+          },
+          "function": "Protein",
+          "id": "f2b858aa7b284787d71372b95f582992"
+        }
+      ]
+    },
+    {
+      "bel": "p(MGI:Ftl1)",
+      "concept": {
+        "name": "Ftl1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "dd36d34842fd1b7241afbf397693d4b7"
+    },
+    {
+      "bel": "p(MGI:Hamp)",
+      "concept": {
+        "name": "Hamp",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "f76caf498f735fa1f89a9e9bc42b5c09"
+    },
+    {
+      "bel": "p(MGI:Hmox1)",
+      "concept": {
+        "name": "Hmox1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "fb7611ec6ea54aba146bae72045c53e6"
+    },
+    {
+      "bel": "p(MGI:Hpx)",
+      "concept": {
+        "name": "Hpx",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "31e4aedd4a04f422b4b3ddab695d1968"
+    },
+    {
+      "bel": "p(MGI:Slc40a1)",
+      "concept": {
+        "name": "Slc40a1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "f2b858aa7b284787d71372b95f582992"
+    },
+    {
+      "bel": "p(MGI:Tfrc)",
+      "concept": {
+        "name": "Tfrc",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "c2f54e40cabcbb311533cebf7e2fc208"
+    },
+    {
+      "bel": "r(MGI:Slc40a1)",
+      "concept": {
+        "name": "Slc40a1",
+        "namespace": "MGI"
+      },
+      "function": "RNA",
+      "id": "99707d5d7dda76a3e994c7c455ef8add"
+    }
+  ]
+}

@@ -1,0 +1,969 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_24630724.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_24630724.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "CD169 expression was significantly decreased in Spic−/− BM indicating loss of these macrophages (Figure 1E).",
+      "key": "7734b15517652f400cf7b6231c198939",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "CD169 expression was significantly decreased in Spic−/− BM indicating loss of these macrophages (Figure 1E).",
+      "key": "01fe1455a51b5eff0d6118d9bc4eac2a",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Heme-induced Spic expression was confirmed by reverse transcription PCR and was dose-dependent (Figure 2C).",
+      "key": "cbbec762daf831fe76a9aa76e94ba87b",
+      "line": 98,
+      "relation": "increases",
+      "source": 0,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "In addition, Spic was induced as expected, as was Treml4, which can be used as a marker for RPM (Figure 5A).",
+      "key": "d9d9b5e2d4bb969f43fb0983a2b04646",
+      "line": 111,
+      "relation": "increases",
+      "source": 0,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Heme induced the expression of Ho1 and Blvrb as well as Slc40a1, which encodes the mammalian iron exporter (Figure 5A), in agreement with previous reports (Delaby et al., 2008).",
+      "key": "692868eb9ff246b445b7a449fb05a0be",
+      "line": 104,
+      "relation": "increases",
+      "source": 0,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Heme induced the expression of Ho1 and Blvrb as well as Slc40a1, which encodes the mammalian iron exporter (Figure 5A), in agreement with previous reports (Delaby et al., 2008).",
+      "key": "6dd92347c153dc5a9622fbef722706ae",
+      "line": 105,
+      "relation": "increases",
+      "source": 0,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Heme induced the expression of Ho1 and Blvrb as well as Slc40a1, which encodes the mammalian iron exporter (Figure 5A), in agreement with previous reports (Delaby et al., 2008).",
+      "key": "e8e6b2bd9113a2d3291a73d08798783c",
+      "line": 106,
+      "relation": "increases",
+      "source": 0,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "In addition, Spic was induced as expected, as was Treml4, which can be used as a marker for RPM (Figure 5A).",
+      "key": "d39a4a02c9edbd0ee55bc30ec334b5d1",
+      "line": 112,
+      "relation": "increases",
+      "source": 0,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Heme has been suggested to induce polyubiquitination and proteasome-dependent degradation of BACH1 (Zenke-Kawasaki et al., 2007; Tan et al., 2013).",
+      "key": "f4a693a1577c185acdeeaa356f3c2306",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 3,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Here we showed that Bach1 was a transcriptional repressor of Spic and that heme-induced proteasome-dependent degradation of BACH1 protein in monocytes led to Spic expression and promoted RPM and BMM development (Figure 7F).",
+      "key": "2d12003cf54a5da10a6aa643f6875c85",
+      "line": 131,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 3,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "splenic red pulp macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Here we showed that Bach1 was a transcriptional repressor of Spic and that heme-induced proteasome-dependent degradation of BACH1 protein in monocytes led to Spic expression and promoted RPM and BMM development (Figure 7F).",
+      "key": "e04380bf07ad71d8c73dbb22c0642a50",
+      "line": 134,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Notably, heme mediated induction of SPIC-EGFP+ BMDM was significantly reduced with Bach1 overexpression suggesting that Bach1 may inhibit Spic expression (Figure 5C).",
+      "key": "36d8290461e1ee15c3edc75e46cf66c3",
+      "line": 118,
+      "relation": "decreases",
+      "source": 3,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Here we showed that Bach1 was a transcriptional repressor of Spic and that heme-induced proteasome-dependent degradation of BACH1 protein in monocytes led to Spic expression and promoted RPM and BMM development (Figure 7F).",
+      "key": "c1c0bc35dd847bbb2295166286cc0d98",
+      "line": 130,
+      "relation": "decreases",
+      "source": 3,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Here we showed that Bach1 was a transcriptional repressor of Spic and that heme-induced proteasome-dependent degradation of BACH1 protein in monocytes led to Spic expression and promoted RPM and BMM development (Figure 7F).",
+      "key": "fbaeef40e417a801c38ce242cac06b2c",
+      "line": 132,
+      "relation": "increases",
+      "source": 3,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Heme has been suggested to induce polyubiquitination and proteasome-dependent degradation of BACH1 (Zenke-Kawasaki et al., 2007; Tan et al., 2013).",
+      "key": "04a97cc008e9e7588681d315158abf48",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 0
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Here we showed that Bach1 was a transcriptional repressor of Spic and that heme-induced proteasome-dependent degradation of BACH1 protein in monocytes led to Spic expression and promoted RPM and BMM development (Figure 7F).",
+      "key": "c70ad180aa3efbd765e5b4e15faf1928",
+      "line": 131,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "splenic red pulp macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Arase H",
+          "Baltimore D",
+          "Briseño CG",
+          "Egawa T",
+          "Haldar M",
+          "Igarashi K",
+          "Kc W",
+          "Kohyama M",
+          "Kretzer NM",
+          "Murphy KM",
+          "Murphy TL",
+          "Rajasekaran NS",
+          "Satpathy AT",
+          "So AY",
+          "Wang L",
+          "Wu X"
+        ],
+        "date": "2014-03-13",
+        "first": "Haldar M",
+        "identifier": "24630724",
+        "journal": "Cell",
+        "last": "Murphy KM",
+        "name": "Heme-mediated SPI-C induction promotes monocyte differentiation into iron-recycling macrophages.",
+        "namespace": "pubmed",
+        "pages": "1223-1234",
+        "volume": "156"
+      },
+      "evidence": "Here we showed that Bach1 was a transcriptional repressor of Spic and that heme-induced proteasome-dependent degradation of BACH1 protein in monocytes led to Spic expression and promoted RPM and BMM development (Figure 7F).",
+      "key": "524192e362a54c555256ffa8773e68b9",
+      "line": 134,
+      "relation": "positiveCorrelation",
+      "source": 1,
+      "target": 8
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "bp(HP:macrophage)",
+      "concept": {
+        "name": "macrophage",
+        "namespace": "HP"
+      },
+      "function": "BiologicalProcess",
+      "id": "aef7ac36be16f1a77a5e03c734081233"
+    },
+    {
+      "bel": "g(MGI:Spic)",
+      "concept": {
+        "name": "Spic",
+        "namespace": "MGI"
+      },
+      "function": "Gene",
+      "id": "39edb9da71a9e9b76e1b72b4b84a77ac"
+    },
+    {
+      "bel": "p(MGI:Bach1)",
+      "concept": {
+        "name": "Bach1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "5676e13fb35cd461cdfd57dac1a2970c"
+    },
+    {
+      "bel": "p(MGI:Blvrb)",
+      "concept": {
+        "name": "Blvrb",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "5c22ad334e9055b2a3cee26bbc605750"
+    },
+    {
+      "bel": "p(MGI:Hmox1)",
+      "concept": {
+        "name": "Hmox1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "fb7611ec6ea54aba146bae72045c53e6"
+    },
+    {
+      "bel": "p(MGI:Siglec1)",
+      "concept": {
+        "name": "Siglec1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "efcf813f6cfef47d588efb3991a0f6af"
+    },
+    {
+      "bel": "p(MGI:Slc40a1)",
+      "concept": {
+        "name": "Slc40a1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "f2b858aa7b284787d71372b95f582992"
+    },
+    {
+      "bel": "p(MGI:Spic)",
+      "concept": {
+        "name": "Spic",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "80d895a2d6eb5fc2bdaa351797d3e2a5"
+    },
+    {
+      "bel": "p(MGI:Treml4)",
+      "concept": {
+        "name": "Treml4",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "f40150dfded95d4ca9cb8cfea13ea77d"
+    }
+  ]
+}

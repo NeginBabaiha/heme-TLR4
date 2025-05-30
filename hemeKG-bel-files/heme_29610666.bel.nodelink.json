@@ -1,0 +1,2408 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_29610666.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_29610666.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "Exposure of washed human peripheral blood leukocytes to protein free crystalline heme that has been dissolved in NaOH (100 mmol\u0001L\u00031) with subsequent adjustment to pH 7.8 resulted in a drastic reduction in cell surface CD62L expression on CD14 low CD15 high neutrophil granulocytes after 30 minutes of exposure (Figure 1A).",
+      "key": "19b99987e1089705fe2d8be71c65d1eb",
+      "line": 95,
+      "relation": "decreases",
+      "source": 3,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "By modeling the equilibrium concentration in the experiments performed with heme-albumin we could show that the free heme is the active neutrophil-stimulating component, which is inactivated by protein association (Figure S2).",
+      "key": "b182b65ffa8460c7fa85cbc2e7e546e3",
+      "line": 103,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "These observations suggest that in any physiological scenario in which heme might be present in extracellular spaces as a component of a natural hemoprotein, the concentration of free or quasi-free heme can be expected to be very low, possibly below the minimum range required to trigger granulocyte activation and other innate immunity responses.",
+      "key": "1235cb4d2d91804c6b6507476f7a2e5c",
+      "line": 113,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Human Umbilical Vein Endothelial Cells",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In serum-free conditions, NaOH-dissolved heme (final pH 7.8) reduced cellular ATP in both cell types in a dose-dependent manner after 8 hours of exposure (Figure 2A)",
+      "key": "b79e0a9eabf0cf2bfcfc33559ab2ea1a",
+      "line": 122,
+      "relation": "decreases",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "key": "9bded6c138f007618cc60fb18e1fd256",
+      "relation": "partOf",
+      "source": 3,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "This experiment demonstrated that under serum-free conditions, 4 hours of exposure to NaOH-dissolved heme induced complete deterioration of mitochondrial respiration at concentrations as low as 10 lmol\u0001L\u00031, while exposure to albumin-associated heme in the presence of 2% FCS stimulated respiratory capacity to levels above baseline.",
+      "key": "b307e1c3ea022b728ce6411cd2b200fb",
+      "line": 141,
+      "relation": "decreases",
+      "source": 3,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "However, a weak TNF-alpha signal appeared in macrophages that were treated with the highest concentration of NaOH-dissolved heme (500 lmol\u0001L\u00031).",
+      "key": "7415bd9ae1746a0b67ae96c45c03b776",
+      "line": 167,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "These experiments confirm a number of earlier reports and support the idea that certain solutions derived from purified/crystalline heme have the potential to induce weak TLR4-mediated inflammatory responses in macrophages in the complete absence of plasma derived proteins.",
+      "key": "496e336b481ae76d34fc369f88b651a2",
+      "line": 176,
+      "relation": "increases",
+      "source": 3,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In subsequent reactions, metHb or metHb-derived heme participates in redox chain reactions that lead to the accumulation of modified lipids and proteins, as well as to heme degradation and to the release of free iron.19,25",
+      "key": "9a2fdd7b7ed24fe2b6e74fef003e5d65",
+      "line": 202,
+      "relation": "increases",
+      "source": 3,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "Purified heme was found to be an activator of TLR4 8,11,27 in some studies and of the inflammasome 9 in others, and these activities were considered to be the molecular mechanism behind the coexistence of inflammation and hemolysis.",
+      "key": "8902d39517b0398c305c2eebd7672022",
+      "line": 209,
+      "relation": "increases",
+      "source": 3,
+      "target": 20,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "Only under protein-free conditions did we observe a limited heme-induced TNF-alpha response in cultured macrophages, which was triggered via signaling of the classical TLR4–MyD88–TRIF pathway of NF-kB activation.28",
+      "key": "51a64f0f365315196bd7ed12769cebb1",
+      "line": 225,
+      "relation": "increases",
+      "source": 3,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "By modeling the equilibrium concentration in the experiments performed with heme-albumin we could show that the free heme is the active neutrophil-stimulating component, which is inactivated by protein association (Figure S2).",
+      "key": "f8c99603b2d6976341c448941b8f2900",
+      "line": 103,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "These observations suggest that in any physiological scenario in which heme might be present in extracellular spaces as a component of a natural hemoprotein, the concentration of free or quasi-free heme can be expected to be very low, possibly below the minimum range required to trigger granulocyte activation and other innate immunity responses.",
+      "key": "524e46e1667ed747e9e679eb28aed19d",
+      "line": 113,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Human Umbilical Vein Endothelial Cells",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In contrast, less ATP depletion was observed during exposure to heme-albumin, and no effect could be detected when either cell type was exposed to metHb or oxyHb at concentrations of up to 500 lmol\u0001L\u00031, even in the absence of serum.",
+      "key": "aa8819fa692cfb23e29c1fd5a7582d63",
+      "line": 130,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Human Umbilical Vein Endothelial Cells",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In contrast, less ATP depletion was observed during exposure to heme-albumin, and no effect could be detected when either cell type was exposed to metHb or oxyHb at concentrations of up to 500 lmol\u0001L\u00031, even in the absence of serum.",
+      "key": "494dcf8eea10e29a16e40305c8218250",
+      "line": 130,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "This experiment demonstrated that under serum-free conditions, 4 hours of exposure to NaOH-dissolved heme induced complete deterioration of mitochondrial respiration at concentrations as low as 10 lmol\u0001L\u00031, while exposure to albumin-associated heme in the presence of 2% FCS stimulated respiratory capacity to levels above baseline.",
+      "key": "ecad6b8995850e30dce70d4d0708da51",
+      "line": 142,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In endothelial cells, we found that, in the absence of serum, heme-albumin triggered a dose-dependent HMOX1 protein expression signal in an exposure range of 0–175 lmol\u0001L\u00031.",
+      "key": "67d2464c0a2036cbe92183dfa8cbe5f6",
+      "line": 150,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "heme-albumin is also a robust inducer of dose-dependent HMOX1 expression in BMDMs (Figure 2D).",
+      "key": "24228ed57f54556827fce7ca1ddae0bb",
+      "line": 155,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "heme-albumin, in contrast, induced HMOX1 in a dose-dependent manner.",
+      "key": "e74f75a1bbde3f6207e8bc797d36e4d1",
+      "line": 160,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "However, similar to Hb, heme-albumin did not induce an inflammatory response in macrophages or endothelial cells in the presence of low concentrations of serum.",
+      "key": "08bb6b9ae7bd97ffda0380b7aee6cd58",
+      "line": 217,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 9
+    },
+    {
+      "key": "eb9328e4b92c8be27c5d83047c5a4a59",
+      "relation": "partOf",
+      "source": 13,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Human Umbilical Vein Endothelial Cells",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In contrast, less ATP depletion was observed during exposure to heme-albumin, and no effect could be detected when either cell type was exposed to metHb or oxyHb at concentrations of up to 500 lmol\u0001L\u00031, even in the absence of serum.",
+      "key": "458d45061c932c97298a30384ca30951",
+      "line": 131,
+      "relation": "causesNoChange",
+      "source": 5,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Human Umbilical Vein Endothelial Cells",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In contrast, less ATP depletion was observed during exposure to heme-albumin, and no effect could be detected when either cell type was exposed to metHb or oxyHb at concentrations of up to 500 lmol\u0001L\u00031, even in the absence of serum.",
+      "key": "42d1ee7bde8d13218a65447ebd21584a",
+      "line": 132,
+      "relation": "causesNoChange",
+      "source": 4,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In subsequent reactions, metHb or metHb-derived heme participates in redox chain reactions that lead to the accumulation of modified lipids and proteins, as well as to heme degradation and to the release of free iron.19,25",
+      "key": "99cd59bb3bb3564c675312c8445e42cd",
+      "line": 201,
+      "relation": "increases",
+      "source": 4,
+      "target": 3,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "This experiment demonstrated that under serum-free conditions, 4 hours of exposure to NaOH-dissolved heme induced complete deterioration of mitochondrial respiration at concentrations as low as 10 lmol\u0001L\u00031, while exposure to albumin-associated heme in the presence of 2% FCS stimulated respiratory capacity to levels above baseline.",
+      "key": "1f6f9ce42fe9c860451d08c9837110b6",
+      "line": 142,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "In endothelial cells, we found that, in the absence of serum, heme-albumin triggered a dose-dependent HMOX1 protein expression signal in an exposure range of 0–175 lmol\u0001L\u00031.",
+      "key": "825f7076e73c6b2981e09a0f9ddbd5f1",
+      "line": 150,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "heme-albumin is also a robust inducer of dose-dependent HMOX1 expression in BMDMs (Figure 2D).",
+      "key": "8b3f590fa4a1f3bd43b3da63c801eb29",
+      "line": 155,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "heme-albumin, in contrast, induced HMOX1 in a dose-dependent manner.",
+      "key": "3236f1d55bede0e852464815dd9aa61d",
+      "line": 160,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "However, a weak TNF-alpha signal appeared in macrophages that were treated with the highest concentration of NaOH-dissolved heme (500 lmol\u0001L\u00031).",
+      "key": "27d59cef681530b892e5f27f92528d23",
+      "line": 167,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "However, similar to Hb, heme-albumin did not induce an inflammatory response in macrophages or endothelial cells in the presence of low concentrations of serum.",
+      "key": "7b6ec906ea607cdda0abfbfbd233d44d",
+      "line": 217,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "The first process links the nitric oxide (NO) reactivity of oxyHb to a cascade of cell-free Hb extravasation, hemolysis-associated NO-depletion, and vasoconstriction.21–23",
+      "key": "b3f79f65f63c66301f74b3aaa005daae",
+      "line": 184,
+      "relation": "decreases",
+      "source": 14,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "The first process links the nitric oxide (NO) reactivity of oxyHb to a cascade of cell-free Hb extravasation, hemolysis-associated NO-depletion, and vasoconstriction.21–23",
+      "key": "ab75cb739d28014f5fb489bad4c2fbaa",
+      "line": 185,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "The second biochemical process relates to the ability of Hb to facilitate oxidative reactions outside of the reducing environment of the RBC, leading to the accumulation of ferric metHb(Fe3+) in tissue.24",
+      "key": "4b2e3687d9b42397e001a4024d215571",
+      "line": 192,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "The second biochemical process relates to the ability of Hb to facilitate oxidative reactions outside of the reducing environment of the RBC, leading to the accumulation of ferric metHb(Fe3+) in tissue.24",
+      "key": "bca4d5e5d6c518f822362bd3e5704c70",
+      "line": 193,
+      "relation": "increases",
+      "source": 14,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "The first process links the nitric oxide (NO) reactivity of oxyHb to a cascade of cell-free Hb extravasation, hemolysis-associated NO-depletion, and vasoconstriction.21–23",
+      "key": "515fd2d41d687c4b1473a0103fcec686",
+      "line": 185,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "The second biochemical process relates to the ability of Hb to facilitate oxidative reactions outside of the reducing environment of the RBC, leading to the accumulation of ferric metHb(Fe3+) in tissue.24",
+      "key": "eb221289ef830f3d768db049bdc7e572",
+      "line": 192,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "Only under protein-free conditions did we observe a limited heme-induced TNF-alpha response in cultured macrophages, which was triggered via signaling of the classical TLR4–MyD88–TRIF pathway of NF-kB activation.28",
+      "key": "bbee389a1848df376f4aeab3857abf2b",
+      "line": 226,
+      "relation": "increases",
+      "source": 20,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "Only under protein-free conditions did we observe a limited heme-induced TNF-alpha response in cultured macrophages, which was triggered via signaling of the classical TLR4–MyD88–TRIF pathway of NF-kB activation.28",
+      "key": "c09aa6a4621b75ebbb5b395d44a4b36d",
+      "line": 227,
+      "relation": "increases",
+      "source": 20,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "Only under protein-free conditions did we observe a limited heme-induced TNF-alpha response in cultured macrophages, which was triggered via signaling of the classical TLR4–MyD88–TRIF pathway of NF-kB activation.28",
+      "key": "1e0e55692be5ec558ad9ca35b7f72ace",
+      "line": 228,
+      "relation": "increases",
+      "source": 16,
+      "target": 17,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "Only under protein-free conditions did we observe a limited heme-induced TNF-alpha response in cultured macrophages, which was triggered via signaling of the classical TLR4–MyD88–TRIF pathway of NF-kB activation.28",
+      "key": "b7d854052769611480ef664097a51a2e",
+      "line": 229,
+      "relation": "increases",
+      "source": 19,
+      "target": 17,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Mitochondria",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "8 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Buehler PW",
+          "Deuel JW",
+          "Humar R",
+          "Ingoglia G",
+          "Schaer CA",
+          "Schaer DJ",
+          "Vallelian F"
+        ],
+        "date": "2018-04-01",
+        "first": "Vallelian F",
+        "identifier": "29610666",
+        "journal": "Pharmacology research & perspectives",
+        "last": "Schaer DJ",
+        "name": "Revisiting the putative role of heme as a trigger of inflammation.",
+        "namespace": "pubmed",
+        "pages": "e00392",
+        "volume": "6"
+      },
+      "evidence": "Only under protein-free conditions did we observe a limited heme-induced TNF-alpha response in cultured macrophages, which was triggered via signaling of the classical TLR4–MyD88–TRIF pathway of NF-kB activation.28",
+      "key": "9c69aecc38682344e58d25a48b399ef4",
+      "line": 230,
+      "relation": "increases",
+      "source": 17,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 21
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"adenosine triphosphate\")",
+      "concept": {
+        "name": "adenosine triphosphate",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "5df10c47733716e680d73b520cdc1918"
+    },
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "concept": {
+        "name": "iron(2+)",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "be7ed197cc239803fafad58c7dc415ba"
+    },
+    {
+      "bel": "a(CHEBI:\"nitric oxide\")",
+      "concept": {
+        "name": "nitric oxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "da5a3d810aacb9c4649ec7df3b5f60d3"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "a(CHEBI:methemoglobin)",
+      "concept": {
+        "name": "methemoglobin",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "f7477b631e71284b5f4073769cbe705f"
+    },
+    {
+      "bel": "a(CHEBI:oxyhemoglobin)",
+      "concept": {
+        "name": "oxyhemoglobin",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "c49b5c42ea35108a30ba8e7c04e9a2b8"
+    },
+    {
+      "bel": "a(HM:\"oxidative reactions\")",
+      "concept": {
+        "name": "oxidative reactions",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "789ec070d787c034ffef2e9b908faaa0"
+    },
+    {
+      "bel": "bp(GO:\"cellular respiration\")",
+      "concept": {
+        "name": "cellular respiration",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "ced509226a10b89fb0f158c6a90c60c2"
+    },
+    {
+      "bel": "bp(GO:\"granulocyte activation\")",
+      "concept": {
+        "name": "granulocyte activation",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "ebd0dad5e2e64130d2e039a113b2ca06"
+    },
+    {
+      "bel": "bp(GO:\"inflammatory response\")",
+      "concept": {
+        "name": "inflammatory response",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "abd32f6c5cca606061975532840db260"
+    },
+    {
+      "bel": "bp(GO:\"neutrophil activation\")",
+      "concept": {
+        "name": "neutrophil activation",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "12adb82029111393287bdd011fd91ee0"
+    },
+    {
+      "bel": "bp(MESH:Vasoconstriction)",
+      "concept": {
+        "name": "Vasoconstriction",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "88ca53da51150a3c8f9d5e05c0a1223f"
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), p(HGNC:ALB))",
+      "function": "Complex",
+      "id": "be2ff6235262b93cd3326761fc13a0ae",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        },
+        {
+          "bel": "p(HGNC:ALB)",
+          "concept": {
+            "name": "ALB",
+            "namespace": "HGNC"
+          },
+          "function": "Protein",
+          "id": "9bfb0d3cb57cf8eaf9ce5878897a6b3a"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:ALB)",
+      "concept": {
+        "name": "ALB",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "9bfb0d3cb57cf8eaf9ce5878897a6b3a"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "concept": {
+        "name": "HBB",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "15ee95d6d880d241c742461c7f432f15"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "concept": {
+        "name": "HMOX1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "d8af6078f1872edbf59623df2a9fa1c2"
+    },
+    {
+      "bel": "p(HGNC:MYD88)",
+      "concept": {
+        "name": "MYD88",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "f14c331d37210d025523a016597e9de6"
+    },
+    {
+      "bel": "p(HGNC:NFKB1)",
+      "concept": {
+        "name": "NFKB1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "6e6f7419cc0edfa08d7d4c82eae0f4c4"
+    },
+    {
+      "bel": "p(HGNC:SELL)",
+      "concept": {
+        "name": "SELL",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "5b2e079d81200a91c20afcaaa9f4a8b1"
+    },
+    {
+      "bel": "p(HGNC:TICAM1)",
+      "concept": {
+        "name": "TICAM1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "7f339bf2fb1b3874312f15c03ccf7d0f"
+    },
+    {
+      "bel": "p(HGNC:TLR4)",
+      "concept": {
+        "name": "TLR4",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "4d3aa2ce51d0cd7f2aa9267a9c61f9f7"
+    },
+    {
+      "bel": "p(HGNC:TNF)",
+      "concept": {
+        "name": "TNF",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "fdc1c1f5a73c3c992b6eb71ce9b6908e"
+    },
+    {
+      "bel": "p(MGI:Tnf)",
+      "concept": {
+        "name": "Tnf",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "cd5c5c12b7855d35a3e18c5ee16eb074"
+    }
+  ]
+}

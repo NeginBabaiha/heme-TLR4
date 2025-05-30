@@ -1,0 +1,2799 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_28716864.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_28716864.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Hemin induces expression of the adhesion molecules on endothelial cells [7, 8] and enables firm neutrophil attachment to the endothelium and initiation of an inflammatory response [9, 10].",
+      "key": "b4f6ce5eda56abf959e1dce5aba1a816",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Based on the previous findings that hemin induces neutrophil adhesion to endothelial cells [8] and that A1AT protects endothelial cells from neutrophil adhesion induced by fMLP [27], we investigated whether A1AT, as a scavenger of hemin, can prevent hemin-induced neutrophil adhesion to HUVECs. As shown in Fig. 4, neutrophils treated with hemin or fMLP (used as a positive control) exhibited a 3-fold higher adhesion to HUVECs compared with controls. However, the adherence of neutrophils treated with hemin/A1AT did not differ from controls (Fig. 4).",
+      "key": "e6245d1e0ceb0bd0c289a61410bf20dc",
+      "line": 125,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Hemin induces expression of the adhesion molecules on endothelial cells [7, 8] and enables firm neutrophil attachment to the endothelium and initiation of an inflammatory response [9, 10].",
+      "key": "c75c0d1204165bf4d19876df23bc61cb",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "With the triggering of the oxidative burst and modification of actin cytoskeleton dynamics, hemin also induces neutrophil migration [10]",
+      "key": "9cd6ee0e99dde4019e7ba07da55cd7ab",
+      "line": 102,
+      "relation": "increases",
+      "source": 0,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "In contrast, hemin strongly increased the percentage of neutrophils positive for surface expression of vimentin [mean (SD) 48.8% (20) vs. 2.5% (0.8), n = 5; P , 0.001].",
+      "key": "0d453331fb7bd2bb3454f488fbfe626e",
+      "line": 133,
+      "relation": "increases",
+      "source": 0,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Incubation of neutrophils with 4 mM hemin resulted in an ;2-fold increase in CXCL8 mRNA expression and in a significant increase in released and cell-associated levels of IL-8 protein compared with the nontreated controls or A1AT-treated cells (Fig. 7A–C).",
+      "key": "0beb40caff8534703d2af2b11634c22b",
+      "line": 146,
+      "relation": "increases",
+      "source": 0,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Incubation of neutrophils with 4 mM hemin resulted in an ;2-fold increase in CXCL8 mRNA expression and in a significant increase in released and cell-associated levels of IL-8 protein compared with the nontreated controls or A1AT-treated cells (Fig. 7A–C).",
+      "key": "d0243f4e44b44cc3278aa0c00484135a",
+      "line": 147,
+      "relation": "increases",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "As expected, incubation of neutrophils with hemin resulted in a significant number of cells producing ROS (Fig. 8A and B).",
+      "key": "7fc995c7b24a2b6d8346ccbe3bab13e0",
+      "line": 160,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "For instance, earlier studies have demonstrated that neutrophil elastase degrades the hemoglobin liberating free hemin that induces ROS production.",
+      "key": "43c628c438007b6050d0921b7943d567",
+      "line": 258,
+      "relation": "increases",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "As predicted, HMOX1 expression levels (means 6 SD) in hemin-treated cells were much higher (7.25 6 5.02, n = 12; P , 0.001) than in nontreated controls (0.14 6 0.18, n = 9) or A1AT-treated cells (0.09 6 0.1, n = 9).",
+      "key": "ff2189d1b66ac7ffdbf7839b7ce388b6",
+      "line": 173,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "As shown in Fig. 10, when neutrophils were incubated for 2 h with hemin, GR activity decreased by 50% (P , 0.05).",
+      "key": "aaf5a184dcdf73db70e0df603b70ae24",
+      "line": 186,
+      "relation": "decreases",
+      "source": 0,
+      "target": 14,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "As shown in Fig. 11A, in hemin-treated neutrophils, PKC activity increased by ;2.6-fold (P , 0.001) relative to controls.",
+      "key": "f0d1f5986e30703862d4e24b04fc32b7",
+      "line": 199,
+      "relation": "increases",
+      "source": 0,
+      "target": 20,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Exposure of cells to hemin or hemin plus A1AT did not change TLR2/4 mRNA levels (Fig. 12).",
+      "key": "30e42da2bf95c8e8ce04e2c60daa8b17",
+      "line": 209,
+      "relation": "causesNoChange",
+      "source": 0,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Exposure of cells to hemin or hemin plus A1AT did not change TLR2/4 mRNA levels (Fig. 12).",
+      "key": "b7453cfa43454d58f410ed95e0ad9f53",
+      "line": 210,
+      "relation": "causesNoChange",
+      "source": 0,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Of note, hemin significantly lowered LRP1 mRNA, whereas hemin/A1AT had no significant effect on LRP1 expression relative to controls (Supplemental Fig. 2).",
+      "key": "c563773a05cc7c4ac642366b89a13cd1",
+      "line": 218,
+      "relation": "increases",
+      "source": 0,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Free hemin is a cytotoxic molecule that mediates oxidative stress, endothelial activation, and inflammation, and it is implicated in malaria pathogenesis [40] and AKI, among others [41].",
+      "key": "5587229baa5b7e4a50119c58baae5b28",
+      "line": 234,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Free hemin is a cytotoxic molecule that mediates oxidative stress, endothelial activation, and inflammation, and it is implicated in malaria pathogenesis [40] and AKI, among others [41].",
+      "key": "5689c819b647152d6dd6d80d08936b51",
+      "line": 235,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Free hemin is a cytotoxic molecule that mediates oxidative stress, endothelial activation, and inflammation, and it is implicated in malaria pathogenesis [40] and AKI, among others [41].",
+      "key": "32cb806c7975c8995afebf11550f55ed",
+      "line": 236,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Hemin induces expression of the adhesion molecules on endothelial cells [7, 8] and enables firm neutrophil attachment to the endothelium and initiation of an inflammatory response [9, 10].",
+      "key": "a35fa21f091e182a0ca28056dfdfe7e7",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Based on the previous findings that hemin induces neutrophil adhesion to endothelial cells [8] and that A1AT protects endothelial cells from neutrophil adhesion induced by fMLP [27], we investigated whether A1AT, as a scavenger of hemin, can prevent hemin-induced neutrophil adhesion to HUVECs. As shown in Fig. 4, neutrophils treated with hemin or fMLP (used as a positive control) exhibited a 3-fold higher adhesion to HUVECs compared with controls. However, the adherence of neutrophils treated with hemin/A1AT did not differ from controls (Fig. 4).",
+      "key": "bfbc169e641b399352751d3c9098540d",
+      "line": 125,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Hemin induces expression of the adhesion molecules on endothelial cells [7, 8] and enables firm neutrophil attachment to the endothelium and initiation of an inflammatory response [9, 10].",
+      "key": "d36e139c6c67692ff7af7f97940ff09c",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Under the same experimental conditions, addition of 1 mg/ ml A1AT significantly prevented hemin-induced neutrophil spreading and adhesion (Fig. 3A).",
+      "key": "7250dbbfaa9db8e48b0ebacc7a2758d0",
+      "line": 110,
+      "relation": "decreases",
+      "source": 16,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Under the same experimental conditions, addition of 1 mg/ ml A1AT significantly prevented hemin-induced neutrophil spreading and adhesion (Fig. 3A).",
+      "key": "b81381bf7b4ff2d522aaf7a78bb4bb3f",
+      "line": 112,
+      "relation": "decreases",
+      "source": 16,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Based on the previous findings that hemin induces neutrophil adhesion to endothelial cells [8] and that A1AT protects endothelial cells from neutrophil adhesion induced by fMLP [27], we investigated whether A1AT, as a scavenger of hemin, can prevent hemin-induced neutrophil adhesion to HUVECs. As shown in Fig. 4, neutrophils treated with hemin or fMLP (used as a positive control) exhibited a 3-fold higher adhesion to HUVECs compared with controls. However, the adherence of neutrophils treated with hemin/A1AT did not differ from controls (Fig. 4).",
+      "key": "accb2dde4b256dbbca5bc67bc5a4811c",
+      "line": 126,
+      "relation": "decreases",
+      "source": 16,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "In the presence of A1AT, this latter effect of hemin was significantly inhibited and did not differ from controls (Fig. 5B).",
+      "key": "bf64382135cfe2d841d880038a1a135c",
+      "line": 138,
+      "relation": "decreases",
+      "source": 16,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "In the presence of A1AT, hemin-induced release of IL-8 protein was inhibited significantly (Fig. 7B).",
+      "key": "7cdaaa070422475761e5a0c2d459e597",
+      "line": 153,
+      "relation": "decreases",
+      "source": 16,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "The ability of hemin to trigger ROS production in neutrophils was abrogated significantly in the presence of A1AT (Fig. 8).",
+      "key": "ab2714d26d5c6aaebc80ae203244b7f4",
+      "line": 166,
+      "relation": "decreases",
+      "source": 16,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "In the presence of A1AT, hemin effect on HMOX1 expression was diminished significantly (Fig. 9A).",
+      "key": "e2e054095e0afb18da0ac29fb5cca8b7",
+      "line": 179,
+      "relation": "decreases",
+      "source": 16,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Under the same experimental conditions, A1AT blocked the ability of hemin to reduce GR activity (Fig. 10).",
+      "key": "6fef78d4dc1304c70f51899f713fe0fd",
+      "line": 193,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 14,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "However, in the presence of A1AT, hemin did not change PKC activity significantly.",
+      "key": "a3853e06d182003303abe9da0efcb92d",
+      "line": 204,
+      "relation": "negativeCorrelation",
+      "source": 16,
+      "target": 20,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "key": "2b91554e338d51fc04f024be26098663",
+      "relation": "partOf",
+      "source": 16,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "The main function of A1AT is to inhibit neutrophil elastase and proteinase 3.",
+      "key": "e198fbbd239fd24ecd54c88100642e06",
+      "line": 242,
+      "relation": "decreases",
+      "source": 16,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "The main function of A1AT is to inhibit neutrophil elastase and proteinase 3.",
+      "key": "fd1322bb1754e35dcc573be7f9a8df3f",
+      "line": 243,
+      "relation": "decreases",
+      "source": 16,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "However A1AT has broader functions [26, 27], abrogating inflammation via both enzyme-inhibitory and noninhibitory mechanisms [47].",
+      "key": "df4fb0327afa2232e9a10f19e8534b75",
+      "line": 249,
+      "relation": "decreases",
+      "source": 16,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Along with this, A1AT inhibited hemin to induce PKC phosphorylation, which is an essential step for the production of ROS [9].",
+      "key": "3e49c508c8f34d74bf557018d9574bf3",
+      "line": 264,
+      "relation": "decreases",
+      "source": 16,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "As expected, incubation of neutrophils with hemin resulted in a significant number of cells producing ROS (Fig. 8A and B).",
+      "key": "8fc936686e14ff649172fd4a6c7073f1",
+      "line": 160,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "As predicted, HMOX1 expression levels (means 6 SD) in hemin-treated cells were much higher (7.25 6 5.02, n = 12; P , 0.001) than in nontreated controls (0.14 6 0.18, n = 9) or A1AT-treated cells (0.09 6 0.1, n = 9).",
+      "key": "80dd5a6b8052905e59db76053abf4f36",
+      "line": 173,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Under the same experimental conditions, A1AT blocked the ability of hemin to reduce GR activity (Fig. 10).",
+      "key": "eb7202c2462c0f66dcb58619769a6a46",
+      "line": 193,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "However, in the presence of A1AT, hemin did not change PKC activity significantly.",
+      "key": "04a26981e6f8f47232697aa06babeafe",
+      "line": 204,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 16
+    },
+    {
+      "key": "aadd862770cfbd33a161b7d6f4682d64",
+      "relation": "hasVariant",
+      "source": 20,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Exposure of cells to hemin or hemin plus A1AT did not change TLR2/4 mRNA levels (Fig. 12).",
+      "key": "8cd202d85768f9a4fb38aac60996fc92",
+      "line": 211,
+      "relation": "causesNoChange",
+      "source": 9,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Exposure of cells to hemin or hemin plus A1AT did not change TLR2/4 mRNA levels (Fig. 12).",
+      "key": "28e16507994901bab460da6ff09d55f9",
+      "line": 212,
+      "relation": "causesNoChange",
+      "source": 9,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Of note, hemin significantly lowered LRP1 mRNA, whereas hemin/A1AT had no significant effect on LRP1 expression relative to controls (Supplemental Fig. 2).",
+      "key": "b882d58e2a4d9463666ab3d84ec233f6",
+      "line": 219,
+      "relation": "causesNoChange",
+      "source": 9,
+      "target": 24
+    },
+    {
+      "key": "6d01852d11bae1cc02b6c06b85aa7470",
+      "relation": "partOf",
+      "source": 1,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Therapy with A1AT slightly reduced serum CXCL1/KC levels (Fig. 15).",
+      "key": "43663e7abe2ba54e3353edace83eb574",
+      "line": 225,
+      "relation": "decreases",
+      "source": 19,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Free hemin is a cytotoxic molecule that mediates oxidative stress, endothelial activation, and inflammation, and it is implicated in malaria pathogenesis [40] and AKI, among others [41].",
+      "key": "93724f600694c56e97d599b38771a67f",
+      "line": 234,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Free hemin is a cytotoxic molecule that mediates oxidative stress, endothelial activation, and inflammation, and it is implicated in malaria pathogenesis [40] and AKI, among others [41].",
+      "key": "d255c289bd7e49f2939e13bfbee4f442",
+      "line": 235,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "Free hemin is a cytotoxic molecule that mediates oxidative stress, endothelial activation, and inflammation, and it is implicated in malaria pathogenesis [40] and AKI, among others [41].",
+      "key": "4eaf84ddc1938d52e5b4c4840794132d",
+      "line": 236,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "For instance, earlier studies have demonstrated that neutrophil elastase degrades the hemoglobin liberating free hemin that induces ROS production.",
+      "key": "71606ba7e44885c49293f6120a86de11",
+      "line": 256,
+      "relation": "increases",
+      "source": 11,
+      "target": 12,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "neutrophil",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Serum",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Malaria",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Chen R",
+          "Chorostowska-Wynimko J",
+          "Gueler F",
+          "Immenschuh S",
+          "Janciauskiene S",
+          "Madyaningrana K",
+          "Mahadeva R",
+          "Tumpara S",
+          "Vijayan V",
+          "Welte T",
+          "Wiese M",
+          "Wrenger S"
+        ],
+        "date": "2017-10-01",
+        "first": "Janciauskiene S",
+        "identifier": "28716864",
+        "journal": "Journal of leukocyte biology",
+        "last": "Chorostowska-Wynimko J",
+        "name": "Alpha1-antitrypsin binds hemin and prevents oxidative activation of human neutrophils: putative pathophysiological significance.",
+        "namespace": "pubmed",
+        "pages": "1127-1141",
+        "volume": "102"
+      },
+      "evidence": "For instance, earlier studies have demonstrated that neutrophil elastase degrades the hemoglobin liberating free hemin that induces ROS production.",
+      "key": "7b867178c1a8243ce7d5ae32af6f5bf5",
+      "line": 257,
+      "relation": "increases",
+      "source": 12,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 0
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "a(CHEBI:hemin)",
+      "concept": {
+        "name": "hemin",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "0dafb20cc60a441f55e38b827bf55b31"
+    },
+    {
+      "bel": "a(MESH:\"Cell Adhesion Molecules\")",
+      "concept": {
+        "name": "Cell Adhesion Molecules",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "8f9c2f3217f187cb6562bdccae9c0dc8"
+    },
+    {
+      "bel": "a(MESH:\"Reactive Oxygen Species\")",
+      "concept": {
+        "name": "Reactive Oxygen Species",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "dd0e798c738472fa8ffb9fa88a2eacc7"
+    },
+    {
+      "bel": "bp(GO:\"endothelial cell activation\")",
+      "concept": {
+        "name": "endothelial cell activation",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "f96b4da95b8d4968c158a5aade426691"
+    },
+    {
+      "bel": "bp(GO:\"inflammatory response\")",
+      "concept": {
+        "name": "inflammatory response",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "abd32f6c5cca606061975532840db260"
+    },
+    {
+      "bel": "bp(GO:\"neutrophil migration\")",
+      "concept": {
+        "name": "neutrophil migration",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "6302390ad573a4bf812e6fb81eda360e"
+    },
+    {
+      "bel": "bp(MESH:\"Cell Adhesion\")",
+      "concept": {
+        "name": "Cell Adhesion",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "922212641e774ef9ab37cbfa7c8f2298"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "concept": {
+        "name": "Oxidative Stress",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "9174b724412892a12c4da7cab55f893c"
+    },
+    {
+      "bel": "complex(a(CHEBI:hemin), p(HGNC:SERPINA1))",
+      "function": "Complex",
+      "id": "2e3a0d38cf9f59d835c92e942cd0afb9",
+      "members": [
+        {
+          "bel": "a(CHEBI:hemin)",
+          "concept": {
+            "name": "hemin",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "0dafb20cc60a441f55e38b827bf55b31"
+        },
+        {
+          "bel": "p(HGNC:SERPINA1)",
+          "concept": {
+            "name": "SERPINA1",
+            "namespace": "HGNC"
+          },
+          "function": "Protein",
+          "id": "6344cd37b331f1f7d8fc9d6395bc4715"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:CXCL8)",
+      "concept": {
+        "name": "CXCL8",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "325a76cdc17ef7ce6a715ed6201f2a09"
+    },
+    {
+      "bel": "p(HGNC:ELANE)",
+      "concept": {
+        "name": "ELANE",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "181e23062240a0e48d4b4fadd3e945eb"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "concept": {
+        "name": "HBB",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "15ee95d6d880d241c742461c7f432f15"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "concept": {
+        "name": "HMOX1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "d8af6078f1872edbf59623df2a9fa1c2"
+    },
+    {
+      "bel": "p(HGNC:NR3C1)",
+      "concept": {
+        "name": "NR3C1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "06820afe2bb1d23782b55583f42e2218"
+    },
+    {
+      "bel": "p(HGNC:PRTN3)",
+      "concept": {
+        "name": "PRTN3",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "2bfe4856a70a4fde8bf76d8f1c22c2e0"
+    },
+    {
+      "bel": "p(HGNC:SERPINA1)",
+      "concept": {
+        "name": "SERPINA1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "6344cd37b331f1f7d8fc9d6395bc4715"
+    },
+    {
+      "bel": "p(HGNC:VIM)",
+      "concept": {
+        "name": "VIM",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "36790919ba6a64420dfecb590dfa30be"
+    },
+    {
+      "bel": "p(MGI:Cxcl1)",
+      "concept": {
+        "name": "Cxcl1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "2a3242594c28922a7c477e478145db67"
+    },
+    {
+      "bel": "p(MGI:Serpina1a)",
+      "concept": {
+        "name": "Serpina1a",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "705aa2816df3e065c398f6622d041c86"
+    },
+    {
+      "bel": "p(PFAM:\"Pkinase_C\")",
+      "concept": {
+        "name": "Pkinase_C",
+        "namespace": "PFAM"
+      },
+      "function": "Protein",
+      "id": "4af94af1523c01c140ac61bb8145052c"
+    },
+    {
+      "bel": "p(PFAM:\"Pkinase_C\", pmod(go:0006468 ! \"protein phosphorylation\"))",
+      "concept": {
+        "name": "Pkinase_C",
+        "namespace": "PFAM"
+      },
+      "function": "Protein",
+      "id": "2e095a6e8dd626bc061297b48d9ecab5",
+      "variants": [
+        {
+          "concept": {
+            "identifier": "0006468",
+            "name": "protein phosphorylation",
+            "namespace": "go"
+          },
+          "kind": "pmod"
+        }
+      ]
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "concept": {
+        "name": "Inflammation",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "10cd96fd4056a5e6c27264e0130e89f9"
+    },
+    {
+      "bel": "r(HGNC:CXCL8)",
+      "concept": {
+        "name": "CXCL8",
+        "namespace": "HGNC"
+      },
+      "function": "RNA",
+      "id": "13f63009edaa609c3b5f55cfc0bcc0fb"
+    },
+    {
+      "bel": "r(HGNC:LRP1)",
+      "concept": {
+        "name": "LRP1",
+        "namespace": "HGNC"
+      },
+      "function": "RNA",
+      "id": "478cede2bbf710c83936c634089139c6"
+    },
+    {
+      "bel": "r(HGNC:TLR2)",
+      "concept": {
+        "name": "TLR2",
+        "namespace": "HGNC"
+      },
+      "function": "RNA",
+      "id": "969d19042cc084ef0e16acc7e5f4d789"
+    },
+    {
+      "bel": "r(HGNC:TLR4)",
+      "concept": {
+        "name": "TLR4",
+        "namespace": "HGNC"
+      },
+      "function": "RNA",
+      "id": "dc03041833c7fb6cb74660a23d41f5d1"
+    }
+  ]
+}

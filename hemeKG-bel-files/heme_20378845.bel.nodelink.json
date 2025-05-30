@@ -1,0 +1,6517 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_20378845.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_20378845.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Oxysterols and oxidation products of polyunsaturated fatty acids (PUFAs) are present in human atheromatous lesions.4,5",
+      "key": "29d067777a3f2ac219dc1bc69d89b559",
+      "line": 90,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Hematomas occur in atheromatous lesions and plaque material contains lipid oxidation products including lipid hydroperoxide22 which can mediate not only the oxidation of hemoglobin but might also lyse intact red cells.23",
+      "key": "1781e7534ff0efccdf8aea4c307b2211",
+      "line": 122,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 43
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Atheromatous lesions are prone to disruption leading to hematoma or hemorrhage.",
+      "key": "4aabb2a4e8ba4babbb8b0a871b539799",
+      "line": 258,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 43
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Lipids of atheromatous (Fig 1A, 1b and 2b panels) and ruptured complicated lesions (Fig 1A, 1c and 2c panels) as well as oxidized LDL caused significant lysis of red cells within 24 hours (Fig 1B, black bars).",
+      "key": "29fca05aca63698212d0c4211ee9c5fa",
+      "line": 133,
+      "relation": "increases",
+      "source": 25,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Levels of conjugated dienes, lipid hydroperoxides and TBARs were significantly higher in atheromatous lesions compared to controls (supplemental Table I).",
+      "key": "ed29ebcc7561685d640d835489208a23",
+      "line": 201,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Levels of conjugated dienes, lipid hydroperoxides and TBARs were significantly higher in atheromatous lesions compared to controls (supplemental Table I).",
+      "key": "03547a741c93159cb6acf5f9467580be",
+      "line": 202,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Atheromatous lesions are prone to disruption leading to hematoma or hemorrhage.",
+      "key": "a913995fd0d84c0250a541b827a925fe",
+      "line": 259,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 44
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Elevated amounts of HO-1 were found in macrophages and medial smooth muscle cells of human atherosclerotic lesions.15",
+      "key": "78010405c88d2ccd08d73c69a5f6e69e",
+      "line": 346,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "target": 35
+    },
+    {
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Oxysterols and oxidation products of polyunsaturated fatty acids (PUFAs) are present in human atheromatous lesions.4,5",
+      "key": "3f3085aaab11ae31611d8df8fb4935d2",
+      "line": 90,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "In previous studies we found that endothelial cells exposed to oxidized LDL upregulated both heme oxygenase-1 (HO-1) and ferritin,8,9 presumably as a defense mechanism.6,11-14",
+      "key": "b06be68387dbef5e8afd3ebc1a31c156",
+      "line": 96,
+      "relation": "increases",
+      "source": 5,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Upregulation of HO-115 and ferritin H chain16 in endothelial cells has been reported in the early phase of progression of atherosclerotic lesions.",
+      "key": "4c38d40f51dce28a453c8f30f21c02b7",
+      "line": 105,
+      "relation": "increases",
+      "source": 5,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "In previous studies we found that endothelial cells exposed to oxidized LDL upregulated both heme oxygenase-1 (HO-1) and ferritin,8,9 presumably as a defense mechanism.6,11-14",
+      "key": "b385411523202aa82808ba536b9584ba",
+      "line": 97,
+      "relation": "increases",
+      "source": 5,
+      "target": 38
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Upregulation of HO-115 and ferritin H chain16 in endothelial cells has been reported in the early phase of progression of atherosclerotic lesions.",
+      "key": "49c84b39d811ab78a7505d71c3b967f6",
+      "line": 106,
+      "relation": "increases",
+      "source": 5,
+      "target": 38
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Lipids of atheromatous (Fig 1A, 1b and 2b panels) and ruptured complicated lesions (Fig 1A, 1c and 2c panels) as well as oxidized LDL caused significant lysis of red cells within 24 hours (Fig 1B, black bars).",
+      "key": "417b89ddd28e2db7b96db1fcc01d9500",
+      "line": 134,
+      "relation": "increases",
+      "source": 5,
+      "target": 12
+    },
+    {
+      "key": "18739c7604b764d45e5e449688224b94",
+      "relation": "partOf",
+      "source": 5,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Heme/iron-mediated oxidative modification of LDL can cause endothelial cytotoxicity8,24 and – at sublethal doses – the expression of stress-response genes.9,11-14",
+      "key": "eb3b7c65dc536e0043148b6e4d194b64",
+      "line": 169,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Expression of HO-1 provides protection against atherosclerosis in several experimental models17,18 and HO-1 deficiency in humans has been associated with the appearance of vasculature fatty streaks and atheromatous plaques at age of six.19",
+      "key": "332dbf71aff847e6ed6fe6c6af0fc418",
+      "line": 113,
+      "relation": "negativeCorrelation",
+      "source": 35,
+      "target": 42
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Expression of HO-1 provides protection against atherosclerosis in several experimental models17,18 and HO-1 deficiency in humans has been associated with the appearance of vasculature fatty streaks and atheromatous plaques at age of six.19",
+      "key": "a031319893ebfb7c57674fd4d8fca520",
+      "line": 114,
+      "relation": "negativeCorrelation",
+      "source": 35,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Heme oxygenase-1, a key antioxidant enzyme that exerts cytoprotective effects in endothelial cells8,11-14 also plays an important role in preventing the development of atherosclerosis.",
+      "key": "451b6e3b05d72bed8416c363c77df7ec",
+      "line": 340,
+      "relation": "negativeCorrelation",
+      "source": 35,
+      "target": 40
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Elevated amounts of HO-1 were found in macrophages and medial smooth muscle cells of human atherosclerotic lesions.15",
+      "key": "a1eea4715d9a49348560d0aaea58baa4",
+      "line": 346,
+      "relation": "positiveCorrelation",
+      "source": 35,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Expression of HO-1 provides protection against atherosclerosis in several experimental models17,18 and HO-1 deficiency in humans has been associated with the appearance of vasculature fatty streaks and atheromatous plaques at age of six.19",
+      "key": "0c219ed4a72609dbafe30441169e44f0",
+      "line": 113,
+      "relation": "negativeCorrelation",
+      "source": 42,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Expression of HO-1 provides protection against atherosclerosis in several experimental models17,18 and HO-1 deficiency in humans has been associated with the appearance of vasculature fatty streaks and atheromatous plaques at age of six.19",
+      "key": "7a13f7c9a45e8688cf6cec6146d0423e",
+      "line": 114,
+      "relation": "negativeCorrelation",
+      "source": 41,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Thus, it appears that these extracts oxidize ferrohemoglobin to ferrihemoglobin, thereby leading to heme instability and heme-mediated initiation of lipid peroxidation.",
+      "key": "e5ee8a758103b4269fe0fbd208eededc",
+      "line": 334,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Earlier chemical investigations of gruel from advanced lesions revealed that it contains ceroid-like insoluble material composed mainly of hydoxyapatite, iron and calcium.",
+      "key": "ee00d994ee9f541084f822741d898cf6",
+      "line": 359,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Earlier chemical investigations of gruel from advanced lesions revealed that it contains ceroid-like insoluble material composed mainly of hydoxyapatite, iron and calcium.",
+      "key": "d7671310013f8b233962519ac6842f3d",
+      "line": 360,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Earlier chemical investigations of gruel from advanced lesions revealed that it contains ceroid-like insoluble material composed mainly of hydoxyapatite, iron and calcium.",
+      "key": "9e1f594f87df5feac1bdd29a8dc86cd3",
+      "line": 361,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Gruel from advanced plaque also contains large amounts of organic soluble carbonyls and aldehydes that are also cytotoxic.",
+      "key": "307269240839c180c6c44bef1eb03830",
+      "line": 367,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Gruel from advanced plaque also contains large amounts of organic soluble carbonyls and aldehydes that are also cytotoxic.",
+      "key": "f0fa5ad180fcd8d6c6f225f8a2846963",
+      "line": 368,
+      "relation": "positiveCorrelation",
+      "source": 41,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Hematomas occur in atheromatous lesions and plaque material contains lipid oxidation products including lipid hydroperoxide22 which can mediate not only the oxidation of hemoglobin but might also lyse intact red cells.23",
+      "key": "dbf7f01fde464aab0ca4160195b0cab0",
+      "line": 122,
+      "relation": "positiveCorrelation",
+      "source": 43,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Atheromatous lesions are prone to disruption leading to hematoma or hemorrhage.",
+      "key": "22aee6be467aeaf90b8e8fb9191c6e77",
+      "line": 258,
+      "relation": "positiveCorrelation",
+      "source": 43,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Hematomas occur in atheromatous lesions and plaque material contains lipid oxidation products including lipid hydroperoxide22 which can mediate not only the oxidation of hemoglobin but might also lyse intact red cells.23",
+      "key": "f4d8a9a9f8bdb18dcb4f9e9859951146",
+      "line": 125,
+      "relation": "increases",
+      "source": 3,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Hematomas occur in atheromatous lesions and plaque material contains lipid oxidation products including lipid hydroperoxide22 which can mediate not only the oxidation of hemoglobin but might also lyse intact red cells.23",
+      "key": "7a57da81eddb1b88f5b525c59a3ef910",
+      "line": 126,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Levels of conjugated dienes, lipid hydroperoxides and TBARs were significantly higher in atheromatous lesions compared to controls (supplemental Table I).",
+      "key": "8ee4ae9fc211c7eb32fb9c9d49aa2fb9",
+      "line": 201,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Concentrations of iron, conjugated dienes and lipid hydroperoxides were elevated by about 2- fold in ruptured complicated lesions, as compared to atheromatous lesions (0.433 ± 0.075 vs. 0.185 ± 0.096 nmol Fe/mg tissue; 0.047 ± 0.019 vs. 0.021 ± 0.003 A234 conjugated dienes/mg tissue and 0.465 ± 0.110 vs. 0.248 ± 0.106 nmol LOOH/mg tissue, respectively) and complicated lesions contained 5.6 times more TBARs than atheromatous lesions (0.028 ± 0.012 vs. 0.005 ± 0.001 nmol/mg tissue).",
+      "key": "6d90a23e91cb899a70808c395e8962c5",
+      "line": 245,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Thus, it appears that these extracts oxidize ferrohemoglobin to ferrihemoglobin, thereby leading to heme instability and heme-mediated initiation of lipid peroxidation.",
+      "key": "a695577c5a3792504bcf07886db67f07",
+      "line": 334,
+      "relation": "positiveCorrelation",
+      "source": 34,
+      "target": 41
+    },
+    {
+      "key": "b7d995c3455a89bde16c4b7c82fffd60",
+      "relation": "hasVariant",
+      "source": 33,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "The results reported here indicate that, once exposed to oxidized plaque material, erythrocytes are lysed, the liberated hemoglobin is oxidized and heme dissociates from the resultant ferrihemoglobin.",
+      "key": "65522aa3b70c2a2db44c7e412e43abf8",
+      "line": 266,
+      "relation": "increases",
+      "source": 33,
+      "target": 16
+    },
+    {
+      "key": "feeb2130bc32e3c63e62fafca97a7673",
+      "relation": "partOf",
+      "source": 33,
+      "target": 32
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Hematomas occur in atheromatous lesions and plaque material contains lipid oxidation products including lipid hydroperoxide22 which can mediate not only the oxidation of hemoglobin but might also lyse intact red cells.23",
+      "key": "6b683e82831ddcc24313832aefa4c552",
+      "line": 126,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "The results reported here indicate that, once exposed to oxidized plaque material, erythrocytes are lysed, the liberated hemoglobin is oxidized and heme dissociates from the resultant ferrihemoglobin.",
+      "key": "2ca86e619fe0629315cd4c30e1734f75",
+      "line": 265,
+      "relation": "increases",
+      "source": 12,
+      "target": 33
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Lipids of atheromatous (Fig 1A, 1b and 2b panels) and ruptured complicated lesions (Fig 1A, 1c and 2c panels) as well as oxidized LDL caused significant lysis of red cells within 24 hours (Fig 1B, black bars).",
+      "key": "6b5a3f52c6b432858f5b33e9841fdb3d",
+      "line": 132,
+      "relation": "increases",
+      "source": 11,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Indeed, lipids derived from atheromatous lesions promoted the oxidation of ferrohemoglobin to ferrihemoglobin (Fig 2C).",
+      "key": "cd3448b86c62385e89c89f492a32b997",
+      "line": 149,
+      "relation": "increases",
+      "source": 11,
+      "target": 34
+    },
+    {
+      "key": "bd14740dcf3a4c3482d69849673aba71",
+      "relation": "partOf",
+      "source": 11,
+      "target": 30
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "As shown in Fig 3B, lipids from atherosclerotic lesions were cytotoxic to endothelium, an effect strikingly enhanced when lipids were pre-oxidized by exposure to heme.",
+      "key": "3975c0dea7d90ccf018367e82537e305",
+      "line": 175,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 39
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "At sublethal doses, atheroma lipid - whether pre-treated with heme or not - induced the expression of the stress-responsive gene HO-1, at both mRNA (Fig 3C) and protein levels (Fig 3D).",
+      "key": "1abe894f9a51d0f3a59ae5cb1b04990a",
+      "line": 181,
+      "relation": "increases",
+      "source": 11,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "At sublethal doses, atheroma lipid - whether pre-treated with heme or not - induced the expression of the stress-responsive gene HO-1, at both mRNA (Fig 3C) and protein levels (Fig 3D).",
+      "key": "d47041911153e5a2f5350612980ff459",
+      "line": 182,
+      "relation": "increases",
+      "source": 11,
+      "target": 46
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Elevated cholesterol, oxy-cholesterol, lyso-phospholipid and decreased phosphatidylserine were found in atheromatous lipids compared to controls (supplemental Table II).",
+      "key": "62d93073466ceaffff35ca1dfdf940c3",
+      "line": 207,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Elevated cholesterol, oxy-cholesterol, lyso-phospholipid and decreased phosphatidylserine were found in atheromatous lipids compared to controls (supplemental Table II).",
+      "key": "3b627fab2fb948e116e4ad1ea7d5db30",
+      "line": 208,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Elevated cholesterol, oxy-cholesterol, lyso-phospholipid and decreased phosphatidylserine were found in atheromatous lipids compared to controls (supplemental Table II).",
+      "key": "2450c30e2eb8cddfe86631b1403b8d3f",
+      "line": 209,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Moreover, lipids extracted from atheromatous lesions contained 1.9 times more monounsaturated fatty acids than control extracts.",
+      "key": "7c18ecb56ff1272a10c5b3ff1a9f800e",
+      "line": 215,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "We have found that atheroma lipids when oxidized by heme are highly cytotoxic to human endothelial cells, and hemopexin reduced this cytotoxicity.",
+      "key": "0968fdede726eabc70b85c695797ba3f",
+      "line": 312,
+      "relation": "increases",
+      "source": 11,
+      "target": 26
+    },
+    {
+      "key": "ef5278295a31a014b933bcf0a6a3b421",
+      "relation": "partOf",
+      "source": 11,
+      "target": 32
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Preincubation of lipid extract derived from atheroma, complicated lesion or oxidized LDL with glutathione/glutathione peroxidase (which specifically reduced lipid hydroperoxide to alcohol by 35%, 38% and 90%, respectively) significantly lowered the lytic effect (Fig 1B, empty bars).Oxidation of liberated hemoglobin was also reduced (Fig 1C, empty bars)",
+      "key": "532463fbfb1b977761ca3c965cc1ab5d",
+      "line": 142,
+      "relation": "decreases",
+      "source": 19,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Pre-treatment of heme-oxidized lipids with glutathione/glutathione peroxidase reduced the lipid hydroperoxide content (113±30 vs. 74±22 nmol LOOH/mg extract, p<0.01) and inhibited the endothelial cell cytotoxicity by 25% (p<0.05).",
+      "key": "f7b5ac4e5cfa242e7935c366a5280fc4",
+      "line": 188,
+      "relation": "decreases",
+      "source": 19,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Preincubation of lipid extract derived from atheroma, complicated lesion or oxidized LDL with glutathione/glutathione peroxidase (which specifically reduced lipid hydroperoxide to alcohol by 35%, 38% and 90%, respectively) significantly lowered the lytic effect (Fig 1B, empty bars).Oxidation of liberated hemoglobin was also reduced (Fig 1C, empty bars)",
+      "key": "7a705dbcd9dc555e679004ea605b03a1",
+      "line": 143,
+      "relation": "decreases",
+      "source": 19,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Preincubation of lipid extract derived from atheroma, complicated lesion or oxidized LDL with glutathione/glutathione peroxidase (which specifically reduced lipid hydroperoxide to alcohol by 35%, 38% and 90%, respectively) significantly lowered the lytic effect (Fig 1B, empty bars).Oxidation of liberated hemoglobin was also reduced (Fig 1C, empty bars)",
+      "key": "470416ec2fbd87aa9bb82bceccb3a257",
+      "line": 144,
+      "relation": "decreases",
+      "source": 19,
+      "target": 34
+    },
+    {
+      "key": "1a10e6a436e2bdb1700b1be7d0d9f9de",
+      "relation": "partOf",
+      "source": 19,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Pre-treatment of heme-oxidized lipids with glutathione/glutathione peroxidase reduced the lipid hydroperoxide content (113±30 vs. 74±22 nmol LOOH/mg extract, p<0.01) and inhibited the endothelial cell cytotoxicity by 25% (p<0.05).",
+      "key": "d039fbabaa30df078fb9ec73990bb0fa",
+      "line": 190,
+      "relation": "decreases",
+      "source": 19,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Furthermore, the induction of HO-1 was decreased (153 ± 16 versus 105 ± 3 pmol bilirubin formed per milligram of cell protein per 60 minutes, p<0.01) in endothelial cells.",
+      "key": "63d6b69603fbe6bf10f3b95cbeb6c85f",
+      "line": 196,
+      "relation": "decreases",
+      "source": 19,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Treatment of oxidized LDL (Fig 2B), or atheroma lipids (Fig 2D) with glutathione/glutathione peroxidase lowered the lipid hydroperoxide content as well as the oxidation of hemoglobin.",
+      "key": "91f959cbb04de68ae5b87c89971bece2",
+      "line": 154,
+      "relation": "decreases",
+      "source": 29,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Treatment of oxidized LDL (Fig 2B), or atheroma lipids (Fig 2D) with glutathione/glutathione peroxidase lowered the lipid hydroperoxide content as well as the oxidation of hemoglobin.",
+      "key": "7f0481512507fd76ce115877c24739a0",
+      "line": 155,
+      "relation": "decreases",
+      "source": 29,
+      "target": 34
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "As is true of intact hemoglobin, lipid extracts from atheromatous lesions exposed to heme also underwent lipid peroxidation as reflected by the accumulation of thiobarbituric acid-reactive substances (TBARs) and lipid hydroperoxides (supplemental Fig I).",
+      "key": "df06af4252fb1e342ddcbb5965d341e1",
+      "line": 161,
+      "relation": "increases",
+      "source": 30,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "As is true of intact hemoglobin, lipid extracts from atheromatous lesions exposed to heme also underwent lipid peroxidation as reflected by the accumulation of thiobarbituric acid-reactive substances (TBARs) and lipid hydroperoxides (supplemental Fig I).",
+      "key": "63b116f85266c09c4077b24e9a93db49",
+      "line": 162,
+      "relation": "increases",
+      "source": 30,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "As is true of intact hemoglobin, lipid extracts from atheromatous lesions exposed to heme also underwent lipid peroxidation as reflected by the accumulation of thiobarbituric acid-reactive substances (TBARs) and lipid hydroperoxides (supplemental Fig I).",
+      "key": "497679b0d4ddbec9e4781655d6676037",
+      "line": 163,
+      "relation": "increases",
+      "source": 30,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Now we demonstrate that heme and hemoglobin-treated atheroma lipids also induce HO-1 in endothelial cells exposed in sublethal doses.",
+      "key": "faaa1799e8fda3971232e720a9a86f47",
+      "line": 352,
+      "relation": "increases",
+      "source": 30,
+      "target": 35
+    },
+    {
+      "key": "f1ab1e34beb2f62e4d2e936014dd750e",
+      "relation": "partOf",
+      "source": 8,
+      "target": 30
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Previously we have shown that heme can enter the lipid moiety of LDL and induce iron-dependent lipid peroxidation.8",
+      "key": "fe693d923dbc3169b8b116ff9fc56e15",
+      "line": 280,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Here we demonstrate that lipids isolated from human atheromatous lesions – which are already in an oxidized state – can be further oxidized in the presence of heme, whereas this effect is not observed using lipids isolated from normal vasculature.",
+      "key": "a2fdfd97446ca24e4f6754573104d69b",
+      "line": 286,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Thus, it appears that these extracts oxidize ferrohemoglobin to ferrihemoglobin, thereby leading to heme instability and heme-mediated initiation of lipid peroxidation.",
+      "key": "110efd856ba3af0a0f4ad564e1132b69",
+      "line": 335,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 27
+    },
+    {
+      "key": "4258b5aaab05e26e3c2ae956d020a640",
+      "relation": "partOf",
+      "source": 8,
+      "target": 31
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Levels of conjugated dienes, lipid hydroperoxides and TBARs were significantly higher in atheromatous lesions compared to controls (supplemental Table I).",
+      "key": "3bde6891d566180b16ac5e705608aaab",
+      "line": 202,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Concentrations of iron, conjugated dienes and lipid hydroperoxides were elevated by about 2- fold in ruptured complicated lesions, as compared to atheromatous lesions (0.433 ± 0.075 vs. 0.185 ± 0.096 nmol Fe/mg tissue; 0.047 ± 0.019 vs. 0.021 ± 0.003 A234 conjugated dienes/mg tissue and 0.465 ± 0.110 vs. 0.248 ± 0.106 nmol LOOH/mg tissue, respectively) and complicated lesions contained 5.6 times more TBARs than atheromatous lesions (0.028 ± 0.012 vs. 0.005 ± 0.001 nmol/mg tissue).",
+      "key": "8e01e6b5edb8fee93cb4782dd735e4af",
+      "line": 246,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Inhibition of lipid oxidation by either haptoglobin or hemopexin reduced the cytotoxicity (Fig 4B) and HO-1 induction caused by sublethal amounts of pretreated atheromatous lesion lipids (Fig 4C and D).",
+      "key": "37a19f0966d95770cfa78fee0dd3bb68",
+      "line": 233,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Previously we have shown that heme can enter the lipid moiety of LDL and induce iron-dependent lipid peroxidation.8",
+      "key": "929a9971ac3ba0f1369be18c00b4f7ad",
+      "line": 280,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Here we demonstrate that lipids isolated from human atheromatous lesions – which are already in an oxidized state – can be further oxidized in the presence of heme, whereas this effect is not observed using lipids isolated from normal vasculature.",
+      "key": "b53b7150e1c5f346bb94f0a86ff50fd6",
+      "line": 286,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Thus, it appears that these extracts oxidize ferrohemoglobin to ferrihemoglobin, thereby leading to heme instability and heme-mediated initiation of lipid peroxidation.",
+      "key": "b830297b8169a66673379aa67c08832a",
+      "line": 335,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Heme/iron-mediated oxidative modification of LDL can cause endothelial cytotoxicity8,24 and – at sublethal doses – the expression of stress-response genes.9,11-14",
+      "key": "13337cfc1b788cd1349e4bf539bebe09",
+      "line": 169,
+      "relation": "positiveCorrelation",
+      "source": 26,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Inhibition of lipid oxidation by either haptoglobin or hemopexin reduced the cytotoxicity (Fig 4B) and HO-1 induction caused by sublethal amounts of pretreated atheromatous lesion lipids (Fig 4C and D).",
+      "key": "cd2afc944a94568ac8dc678b0c2b7822",
+      "line": 233,
+      "relation": "positiveCorrelation",
+      "source": 26,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "As shown in Fig 3B, lipids from atherosclerotic lesions were cytotoxic to endothelium, an effect strikingly enhanced when lipids were pre-oxidized by exposure to heme.",
+      "key": "9e3dde4a19ec43412e5fd31a662299f5",
+      "line": 175,
+      "relation": "positiveCorrelation",
+      "source": 39,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Elevated cholesterol, oxy-cholesterol, lyso-phospholipid and decreased phosphatidylserine were found in atheromatous lipids compared to controls (supplemental Table II).",
+      "key": "06d5e56268eed460201815be2de5dc68",
+      "line": 207,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Elevated cholesterol, oxy-cholesterol, lyso-phospholipid and decreased phosphatidylserine were found in atheromatous lipids compared to controls (supplemental Table II).",
+      "key": "cf7c065f1faebde19ad8c1521ee6a654",
+      "line": 208,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Elevated cholesterol, oxy-cholesterol, lyso-phospholipid and decreased phosphatidylserine were found in atheromatous lipids compared to controls (supplemental Table II).",
+      "key": "7c59669079d5b00e1597f6cc63514c03",
+      "line": 209,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Moreover, lipids extracted from atheromatous lesions contained 1.9 times more monounsaturated fatty acids than control extracts.",
+      "key": "1661d977063d54a879d7bff0096f6406",
+      "line": 215,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Hemoglobinmediated oxidative modification of lipid extracted from atheromatous lesions was inhibited by haptoglobin (Fig 4A).",
+      "key": "100c5277d931f66d153d5389a95819d5",
+      "line": 221,
+      "relation": "decreases",
+      "source": 36,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Both the hemoglobin-binding protein, haptoglobin,27 and the heme-binding protein, hemopexin, inhibited such oxidative modification of lipids indicating the importance of heme loss and scission in hemoglobin-provoked oxidation of lipids derived from atheromatous lesions.",
+      "key": "b1b71ce33be4b52825d0aad7db951ae3",
+      "line": 327,
+      "relation": "decreases",
+      "source": 36,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Inhibition of lipid oxidation by either haptoglobin or hemopexin reduced the cytotoxicity (Fig 4B) and HO-1 induction caused by sublethal amounts of pretreated atheromatous lesion lipids (Fig 4C and D).",
+      "key": "32cf738a76cfbc671b0ad9d058d46bba",
+      "line": 234,
+      "relation": "decreases",
+      "source": 36,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Moreover, the heme-binding protein, hemopexin, also suppressed the oxidation of lipid by ferro- and ferrihemoglobin, indicating the necessity for heme release from ferrihemoglobin for this oxidative process.",
+      "key": "b26fa789e81bc77b20b362fb9d794512",
+      "line": 227,
+      "relation": "decreases",
+      "source": 37,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Both the hemoglobin-binding protein, haptoglobin,27 and the heme-binding protein, hemopexin, inhibited such oxidative modification of lipids indicating the importance of heme loss and scission in hemoglobin-provoked oxidation of lipids derived from atheromatous lesions.",
+      "key": "f4d7dece312f2f37b344f12ad802df9e",
+      "line": 328,
+      "relation": "decreases",
+      "source": 37,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Inhibition of lipid oxidation by either haptoglobin or hemopexin reduced the cytotoxicity (Fig 4B) and HO-1 induction caused by sublethal amounts of pretreated atheromatous lesion lipids (Fig 4C and D).",
+      "key": "1099b90fd6efb46d374f1e06d02ceea6",
+      "line": 235,
+      "relation": "decreases",
+      "source": 37,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "The heme-binding protein, hemopexin, which likely prevents heme:lipid interactions and blocks the oxidative scission of heme,26 significantly inhibited the oxidative reactions.",
+      "key": "d93214b6e0cc2fe53b61d9cf88d9cddc",
+      "line": 299,
+      "relation": "decreases",
+      "source": 37,
+      "target": 14
+    },
+    {
+      "key": "edf2096f946a3d678b54c697d63833c7",
+      "relation": "partOf",
+      "source": 37,
+      "target": 31
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "We have found that atheroma lipids when oxidized by heme are highly cytotoxic to human endothelial cells, and hemopexin reduced this cytotoxicity.",
+      "key": "180bca4a90be8ad27e7db5b65afcca08",
+      "line": 313,
+      "relation": "decreases",
+      "source": 37,
+      "target": 39
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Concentrations of iron, conjugated dienes and lipid hydroperoxides were elevated by about 2- fold in ruptured complicated lesions, as compared to atheromatous lesions (0.433 ± 0.075 vs. 0.185 ± 0.096 nmol Fe/mg tissue; 0.047 ± 0.019 vs. 0.021 ± 0.003 A234 conjugated dienes/mg tissue and 0.465 ± 0.110 vs. 0.248 ± 0.106 nmol LOOH/mg tissue, respectively) and complicated lesions contained 5.6 times more TBARs than atheromatous lesions (0.028 ± 0.012 vs. 0.005 ± 0.001 nmol/mg tissue).",
+      "key": "9e8606b0830c1f26f516708e9b845c34",
+      "line": 244,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Concentrations of iron, conjugated dienes and lipid hydroperoxides were elevated by about 2- fold in ruptured complicated lesions, as compared to atheromatous lesions (0.433 ± 0.075 vs. 0.185 ± 0.096 nmol Fe/mg tissue; 0.047 ± 0.019 vs. 0.021 ± 0.003 A234 conjugated dienes/mg tissue and 0.465 ± 0.110 vs. 0.248 ± 0.106 nmol LOOH/mg tissue, respectively) and complicated lesions contained 5.6 times more TBARs than atheromatous lesions (0.028 ± 0.012 vs. 0.005 ± 0.001 nmol/mg tissue).",
+      "key": "817ca2cb162b3a6c59927b56ccdc1341",
+      "line": 245,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Concentrations of iron, conjugated dienes and lipid hydroperoxides were elevated by about 2- fold in ruptured complicated lesions, as compared to atheromatous lesions (0.433 ± 0.075 vs. 0.185 ± 0.096 nmol Fe/mg tissue; 0.047 ± 0.019 vs. 0.021 ± 0.003 A234 conjugated dienes/mg tissue and 0.465 ± 0.110 vs. 0.248 ± 0.106 nmol LOOH/mg tissue, respectively) and complicated lesions contained 5.6 times more TBARs than atheromatous lesions (0.028 ± 0.012 vs. 0.005 ± 0.001 nmol/mg tissue).",
+      "key": "3957184418a6fa9ca5bae27462bdd6ac",
+      "line": 246,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Moreover, the amounts of a protein oxidation marker, dityrosine,21 were elevated in complicated lesions (Fig 5B) whereas atheromatous lesions did not contain detectable dityrosine.",
+      "key": "ab6cfbdfcb89f56df2a9ccdf06ae4f31",
+      "line": 252,
+      "relation": "positiveCorrelation",
+      "source": 15,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Concentrations of iron, conjugated dienes and lipid hydroperoxides were elevated by about 2- fold in ruptured complicated lesions, as compared to atheromatous lesions (0.433 ± 0.075 vs. 0.185 ± 0.096 nmol Fe/mg tissue; 0.047 ± 0.019 vs. 0.021 ± 0.003 A234 conjugated dienes/mg tissue and 0.465 ± 0.110 vs. 0.248 ± 0.106 nmol LOOH/mg tissue, respectively) and complicated lesions contained 5.6 times more TBARs than atheromatous lesions (0.028 ± 0.012 vs. 0.005 ± 0.001 nmol/mg tissue).",
+      "key": "3d1ee74982098e43c191a812cff21321",
+      "line": 244,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "This engenders the release of iron, which can promote further the oxidation of plaque lipids through redox cycling reactions. The result of these chemical reactions is the formation of deleterious oxidized ‘gruel’ which, among other things, leads to endothelial oxidative stress and ultimately to cytotoxicity.",
+      "key": "25d45210f1d204cfd1008ee3877ac749",
+      "line": 275,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Earlier chemical investigations of gruel from advanced lesions revealed that it contains ceroid-like insoluble material composed mainly of hydoxyapatite, iron and calcium.",
+      "key": "401dd76c986f0f1394ab82fb28a7020d",
+      "line": 360,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Moreover, the amounts of a protein oxidation marker, dityrosine,21 were elevated in complicated lesions (Fig 5B) whereas atheromatous lesions did not contain detectable dityrosine.",
+      "key": "94caf8e50e18fe236665cfc6365f1ca9",
+      "line": 252,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Atheromatous lesions are prone to disruption leading to hematoma or hemorrhage.",
+      "key": "8bf87eceb5ca734f0e3f0f0096a760b5",
+      "line": 259,
+      "relation": "positiveCorrelation",
+      "source": 44,
+      "target": 25
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "The results reported here indicate that, once exposed to oxidized plaque material, erythrocytes are lysed, the liberated hemoglobin is oxidized and heme dissociates from the resultant ferrihemoglobin.",
+      "key": "cb92c313dd036ed208afda9d75bca7df",
+      "line": 267,
+      "relation": "increases",
+      "source": 16,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Plaque, Atherosclerotic",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "This engenders the release of iron, which can promote further the oxidation of plaque lipids through redox cycling reactions. The result of these chemical reactions is the formation of deleterious oxidized ‘gruel’ which, among other things, leads to endothelial oxidative stress and ultimately to cytotoxicity.",
+      "key": "bca5a7347304d057d079fbdc9c130b96",
+      "line": 275,
+      "relation": "positiveCorrelation",
+      "source": 28,
+      "target": 2
+    },
+    {
+      "key": "82b1d197c94da53ef4132756e27203d1",
+      "relation": "hasReactant",
+      "source": 48,
+      "target": 8
+    },
+    {
+      "key": "8be609e299f4a87239a7aee3dbb78793",
+      "relation": "hasReactant",
+      "source": 48,
+      "target": 11
+    },
+    {
+      "key": "c22b020484832c00e001716f553233c4",
+      "relation": "hasProduct",
+      "source": 48,
+      "target": 3
+    },
+    {
+      "key": "50d8ce40b473cbf5ebc324e06eae006b",
+      "relation": "hasReactant",
+      "source": 49,
+      "target": 8
+    },
+    {
+      "key": "d92fcbfbb63d352bb5fd0f0a81fe20a6",
+      "relation": "hasReactant",
+      "source": 49,
+      "target": 11
+    },
+    {
+      "key": "269798b29d5cb627de5fc877cfdefa68",
+      "relation": "hasProduct",
+      "source": 49,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "This serum protein, present at remarkably high concentrations in plasma (≈1g/L), binds heme with extraordinary avidity (Kd less than 1 pmol/ L) and promotes its clearance.",
+      "key": "d8e765075368955b40c8aae94c80174b",
+      "line": 305,
+      "relation": "increases",
+      "source": 31,
+      "target": 8,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "key": "ba21f5afe2ff2b2b7d26f54d8865a257",
+      "relation": "hasReactant",
+      "source": 50,
+      "target": 11
+    },
+    {
+      "key": "60d6be3426c597573f9b91e1bafde40d",
+      "relation": "hasReactant",
+      "source": 50,
+      "target": 16
+    },
+    {
+      "key": "b4b14e3d7446a12e2f8009836ae3fc87",
+      "relation": "hasProduct",
+      "source": 50,
+      "target": 3
+    },
+    {
+      "key": "fbc3f07f71753df736c8fe99474e1c87",
+      "relation": "hasReactant",
+      "source": 51,
+      "target": 11
+    },
+    {
+      "key": "9677cbe2d1201d7f281f34ac8afc6424",
+      "relation": "hasReactant",
+      "source": 51,
+      "target": 16
+    },
+    {
+      "key": "3005321b70b7aa155cd8d456cd881f5d",
+      "relation": "hasProduct",
+      "source": 51,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Heme oxygenase-1, a key antioxidant enzyme that exerts cytoprotective effects in endothelial cells8,11-14 also plays an important role in preventing the development of atherosclerosis.",
+      "key": "7eb98325b53fc84e922dee4c873a73e9",
+      "line": 340,
+      "relation": "negativeCorrelation",
+      "source": 40,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Now we demonstrate that heme and hemoglobin-treated atheroma lipids also induce HO-1 in endothelial cells exposed in sublethal doses.",
+      "key": "222741b04c5616d1a340a44712878468",
+      "line": 353,
+      "relation": "increases",
+      "source": 32,
+      "target": 35
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Earlier chemical investigations of gruel from advanced lesions revealed that it contains ceroid-like insoluble material composed mainly of hydoxyapatite, iron and calcium.",
+      "key": "d4ff28c4c094b8b3d65378c572b3e1e4",
+      "line": 359,
+      "relation": "positiveCorrelation",
+      "source": 23,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Earlier chemical investigations of gruel from advanced lesions revealed that it contains ceroid-like insoluble material composed mainly of hydoxyapatite, iron and calcium.",
+      "key": "b112574ba735d26825b7571a9ed34aef",
+      "line": 361,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Gruel from advanced plaque also contains large amounts of organic soluble carbonyls and aldehydes that are also cytotoxic.",
+      "key": "9e19a0300ffaac9fdfbce9de50a7baf9",
+      "line": 367,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 41
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "macrophage",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "Gruel from advanced plaque also contains large amounts of organic soluble carbonyls and aldehydes that are also cytotoxic.",
+      "key": "8f8bd88a2a4c2d6341d203ab096e2e32",
+      "line": 368,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 41
+    },
+    {
+      "key": "84dc39d50dc7e6b515b705ed43572065",
+      "relation": "hasReactant",
+      "source": 47,
+      "target": 1
+    },
+    {
+      "key": "42da35dda3976b37c696b24d0acce338",
+      "relation": "hasReactant",
+      "source": 47,
+      "target": 33
+    },
+    {
+      "key": "84a3f073207ada7098270fbc20b3a50c",
+      "relation": "hasProduct",
+      "source": 47,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "We recently found that, contrary to other forms of oxidized hemoglobin, ferrylhemoglobin acts as a potent pro-inflammatory agonist in endothelial cells, leading to the up-regulation of adhesion molecules that support the recruitment of macrophages into the vessel wall.36",
+      "key": "2a7acf1961747273331f2eb7993fe34b",
+      "line": 383,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 45
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "We recently found that, contrary to other forms of oxidized hemoglobin, ferrylhemoglobin acts as a potent pro-inflammatory agonist in endothelial cells, leading to the up-regulation of adhesion molecules that support the recruitment of macrophages into the vessel wall.36",
+      "key": "47c35615c3acd8a0a4d39d7be717b710",
+      "line": 384,
+      "relation": "increases",
+      "source": 24,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "endothelial cell",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Atherosclerosis",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Balla G",
+          "Balla J",
+          "Csonka T",
+          "Eaton JW",
+          "Galajda Z",
+          "Jeney V",
+          "Méhes G",
+          "Nagy E",
+          "Smith A",
+          "Soares MP",
+          "Szentmiklósi J",
+          "Varga Z",
+          "Vercellotti GM"
+        ],
+        "date": "2010-07-01",
+        "first": "Nagy E",
+        "identifier": "20378845",
+        "journal": "Arteriosclerosis, thrombosis, and vascular biology",
+        "last": "Balla J",
+        "name": "Red cells, hemoglobin, heme, iron, and atherogenesis.",
+        "namespace": "pubmed",
+        "pages": "1347-53",
+        "volume": "30"
+      },
+      "evidence": "We recently found that, contrary to other forms of oxidized hemoglobin, ferrylhemoglobin acts as a potent pro-inflammatory agonist in endothelial cells, leading to the up-regulation of adhesion molecules that support the recruitment of macrophages into the vessel wall.36",
+      "key": "c24bf629580f5751c9950bc3f7a807a4",
+      "line": 383,
+      "relation": "positiveCorrelation",
+      "source": 45,
+      "target": 24
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"carbonyl group\")",
+      "concept": {
+        "name": "carbonyl group",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "9741d1edbde986427e9865000b9c7bdc"
+    },
+    {
+      "bel": "a(CHEBI:\"hydrogen peroxide\")",
+      "concept": {
+        "name": "hydrogen peroxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "2a33dd72d09a3b66f80326bcf6e3bfd6"
+    },
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "concept": {
+        "name": "iron(2+)",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "be7ed197cc239803fafad58c7dc415ba"
+    },
+    {
+      "bel": "a(CHEBI:\"lipid hydroperoxide\")",
+      "concept": {
+        "name": "lipid hydroperoxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "cda46d7dcc103092fc9c47aad2f07d04"
+    },
+    {
+      "bel": "a(CHEBI:\"monounsaturated fatty acid\")",
+      "concept": {
+        "name": "monounsaturated fatty acid",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "64a2934604c0b5a5dda9e22f110bc758"
+    },
+    {
+      "bel": "a(CHEBI:\"oxidised LDL\")",
+      "concept": {
+        "name": "oxidised LDL",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "df85f4f2c60f05a17168e7391f8442f0"
+    },
+    {
+      "bel": "a(CHEBI:cholesterol)",
+      "concept": {
+        "name": "cholesterol",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "7b4eb3a8e7365ad199fd92c20e3df8bf"
+    },
+    {
+      "bel": "a(CHEBI:dityrosine)",
+      "concept": {
+        "name": "dityrosine",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "e40ac65d63f0498e6fcbea247c09cb6c"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "a(CHEBI:oxysterol)",
+      "concept": {
+        "name": "oxysterol",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "f9d702f8ac0c917c668138740aab60e6"
+    },
+    {
+      "bel": "a(CHEBI:phosphatidyl-L-serine)",
+      "concept": {
+        "name": "phosphatidyl-L-serine",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "980df99015409a120ff5aed7d300be71"
+    },
+    {
+      "bel": "a(HM:\"Atheroma lipid\")",
+      "concept": {
+        "name": "Atheroma lipid",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "520bdb9ab7725ca1816c7e864157cdea"
+    },
+    {
+      "bel": "a(HM:\"Erythrocytes, lysed\")",
+      "concept": {
+        "name": "Erythrocytes, lysed",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "8b04c572cba2a8747ae43c2924d733de"
+    },
+    {
+      "bel": "a(HM:\"oxidative modification of atheroma lipid\")",
+      "concept": {
+        "name": "oxidative modification of atheroma lipid",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "560ebb4f30af1fa38a270bc88983625b"
+    },
+    {
+      "bel": "a(HM:\"oxidative reactions\")",
+      "concept": {
+        "name": "oxidative reactions",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "789ec070d787c034ffef2e9b908faaa0"
+    },
+    {
+      "bel": "a(HM:\"ruptured complicated lesions\")",
+      "concept": {
+        "name": "ruptured complicated lesions",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "13313d0f3bb656a338e3589c6848b0f3"
+    },
+    {
+      "bel": "a(HM:ferrihemoglobin)",
+      "concept": {
+        "name": "ferrihemoglobin",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "34634355fdfa40e812b26e52fbfbd019"
+    },
+    {
+      "bel": "a(MESH:\"5,6-epoxycholesterol\")",
+      "concept": {
+        "name": "5,6-epoxycholesterol",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "0e0e3264b21244714856fd5ce8ae7665"
+    },
+    {
+      "bel": "a(MESH:\"Cell Adhesion Molecules\")",
+      "concept": {
+        "name": "Cell Adhesion Molecules",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "8f9c2f3217f187cb6562bdccae9c0dc8"
+    },
+    {
+      "bel": "a(MESH:\"Glutathione Peroxidase\")",
+      "concept": {
+        "name": "Glutathione Peroxidase",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "b435f9221c066e7b656e2d388dd89352"
+    },
+    {
+      "bel": "a(MESH:\"Thiobarbituric Acid Reactive Substances\")",
+      "concept": {
+        "name": "Thiobarbituric Acid Reactive Substances",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "92c78bb9de3d4ebe5d97dfe97db2b7b6"
+    },
+    {
+      "bel": "a(MESH:Aldehydes)",
+      "concept": {
+        "name": "Aldehydes",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "afd2d081abd5d876e1155443f527d9e8"
+    },
+    {
+      "bel": "a(MESH:Calcium)",
+      "concept": {
+        "name": "Calcium",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "b6bb05aa1fbd6547461ef2f28c9d8f97"
+    },
+    {
+      "bel": "a(MESH:Hydroxyapatites)",
+      "concept": {
+        "name": "Hydroxyapatites",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "e6cfc1c5714d329eca4b275f36a08140"
+    },
+    {
+      "bel": "a(MESH:ferrylhemoglobin)",
+      "concept": {
+        "name": "ferrylhemoglobin",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "e70b602ec7202c9729662fc5420ba39a"
+    },
+    {
+      "bel": "bp(HM:\"Atheromatous lesions\")",
+      "concept": {
+        "name": "Atheromatous lesions",
+        "namespace": "HM"
+      },
+      "function": "BiologicalProcess",
+      "id": "01a87a88109a8f700a4c1ba0cf5d6fc8"
+    },
+    {
+      "bel": "bp(MESH:\"Cytotoxicity, Immunologic\")",
+      "concept": {
+        "name": "Cytotoxicity, Immunologic",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "c8034b7c5e8548570e46ada1a768a854"
+    },
+    {
+      "bel": "bp(MESH:\"Lipid Peroxidation\")",
+      "concept": {
+        "name": "Lipid Peroxidation",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "5aabe71c6ac7a11f93eabad81eec43ce"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "concept": {
+        "name": "Oxidative Stress",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "9174b724412892a12c4da7cab55f893c"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"oxidised LDL\"), a(MESH:\"Glutathione Peroxidase\"))",
+      "function": "Complex",
+      "id": "ad34b0f1df213cc47941ead656455980",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"oxidised LDL\")",
+          "concept": {
+            "name": "oxidised LDL",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "df85f4f2c60f05a17168e7391f8442f0"
+        },
+        {
+          "bel": "a(MESH:\"Glutathione Peroxidase\")",
+          "concept": {
+            "name": "Glutathione Peroxidase",
+            "namespace": "MESH"
+          },
+          "function": "Abundance",
+          "id": "b435f9221c066e7b656e2d388dd89352"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), a(HM:\"Atheroma lipid\"))",
+      "function": "Complex",
+      "id": "efb0d5be52ae1983001b5e296e524a9a",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        },
+        {
+          "bel": "a(HM:\"Atheroma lipid\")",
+          "concept": {
+            "name": "Atheroma lipid",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "520bdb9ab7725ca1816c7e864157cdea"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), p(HGNC:HPX))",
+      "function": "Complex",
+      "id": "365a30a520db1add8865c5c83078c713",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        },
+        {
+          "bel": "p(HGNC:HPX)",
+          "concept": {
+            "name": "HPX",
+            "namespace": "HGNC"
+          },
+          "function": "Protein",
+          "id": "3351b86e04a9ce9c6f90abd5dd57e219"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(HM:\"Atheroma lipid\"), p(HGNC:HBB))",
+      "function": "Complex",
+      "id": "5d4357052dc3cf0a9416e8e93fba7a9a",
+      "members": [
+        {
+          "bel": "a(HM:\"Atheroma lipid\")",
+          "concept": {
+            "name": "Atheroma lipid",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "520bdb9ab7725ca1816c7e864157cdea"
+        },
+        {
+          "bel": "p(HGNC:HBB)",
+          "concept": {
+            "name": "HBB",
+            "namespace": "HGNC"
+          },
+          "function": "Protein",
+          "id": "15ee95d6d880d241c742461c7f432f15"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "concept": {
+        "name": "HBB",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "15ee95d6d880d241c742461c7f432f15"
+    },
+    {
+      "bel": "p(HGNC:HBB, pmod(go:0018158 ! \"protein oxidation\"))",
+      "concept": {
+        "name": "HBB",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "6df5b547c63f6de9e1ff5d315d86078b",
+      "variants": [
+        {
+          "concept": {
+            "identifier": "0018158",
+            "name": "protein oxidation",
+            "namespace": "go"
+          },
+          "kind": "pmod"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "concept": {
+        "name": "HMOX1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "d8af6078f1872edbf59623df2a9fa1c2"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "concept": {
+        "name": "HP",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "b50c4eb6f38e0c1d3d5a1b3d5dcba1e1"
+    },
+    {
+      "bel": "p(HGNC:HPX)",
+      "concept": {
+        "name": "HPX",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "3351b86e04a9ce9c6f90abd5dd57e219"
+    },
+    {
+      "bel": "p(PFAM:Ferritin)",
+      "concept": {
+        "name": "Ferritin",
+        "namespace": "PFAM"
+      },
+      "function": "Protein",
+      "id": "b115fa3d120aa4baf4092dbc345a1973"
+    },
+    {
+      "bel": "path(HM:\"Endothelial dysfunction\")",
+      "concept": {
+        "name": "Endothelial dysfunction",
+        "namespace": "HM"
+      },
+      "function": "Pathology",
+      "id": "336bca6d17802a49e311f8095bc60307"
+    },
+    {
+      "bel": "path(HP:atherosclerosis)",
+      "concept": {
+        "name": "atherosclerosis",
+        "namespace": "HP"
+      },
+      "function": "Pathology",
+      "id": "e79c703259fb8b802624a1b1f87fff42"
+    },
+    {
+      "bel": "path(MESH:\"Plaque, Atherosclerotic\")",
+      "concept": {
+        "name": "Plaque, Atherosclerotic",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "3ab807877ad15868c3d3fd1a505fc021"
+    },
+    {
+      "bel": "path(MESH:Atherosclerosis)",
+      "concept": {
+        "name": "Atherosclerosis",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "b286a0020435f72c77c18eefbd8b93bb"
+    },
+    {
+      "bel": "path(MESH:Hematoma)",
+      "concept": {
+        "name": "Hematoma",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "62ef834cd306f6a76e5a78339ab8b8fe"
+    },
+    {
+      "bel": "path(MESH:Hemorrhage)",
+      "concept": {
+        "name": "Hemorrhage",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "cf4a162722a05595a90a635aa9c8b7ba"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "concept": {
+        "name": "Inflammation",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "10cd96fd4056a5e6c27264e0130e89f9"
+    },
+    {
+      "bel": "r(HGNC:HMOX1)",
+      "concept": {
+        "name": "HMOX1",
+        "namespace": "HGNC"
+      },
+      "function": "RNA",
+      "id": "d124041e4297a0905607cabab90a743b"
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:\"hydrogen peroxide\"), p(HGNC:HBB)), products(a(HM:ferrihemoglobin)))",
+      "function": "Reaction",
+      "id": "29cf3a7647526c7514de67d970b314f8",
+      "products": [
+        {
+          "bel": "a(HM:ferrihemoglobin)",
+          "concept": {
+            "name": "ferrihemoglobin",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "34634355fdfa40e812b26e52fbfbd019"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:\"hydrogen peroxide\")",
+          "concept": {
+            "name": "hydrogen peroxide",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "2a33dd72d09a3b66f80326bcf6e3bfd6"
+        },
+        {
+          "bel": "p(HGNC:HBB)",
+          "concept": {
+            "name": "HBB",
+            "namespace": "HGNC"
+          },
+          "function": "Protein",
+          "id": "15ee95d6d880d241c742461c7f432f15"
+        }
+      ]
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:heme), a(HM:\"Atheroma lipid\")), products(a(CHEBI:\"lipid hydroperoxide\")))",
+      "function": "Reaction",
+      "id": "e50c3b7d393cf6d9c6c112efab39b5af",
+      "products": [
+        {
+          "bel": "a(CHEBI:\"lipid hydroperoxide\")",
+          "concept": {
+            "name": "lipid hydroperoxide",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "cda46d7dcc103092fc9c47aad2f07d04"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        },
+        {
+          "bel": "a(HM:\"Atheroma lipid\")",
+          "concept": {
+            "name": "Atheroma lipid",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "520bdb9ab7725ca1816c7e864157cdea"
+        }
+      ]
+    },
+    {
+      "bel": "rxn(reactants(a(CHEBI:heme), a(HM:\"Atheroma lipid\")), products(a(MESH:\"Thiobarbituric Acid Reactive Substances\")))",
+      "function": "Reaction",
+      "id": "c2aea695b8558dfa8b4368dc356abb14",
+      "products": [
+        {
+          "bel": "a(MESH:\"Thiobarbituric Acid Reactive Substances\")",
+          "concept": {
+            "name": "Thiobarbituric Acid Reactive Substances",
+            "namespace": "MESH"
+          },
+          "function": "Abundance",
+          "id": "92c78bb9de3d4ebe5d97dfe97db2b7b6"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        },
+        {
+          "bel": "a(HM:\"Atheroma lipid\")",
+          "concept": {
+            "name": "Atheroma lipid",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "520bdb9ab7725ca1816c7e864157cdea"
+        }
+      ]
+    },
+    {
+      "bel": "rxn(reactants(a(HM:\"Atheroma lipid\"), a(HM:ferrihemoglobin)), products(a(CHEBI:\"lipid hydroperoxide\")))",
+      "function": "Reaction",
+      "id": "3e8b18782a0e060ca6f822bf691ca38c",
+      "products": [
+        {
+          "bel": "a(CHEBI:\"lipid hydroperoxide\")",
+          "concept": {
+            "name": "lipid hydroperoxide",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "cda46d7dcc103092fc9c47aad2f07d04"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(HM:\"Atheroma lipid\")",
+          "concept": {
+            "name": "Atheroma lipid",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "520bdb9ab7725ca1816c7e864157cdea"
+        },
+        {
+          "bel": "a(HM:ferrihemoglobin)",
+          "concept": {
+            "name": "ferrihemoglobin",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "34634355fdfa40e812b26e52fbfbd019"
+        }
+      ]
+    },
+    {
+      "bel": "rxn(reactants(a(HM:\"Atheroma lipid\"), a(HM:ferrihemoglobin)), products(a(MESH:\"Thiobarbituric Acid Reactive Substances\")))",
+      "function": "Reaction",
+      "id": "3253245bccc2b9b73242ad065fab2865",
+      "products": [
+        {
+          "bel": "a(MESH:\"Thiobarbituric Acid Reactive Substances\")",
+          "concept": {
+            "name": "Thiobarbituric Acid Reactive Substances",
+            "namespace": "MESH"
+          },
+          "function": "Abundance",
+          "id": "92c78bb9de3d4ebe5d97dfe97db2b7b6"
+        }
+      ],
+      "reactants": [
+        {
+          "bel": "a(HM:\"Atheroma lipid\")",
+          "concept": {
+            "name": "Atheroma lipid",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "520bdb9ab7725ca1816c7e864157cdea"
+        },
+        {
+          "bel": "a(HM:ferrihemoglobin)",
+          "concept": {
+            "name": "ferrihemoglobin",
+            "namespace": "HM"
+          },
+          "function": "Abundance",
+          "id": "34634355fdfa40e812b26e52fbfbd019"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6654 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_27515135.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_27515135.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Plasma hemoglobin scavenges nitric oxide and causes vasoconstriction, platelet aggregation and inflammation9,22–24.",
+      "key": "bf2387f052a16d840a87839e9533ee0a",
+      "line": 93,
+      "relation": "negativeCorrelation",
+      "source": 13,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Plasma hemoglobin scavenges nitric oxide and causes vasoconstriction, platelet aggregation and inflammation9,22–24.",
+      "key": "f0c8abe9a85d0c442e5401a52ff86915",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 26
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Plasma hemoglobin scavenges nitric oxide and causes vasoconstriction, platelet aggregation and inflammation9,22–24.",
+      "key": "516b9d5e4c0af33dc54a9954ef0202ed",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Plasma hemoglobin scavenges nitric oxide and causes vasoconstriction, platelet aggregation and inflammation9,22–24.",
+      "key": "a0a5662ed6fa647c35c0160afc20b4d5",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 29
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Toxicity of free hemoglobin is also caused by the release of cell-free heme, which produces lipid peroxidation and mitochondrial damage and increases the production of reactive oxygen species.",
+      "key": "fc62e342ac42b8e811c967aac2f49aba",
+      "line": 102,
+      "relation": "increases",
+      "source": 13,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In mice resuscitated with SRBCs, plasma hemoglobin levels were greater than in mice resuscitated with FRBCs or in sham-treated mice at two, four, and 24 hours after transfusion (Figure 1C).",
+      "key": "ecf5b25f04e9b73eafe12231cc06af60",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The plasma hemoglobin levels at two and four hours after SRBC-transfusion were greater than the cell-free hemoglobin levels in the supernatant of the SRBCs before transfusion (Figure 1C, Supplemental Table I), providing evidence that hemolysis occurs in vivo during and after transfusion of SRBCs.",
+      "key": "6a8e512a285e3f6be67606e298c602c0",
+      "line": 140,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Co-administration of haptoglobin with SRBCs results in a prolonged increase in plasma hemoglobin levels for more than 48 hours after transfusion.",
+      "key": "25039c75e92432e112716b5f0a17f719",
+      "line": 205,
+      "relation": "positiveCorrelation",
+      "source": 13,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Plasma hemoglobin scavenges nitric oxide and causes vasoconstriction, platelet aggregation and inflammation9,22–24.",
+      "key": "552f41999ee693efbfd78ebad54ac65c",
+      "line": 93,
+      "relation": "negativeCorrelation",
+      "source": 1,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Plasma hemoglobin scavenges nitric oxide and causes vasoconstriction, platelet aggregation and inflammation9,22–24.",
+      "key": "18d355735efb0e3be0d70894ca1f855f",
+      "line": 94,
+      "relation": "positiveCorrelation",
+      "source": 26,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Plasma hemoglobin scavenges nitric oxide and causes vasoconstriction, platelet aggregation and inflammation9,22–24.",
+      "key": "df5d5be6762581552b431129b00f373e",
+      "line": 95,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Plasma hemoglobin scavenges nitric oxide and causes vasoconstriction, platelet aggregation and inflammation9,22–24.",
+      "key": "8a5da29fabf9976851e9d6ddb5d066fe",
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "source": 29,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Toxicity of free hemoglobin is also caused by the release of cell-free heme, which produces lipid peroxidation and mitochondrial damage and increases the production of reactive oxygen species.",
+      "key": "d22d2083de31dd1df7e12f99873552b2",
+      "line": 103,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Toxicity of free hemoglobin is also caused by the release of cell-free heme, which produces lipid peroxidation and mitochondrial damage and increases the production of reactive oxygen species.",
+      "key": "97ec6981cf017e910f95fedb9e98b6be",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Cell-free heme selectively triggers pro-inflammatory receptors such as TLR-4 and BACH-1, and activates proteasomes25.",
+      "key": "ff4d5bb94fa8e7d12e03cb28cc79e9bb",
+      "line": 109,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Cell-free heme selectively triggers pro-inflammatory receptors such as TLR-4 and BACH-1, and activates proteasomes25.",
+      "key": "82857293aaa51c102f0fc156c3ee561b",
+      "line": 110,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Cell-free heme selectively triggers pro-inflammatory receptors such as TLR-4 and BACH-1, and activates proteasomes25.",
+      "key": "fdd08614a0f2653c6178200010d803a5",
+      "line": 111,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "target": 25,
+      "target_modifier": {
+        "modifier": "Activity"
+      }
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The increase in hemopexin was associated with decreased plasma heme levels (Figure 3I).",
+      "key": "d549237ff6ea01f1d33c8a75b3be2da9",
+      "line": 191,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "These results demonstrate that transfusion with SRBCs and simultaneous infusion of exogenous hemopexin results in decreased levels of circulating cell-free heme.",
+      "key": "086d7e18fe80738de2e832d2972ac751",
+      "line": 197,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Toxicity of free hemoglobin is also caused by the release of cell-free heme, which produces lipid peroxidation and mitochondrial damage and increases the production of reactive oxygen species.",
+      "key": "61c60283cb32d9a1c40c5d62732b567e",
+      "line": 103,
+      "relation": "positiveCorrelation",
+      "source": 8,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Toxicity of free hemoglobin is also caused by the release of cell-free heme, which produces lipid peroxidation and mitochondrial damage and increases the production of reactive oxygen species.",
+      "key": "191bcda013f06bd899217310c910cb47",
+      "line": 104,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Cell-free heme selectively triggers pro-inflammatory receptors such as TLR-4 and BACH-1, and activates proteasomes25.",
+      "key": "41acf9ffdd424473672f806d05149aef",
+      "line": 109,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Cell-free heme selectively triggers pro-inflammatory receptors such as TLR-4 and BACH-1, and activates proteasomes25.",
+      "key": "6154db17f8ce5c922f97a28b4b1adda8",
+      "line": 110,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Cell-free heme selectively triggers pro-inflammatory receptors such as TLR-4 and BACH-1, and activates proteasomes25.",
+      "key": "2cbcf12f95e80006c40b27801d0121e2",
+      "line": 111,
+      "relation": "positiveCorrelation",
+      "source": 25,
+      "source_modifier": {
+        "modifier": "Activity"
+      },
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "After resuscitation with SRBCs, only 58% of mice survived for 48 hours (SRBC vs. FRBC, P<0.05).",
+      "key": "a2e7f1dd29c5b736764b1ea1ba3ab269",
+      "line": 121,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In mice resuscitated with SRBCs, plasma hemoglobin levels were greater than in mice resuscitated with FRBCs or in sham-treated mice at two, four, and 24 hours after transfusion (Figure 1C).",
+      "key": "2a19dff6508a9faedb352c73b9ace72b",
+      "line": 129,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The plasma hemoglobin levels at two and four hours after SRBC-transfusion were greater than the cell-free hemoglobin levels in the supernatant of the SRBCs before transfusion (Figure 1C, Supplemental Table I), providing evidence that hemolysis occurs in vivo during and after transfusion of SRBCs.",
+      "key": "e4e8843bf49bc0477f03978f189fde45",
+      "line": 139,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 28
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In animals resuscitated with SRBCs, plasma hemopexin levels significantly decreased from 147.1±11.4 mg/dl at baseline to 86.7±12.2 and 76.3±5. 4 mg/dl at two and four hours after resuscitation, respectively (p<0.05 for both, Figure 2A).",
+      "key": "131c35982e0794ced8aea6da6aae63a5",
+      "line": 148,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The increase in plasma haptoglobin levels from baseline to 48 hours after resuscitation was less in mice transfused with SRBCs compared to mice transfused with FRBCs (P<0.001).",
+      "key": "5e4d07c51c9115b7690ccaba250979fd",
+      "line": 156,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 20
+    },
+    {
+      "key": "9c0f0f2a4e84c5f32bc2a4780eec8e40",
+      "relation": "partOf",
+      "source": 3,
+      "target": 11
+    },
+    {
+      "key": "40290be7010ea339e2cad47e31318f6a",
+      "relation": "partOf",
+      "source": 3,
+      "target": 10
+    },
+    {
+      "key": "69dc3c9b247bef54c0922b78d266bb88",
+      "relation": "partOf",
+      "source": 3,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Hemoglobinuria was noted in mice resuscitated with SRBCs alone but not mice resuscitated with FRBCs or sham-treated mice (Figure 4A and B).",
+      "key": "b309d927fad4845410f098a28261ff3b",
+      "line": 211,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Markers of renal damage, including kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels, and plasma NGAL concentration, were greater in mice after resuscitation with SRBCs or SRBCs and albumin than in mice transfused with FRBCs (Figures 4C–F).",
+      "key": "16648d1830c252df56d6fb9636de6dec",
+      "line": 227,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Markers of renal damage, including kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels, and plasma NGAL concentration, were greater in mice after resuscitation with SRBCs or SRBCs and albumin than in mice transfused with FRBCs (Figures 4C–F).",
+      "key": "efa809842ac493f9a6fd54c2490d1743",
+      "line": 229,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 30
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Markers of renal damage, including kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels, and plasma NGAL concentration, were greater in mice after resuscitation with SRBCs or SRBCs and albumin than in mice transfused with FRBCs (Figures 4C–F).",
+      "key": "d949362d79e0efe22fa5abdc500013e8",
+      "line": 231,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Kidney sections of mice resuscitated with SRBCs showed more cortical Ki-67 positive cells per 20× field (1.08 mm field diameter) than those of mice resuscitated with FRBCs (SRBC vs. FRBC: 156.2±10.4 vs. 56.4±4.7, p<0.01).",
+      "key": "c2b100542f11d13ee5b133f16b01bc12",
+      "line": 261,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Tissue iron staining revealed greater cortical iron accumulation in the kidneys of mice resuscitated with SRBCs, SRBCs combined with albumin and SRBCs combined with hemopexin than in the kidneys of mice transfused with FRBCs (Figure 6A and B).",
+      "key": "cc1c6fc761f6606c1773122c4ff87ca0",
+      "line": 286,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Splenic iron content was greater in mice after resuscitation with SRBCs than in FRBC-transfused mice.",
+      "key": "2ecc61b972da5e491aa2a2d864e1dc56",
+      "line": 300,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Taken together, these results indicate that haptoglobin co-transfusion prevented stored blood transfusion-associated renal iron uptake and led to increased weight and greater iron- accumulation in the spleens of mice.",
+      "key": "0878785a99fbdf254c90fc5f24bb3e8d",
+      "line": 323,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Liver damage, measured by plasma levels of alanine transaminase (ALT) and aspartate transaminase (AST) at 48 hours after resuscitation, was greater after resuscitation with SRBCs compared to resuscitation with FRBCs (Figure 6E and F).",
+      "key": "dd07b42d8003e4905b5bbe1b11619c78",
+      "line": 315,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Liver damage, measured by plasma levels of alanine transaminase (ALT) and aspartate transaminase (AST) at 48 hours after resuscitation, was greater after resuscitation with SRBCs compared to resuscitation with FRBCs (Figure 6E and F).",
+      "key": "b50950b0fd76a2632cefa03d007e94ed",
+      "line": 316,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 16
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "After resuscitation with SRBCs, only 58% of mice survived for 48 hours (SRBC vs. FRBC, P<0.05).",
+      "key": "96401731ebdd97668f9acc94fd0e95c3",
+      "line": 121,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "2 weeks",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In contrast, all of the mice survived after SRBC-transfusion and treatment with hemopexin (SRBC+Hx vs. SRBC+Alb, P=0.018). Similarly the survival rate of mice resuscitated with SRBCs and co-infusion of haptoglobin was 96% (SRBC+Hp vs. SRBC+Alb, P=0.030).",
+      "key": "fa417e0cd8e4a9b08b4ada87275ea272",
+      "line": 165,
+      "relation": "negativeCorrelation",
+      "source": 5,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "2 weeks",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In contrast, all of the mice survived after SRBC-transfusion and treatment with hemopexin (SRBC+Hx vs. SRBC+Alb, P=0.018). Similarly the survival rate of mice resuscitated with SRBCs and co-infusion of haptoglobin was 96% (SRBC+Hp vs. SRBC+Alb, P=0.030).",
+      "key": "e4245645ab77e7727530ed1c8603c413",
+      "line": 166,
+      "relation": "negativeCorrelation",
+      "source": 5,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The plasma hemoglobin levels at two and four hours after SRBC-transfusion were greater than the cell-free hemoglobin levels in the supernatant of the SRBCs before transfusion (Figure 1C, Supplemental Table I), providing evidence that hemolysis occurs in vivo during and after transfusion of SRBCs.",
+      "key": "b5fcb72db4f9aa2fd4940c8f3803097c",
+      "line": 139,
+      "relation": "positiveCorrelation",
+      "source": 28,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The plasma hemoglobin levels at two and four hours after SRBC-transfusion were greater than the cell-free hemoglobin levels in the supernatant of the SRBCs before transfusion (Figure 1C, Supplemental Table I), providing evidence that hemolysis occurs in vivo during and after transfusion of SRBCs.",
+      "key": "c7832da835aaeacd0aab3f4fc5237c98",
+      "line": 140,
+      "relation": "positiveCorrelation",
+      "source": 28,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In animals resuscitated with SRBCs, plasma hemopexin levels significantly decreased from 147.1±11.4 mg/dl at baseline to 86.7±12.2 and 76.3±5. 4 mg/dl at two and four hours after resuscitation, respectively (p<0.05 for both, Figure 2A).",
+      "key": "7cff5fc75c1710f60967297e77318779",
+      "line": 148,
+      "relation": "negativeCorrelation",
+      "source": 21,
+      "target": 3
+    },
+    {
+      "key": "bdba16c4ae581ca9f76d92b9bfcc1f87",
+      "relation": "partOf",
+      "source": 21,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Infusion of hemopexin together with SRBCs resulted in a 6.4-fold (95% CI [5.2 – 7.6]) increase in plasma hemopexin levels at four hours after transfusion (Figure 3D).",
+      "key": "1c630c665bfbce2a6e69c0c7ba9fcc3b",
+      "line": 186,
+      "relation": "positiveCorrelation",
+      "source": 21,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The increase in hemopexin was associated with decreased plasma heme levels (Figure 3I).",
+      "key": "26e186072512a3638ca3158fa8c2b7b5",
+      "line": 191,
+      "relation": "negativeCorrelation",
+      "source": 21,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "48 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The increase in plasma haptoglobin levels from baseline to 48 hours after resuscitation was less in mice transfused with SRBCs compared to mice transfused with FRBCs (P<0.001).",
+      "key": "7da62ec1b1f42c74fabd3403be493f40",
+      "line": 156,
+      "relation": "negativeCorrelation",
+      "source": 20,
+      "target": 3
+    },
+    {
+      "key": "1ca3015a211549b79676bd86204882fa",
+      "relation": "partOf",
+      "source": 20,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "2 weeks",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In contrast, all of the mice survived after SRBC-transfusion and treatment with hemopexin (SRBC+Hx vs. SRBC+Alb, P=0.018). Similarly the survival rate of mice resuscitated with SRBCs and co-infusion of haptoglobin was 96% (SRBC+Hp vs. SRBC+Alb, P=0.030).",
+      "key": "07cc708ea4d002dcd5e1042371c1bc18",
+      "line": 165,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Infusion of hemopexin together with SRBCs resulted in a 6.4-fold (95% CI [5.2 – 7.6]) increase in plasma hemopexin levels at four hours after transfusion (Figure 3D).",
+      "key": "cb8809fe4f7028fa32bc20727ed00659",
+      "line": 186,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "These results demonstrate that transfusion with SRBCs and simultaneous infusion of exogenous hemopexin results in decreased levels of circulating cell-free heme.",
+      "key": "ae26ba003fff85c4ebef585ccef9b12e",
+      "line": 197,
+      "relation": "negativeCorrelation",
+      "source": 11,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Tissue iron staining revealed greater cortical iron accumulation in the kidneys of mice resuscitated with SRBCs, SRBCs combined with albumin and SRBCs combined with hemopexin than in the kidneys of mice transfused with FRBCs (Figure 6A and B).",
+      "key": "67b10a5ecc261919f82eec9c4a6f0f80",
+      "line": 287,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The renal expression level of IL-6 was greater 48 hours after resuscitation with SRBCs alone, SRBC and albumin, and SRBCs and hemopexin when compared to resuscitation with FRBCs (Supplemental Figure VI D).",
+      "key": "974550a2c975af185dc0eb31e99992ce",
+      "line": 333,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Mice that were resuscitated with SRBCs and albumin or SRBCs and hemopexin showed a marked increase in HO-1 expression when compared to mice resuscitated with FRBCs.",
+      "key": "1c346a6a5ed62711661cf986b480244d",
+      "line": 339,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "2 weeks",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In contrast, all of the mice survived after SRBC-transfusion and treatment with hemopexin (SRBC+Hx vs. SRBC+Alb, P=0.018). Similarly the survival rate of mice resuscitated with SRBCs and co-infusion of haptoglobin was 96% (SRBC+Hp vs. SRBC+Alb, P=0.030).",
+      "key": "17bb616a70e43f84920d0adaf683c6f6",
+      "line": 166,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Co-administration of haptoglobin with SRBCs results in a prolonged increase in plasma hemoglobin levels for more than 48 hours after transfusion.",
+      "key": "53068859ef16d4842d8ea283cdb49182",
+      "line": 205,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Hemoglobinuria was present in mice resuscitated with SRBCs combined with albumin or hemopexin but not in mice resuscitated with SRBCs combined with haptoglobin (Figure 4A and B).",
+      "key": "56ba9106dbcfad9e4289caf108b405c7",
+      "line": 218,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Co-infusion of haptoglobin but not albumin or hemopexin prevented SRBC-induced hemoglobinuria and kidney injury at 48 hours after resuscitation from hemorrhagic shock.",
+      "key": "8d6d50beb7e414c0158a074082ad71e9",
+      "line": 277,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 27
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "However, kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels and NGAL plasma concentrations in mice transfused with SRBCs and haptoglobin were lower than in mice transfused with SRBCs given a co-infusion of albumin (Figures 4C–F).",
+      "key": "a77a70f4bca858c623932280905d812c",
+      "line": 240,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "However, kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels and NGAL plasma concentrations in mice transfused with SRBCs and haptoglobin were lower than in mice transfused with SRBCs given a co-infusion of albumin (Figures 4C–F).",
+      "key": "0ef86fc8a788217d6dd91142c833eca7",
+      "line": 242,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 30
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "However, kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels and NGAL plasma concentrations in mice transfused with SRBCs and haptoglobin were lower than in mice transfused with SRBCs given a co-infusion of albumin (Figures 4C–F).",
+      "key": "be4a2935f57cf7c794fc37afc38d3bf1",
+      "line": 244,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 23
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The number of Ki-67 positive cells in kidneys from mice that received SRBCs and haptoglobin was similar to the number of Ki-67 positive cells in kidneys from mice that received FRBCs..",
+      "key": "185994e8cce90278902953215f5b9036",
+      "line": 270,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Only transfusion of SRBCs and haptoglobin prevented SRBC-induced renal iron accumulation (Figure 6A and B).",
+      "key": "280576a4382bca9521010325fb61832b",
+      "line": 294,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In comparison to mice transfused with SRBCs alone, the spleens of mice resuscitated with SRBCs and haptoglobin contained more iron (Figure 6D).",
+      "key": "d8a468368349cdc3a3285aefea1c6256",
+      "line": 306,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Resuscitation with SRBCs and haptoglobin prevented the increase in SRBC-induced renal HO-1 expression (Figure 7F).",
+      "key": "8edd7c9afa575d1a11552bf06bf25b04",
+      "line": 345,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Without adjusting for multiple comparison testing, IL-6 expression was lower in kidneys of mice resuscitated with SRBCs and haptoglobin compared to mice resuscitated with SRBCs and albumin (P<0.05).",
+      "key": "fbee437b07efd089e9b8f6cee9fe540a",
+      "line": 353,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "2 weeks",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Resuscitation with SRBCs together with albumin did not alter plasma levels of hemoglobin, hemopexin, haptoglobin, or heme as compared to resuscitation with SRBCs alone (Figure 3C–E, I, Supplemental Material and Supplemental Figure II A–B).",
+      "key": "a05bd9d4eeb6bda137420d77b4ff17af",
+      "line": 176,
+      "relation": "causesNoChange",
+      "source": 9,
+      "target": 13
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "2 weeks",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Resuscitation with SRBCs together with albumin did not alter plasma levels of hemoglobin, hemopexin, haptoglobin, or heme as compared to resuscitation with SRBCs alone (Figure 3C–E, I, Supplemental Material and Supplemental Figure II A–B).",
+      "key": "1aafdc7a43945fe72e3cb4192f691e2f",
+      "line": 177,
+      "relation": "causesNoChange",
+      "source": 9,
+      "target": 2
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "2 weeks",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Resuscitation with SRBCs together with albumin did not alter plasma levels of hemoglobin, hemopexin, haptoglobin, or heme as compared to resuscitation with SRBCs alone (Figure 3C–E, I, Supplemental Material and Supplemental Figure II A–B).",
+      "key": "cf6f6a901759a1b72f1b3a91d734cde6",
+      "line": 178,
+      "relation": "causesNoChange",
+      "source": 9,
+      "target": 21
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "2 weeks",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Resuscitation with SRBCs together with albumin did not alter plasma levels of hemoglobin, hemopexin, haptoglobin, or heme as compared to resuscitation with SRBCs alone (Figure 3C–E, I, Supplemental Material and Supplemental Figure II A–B).",
+      "key": "13e2e3559de14e1e91e34d7b7b05fa73",
+      "line": 179,
+      "relation": "causesNoChange",
+      "source": 9,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Tissue iron staining revealed greater cortical iron accumulation in the kidneys of mice resuscitated with SRBCs, SRBCs combined with albumin and SRBCs combined with hemopexin than in the kidneys of mice transfused with FRBCs (Figure 6A and B).",
+      "key": "306674842e57ec01415ad315c6dc0b5c",
+      "line": 288,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The renal expression level of IL-6 was greater 48 hours after resuscitation with SRBCs alone, SRBC and albumin, and SRBCs and hemopexin when compared to resuscitation with FRBCs (Supplemental Figure VI D).",
+      "key": "778ccb6755918fb68fe672b70292cf9a",
+      "line": 334,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 22
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Mice that were resuscitated with SRBCs and albumin or SRBCs and hemopexin showed a marked increase in HO-1 expression when compared to mice resuscitated with FRBCs.",
+      "key": "fa68503be24c2b1a7852141472d6e88c",
+      "line": 340,
+      "relation": "positiveCorrelation",
+      "source": 9,
+      "target": 19
+    },
+    {
+      "key": "abf2d3084f1b4eb9c4f125f81e77fd85",
+      "relation": "partOf",
+      "source": 15,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Hemoglobinuria was noted in mice resuscitated with SRBCs alone but not mice resuscitated with FRBCs or sham-treated mice (Figure 4A and B).",
+      "key": "75c6474b5de6e4a2b6dc4386290d99af",
+      "line": 211,
+      "relation": "positiveCorrelation",
+      "source": 27,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Hemoglobinuria was present in mice resuscitated with SRBCs combined with albumin or hemopexin but not in mice resuscitated with SRBCs combined with haptoglobin (Figure 4A and B).",
+      "key": "92f9197c1f771a9ae92a378ef9891e09",
+      "line": 218,
+      "relation": "negativeCorrelation",
+      "source": 27,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Co-infusion of haptoglobin but not albumin or hemopexin prevented SRBC-induced hemoglobinuria and kidney injury at 48 hours after resuscitation from hemorrhagic shock.",
+      "key": "de0db6c9edf6e7ddd26068eef2167c0e",
+      "line": 277,
+      "relation": "negativeCorrelation",
+      "source": 27,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Markers of renal damage, including kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels, and plasma NGAL concentration, were greater in mice after resuscitation with SRBCs or SRBCs and albumin than in mice transfused with FRBCs (Figures 4C–F).",
+      "key": "8d06ad05f7d2f9898b0bb660148134a6",
+      "line": 227,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "However, kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels and NGAL plasma concentrations in mice transfused with SRBCs and haptoglobin were lower than in mice transfused with SRBCs given a co-infusion of albumin (Figures 4C–F).",
+      "key": "9bb98f1e84c82b8e5254663f6072525a",
+      "line": 240,
+      "relation": "negativeCorrelation",
+      "source": 18,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Markers of renal damage, including kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels, and plasma NGAL concentration, were greater in mice after resuscitation with SRBCs or SRBCs and albumin than in mice transfused with FRBCs (Figures 4C–F).",
+      "key": "f0649c635cbe1ffcea1e22e663a14350",
+      "line": 229,
+      "relation": "positiveCorrelation",
+      "source": 30,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "However, kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels and NGAL plasma concentrations in mice transfused with SRBCs and haptoglobin were lower than in mice transfused with SRBCs given a co-infusion of albumin (Figures 4C–F).",
+      "key": "8d94561aad6c6997e45fe6d8e8086586",
+      "line": 242,
+      "relation": "negativeCorrelation",
+      "source": 30,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Markers of renal damage, including kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels, and plasma NGAL concentration, were greater in mice after resuscitation with SRBCs or SRBCs and albumin than in mice transfused with FRBCs (Figures 4C–F).",
+      "key": "470d3261ee6e0b1be2b07e204fad62f9",
+      "line": 231,
+      "relation": "positiveCorrelation",
+      "source": 23,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "However, kidney KIM-1 and NGAL mRNA levels, urinary KIM-1 protein levels and NGAL plasma concentrations in mice transfused with SRBCs and haptoglobin were lower than in mice transfused with SRBCs given a co-infusion of albumin (Figures 4C–F).",
+      "key": "febd0aa04af465d6733aa7eed7d3e32d",
+      "line": 244,
+      "relation": "negativeCorrelation",
+      "source": 23,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Tubules",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Tubular regeneration, an indirect marker of tubular injury, was assessed by quantification of the number of Ki-67-positive renal tubular cells at 48 hours after resuscitation and by measuring the level of Ki-67 mRNA in kidney tissue (Figures 5C–E).",
+      "key": "cd864938a61aa8ee2011b1f72fe60d13",
+      "line": 253,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 24
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Tubules",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Tubular regeneration, an indirect marker of tubular injury, was assessed by quantification of the number of Ki-67-positive renal tubular cells at 48 hours after resuscitation and by measuring the level of Ki-67 mRNA in kidney tissue (Figures 5C–E).",
+      "key": "4bb525b4119259240d9e4006389d65cb",
+      "line": 253,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Kidney sections of mice resuscitated with SRBCs showed more cortical Ki-67 positive cells per 20× field (1.08 mm field diameter) than those of mice resuscitated with FRBCs (SRBC vs. FRBC: 156.2±10.4 vs. 56.4±4.7, p<0.01).",
+      "key": "71e27f0ee5ee2b3bb0dcb0d036dc13fe",
+      "line": 261,
+      "relation": "positiveCorrelation",
+      "source": 24,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The number of Ki-67 positive cells in kidneys from mice that received SRBCs and haptoglobin was similar to the number of Ki-67 positive cells in kidneys from mice that received FRBCs..",
+      "key": "b85825e5c8292c1437ca88efa354f9b0",
+      "line": 270,
+      "relation": "negativeCorrelation",
+      "source": 24,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Tissue iron staining revealed greater cortical iron accumulation in the kidneys of mice resuscitated with SRBCs, SRBCs combined with albumin and SRBCs combined with hemopexin than in the kidneys of mice transfused with FRBCs (Figure 6A and B).",
+      "key": "eee50e84591227c50df24587ed5f47bf",
+      "line": 286,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Splenic iron content was greater in mice after resuscitation with SRBCs than in FRBC-transfused mice.",
+      "key": "ead0aa0728a257c7465d356c4e42e6cb",
+      "line": 300,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Taken together, these results indicate that haptoglobin co-transfusion prevented stored blood transfusion-associated renal iron uptake and led to increased weight and greater iron- accumulation in the spleens of mice.",
+      "key": "a476a060aab509f71654471b1fd84c17",
+      "line": 323,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Tissue iron staining revealed greater cortical iron accumulation in the kidneys of mice resuscitated with SRBCs, SRBCs combined with albumin and SRBCs combined with hemopexin than in the kidneys of mice transfused with FRBCs (Figure 6A and B).",
+      "key": "69485ff60e4aaebc86f6f3b22411ec45",
+      "line": 287,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Tissue iron staining revealed greater cortical iron accumulation in the kidneys of mice resuscitated with SRBCs, SRBCs combined with albumin and SRBCs combined with hemopexin than in the kidneys of mice transfused with FRBCs (Figure 6A and B).",
+      "key": "e528d609d0740ba899a0040cd4580ce9",
+      "line": 288,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney Cortex",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Only transfusion of SRBCs and haptoglobin prevented SRBC-induced renal iron accumulation (Figure 6A and B).",
+      "key": "c944061b2320b0e57a4f92c3e06dfebb",
+      "line": 294,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Spleen",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "In comparison to mice transfused with SRBCs alone, the spleens of mice resuscitated with SRBCs and haptoglobin contained more iron (Figure 6D).",
+      "key": "ee31bbc3ebbac05d42bd9114b481674a",
+      "line": 306,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Liver damage, measured by plasma levels of alanine transaminase (ALT) and aspartate transaminase (AST) at 48 hours after resuscitation, was greater after resuscitation with SRBCs compared to resuscitation with FRBCs (Figure 6E and F).",
+      "key": "58a59a0f1c646693a4594628c578c9fb",
+      "line": 315,
+      "relation": "positiveCorrelation",
+      "source": 17,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Liver",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Liver damage, measured by plasma levels of alanine transaminase (ALT) and aspartate transaminase (AST) at 48 hours after resuscitation, was greater after resuscitation with SRBCs compared to resuscitation with FRBCs (Figure 6E and F).",
+      "key": "e4a1ce9620c861c367df537119c5d39e",
+      "line": 316,
+      "relation": "positiveCorrelation",
+      "source": 16,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The renal expression level of IL-6 was greater 48 hours after resuscitation with SRBCs alone, SRBC and albumin, and SRBCs and hemopexin when compared to resuscitation with FRBCs (Supplemental Figure VI D).",
+      "key": "0eef7bcfe99b1aa7e3bbb90918422b11",
+      "line": 333,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "The renal expression level of IL-6 was greater 48 hours after resuscitation with SRBCs alone, SRBC and albumin, and SRBCs and hemopexin when compared to resuscitation with FRBCs (Supplemental Figure VI D).",
+      "key": "7f5236bde6c0e7ff9cbd377094457b1a",
+      "line": 334,
+      "relation": "positiveCorrelation",
+      "source": 22,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Without adjusting for multiple comparison testing, IL-6 expression was lower in kidneys of mice resuscitated with SRBCs and haptoglobin compared to mice resuscitated with SRBCs and albumin (P<0.05).",
+      "key": "eaf9625019fd5bcb267743af659b1a10",
+      "line": 353,
+      "relation": "negativeCorrelation",
+      "source": 22,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Mice that were resuscitated with SRBCs and albumin or SRBCs and hemopexin showed a marked increase in HO-1 expression when compared to mice resuscitated with FRBCs.",
+      "key": "b0a2413462e41de323dd15eb9e2d95f7",
+      "line": 339,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Mice that were resuscitated with SRBCs and albumin or SRBCs and hemopexin showed a marked increase in HO-1 expression when compared to mice resuscitated with FRBCs.",
+      "key": "ce703db9fed927d9216a6f4bd08a996f",
+      "line": 340,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Kidney",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Hemorrhage",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ],
+        "TimePoint": [
+          {
+            "identifier": "4 hours",
+            "namespace": "TimePoint"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Bloch DB",
+          "Bonventre JV",
+          "Colvin RB",
+          "Graw JA",
+          "Liu Y",
+          "Malhotra R",
+          "Mayeur C",
+          "Rechester O",
+          "Riley FE",
+          "Rosales I",
+          "Sabbisetti VS",
+          "Warren HS",
+          "Zapol WM"
+        ],
+        "date": "2016-09-27",
+        "first": "Graw JA",
+        "identifier": "27515135",
+        "journal": "Circulation",
+        "last": "Zapol WM",
+        "name": "Haptoglobin or Hemopexin Therapy Prevents Acute Adverse Effects of Resuscitation After Prolonged Storage of Red Cells.",
+        "namespace": "pubmed",
+        "pages": "945-60",
+        "volume": "134"
+      },
+      "evidence": "Resuscitation with SRBCs and haptoglobin prevented the increase in SRBC-induced renal HO-1 expression (Figure 7F).",
+      "key": "730f06b428d4ffdb0d0aacfc77a2f0e9",
+      "line": 345,
+      "relation": "negativeCorrelation",
+      "source": 19,
+      "target": 10
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "concept": {
+        "name": "iron(2+)",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "be7ed197cc239803fafad58c7dc415ba"
+    },
+    {
+      "bel": "a(CHEBI:\"nitric oxide\")",
+      "concept": {
+        "name": "nitric oxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "da5a3d810aacb9c4649ec7df3b5f60d3"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "a(MESH:\"Blood Transfusion\")",
+      "concept": {
+        "name": "Blood Transfusion",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "1ecb1cfa58cac5666bedf2c4fa57e15b"
+    },
+    {
+      "bel": "a(MESH:\"Reactive Oxygen Species\")",
+      "concept": {
+        "name": "Reactive Oxygen Species",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "dd0e798c738472fa8ffb9fa88a2eacc7"
+    },
+    {
+      "bel": "a(MESH:Mortality)",
+      "concept": {
+        "name": "Mortality",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "cf219a9c8a81a7e372e19173d071eef6"
+    },
+    {
+      "bel": "bp(GO:\"tissue regeneration\")",
+      "concept": {
+        "name": "tissue regeneration",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "a921156ac1e70e8d96cdad7b3df3d6b7"
+    },
+    {
+      "bel": "bp(GO:vasoconstriction)",
+      "concept": {
+        "name": "vasoconstriction",
+        "namespace": "GO"
+      },
+      "function": "BiologicalProcess",
+      "id": "407b9c02f282c6a2ac0ba14924d4ebd7"
+    },
+    {
+      "bel": "bp(MESH:\"Lipid Peroxidation\")",
+      "concept": {
+        "name": "Lipid Peroxidation",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "5aabe71c6ac7a11f93eabad81eec43ce"
+    },
+    {
+      "bel": "complex(a(MESH:\"Blood Transfusion\"), p(MGI:Alb))",
+      "function": "Complex",
+      "id": "252603add20d5d8c4cb552b99c361a0b",
+      "members": [
+        {
+          "bel": "a(MESH:\"Blood Transfusion\")",
+          "concept": {
+            "name": "Blood Transfusion",
+            "namespace": "MESH"
+          },
+          "function": "Abundance",
+          "id": "1ecb1cfa58cac5666bedf2c4fa57e15b"
+        },
+        {
+          "bel": "p(MGI:Alb)",
+          "concept": {
+            "name": "Alb",
+            "namespace": "MGI"
+          },
+          "function": "Protein",
+          "id": "330c2b812ebfdb3c0e78d253d2a7f789"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(MESH:\"Blood Transfusion\"), p(MGI:Hp))",
+      "function": "Complex",
+      "id": "c49b958f159c1a1b3cb73c45e534eac7",
+      "members": [
+        {
+          "bel": "a(MESH:\"Blood Transfusion\")",
+          "concept": {
+            "name": "Blood Transfusion",
+            "namespace": "MESH"
+          },
+          "function": "Abundance",
+          "id": "1ecb1cfa58cac5666bedf2c4fa57e15b"
+        },
+        {
+          "bel": "p(MGI:Hp)",
+          "concept": {
+            "name": "Hp",
+            "namespace": "MGI"
+          },
+          "function": "Protein",
+          "id": "13f5a151541d81593768f8cddf6333ad"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(MESH:\"Blood Transfusion\"), p(MGI:Hpx))",
+      "function": "Complex",
+      "id": "a75753f591365cf6e29ec4d8b3d1ee3f",
+      "members": [
+        {
+          "bel": "a(MESH:\"Blood Transfusion\")",
+          "concept": {
+            "name": "Blood Transfusion",
+            "namespace": "MESH"
+          },
+          "function": "Abundance",
+          "id": "1ecb1cfa58cac5666bedf2c4fa57e15b"
+        },
+        {
+          "bel": "p(MGI:Hpx)",
+          "concept": {
+            "name": "Hpx",
+            "namespace": "MGI"
+          },
+          "function": "Protein",
+          "id": "31e4aedd4a04f422b4b3ddab695d1968"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:BACH1)",
+      "concept": {
+        "name": "BACH1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "201181e3975a975cad110f82064059c8"
+    },
+    {
+      "bel": "p(HGNC:HBB)",
+      "concept": {
+        "name": "HBB",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "15ee95d6d880d241c742461c7f432f15"
+    },
+    {
+      "bel": "p(HGNC:TLR4)",
+      "concept": {
+        "name": "TLR4",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "4d3aa2ce51d0cd7f2aa9267a9c61f9f7"
+    },
+    {
+      "bel": "p(MGI:Alb)",
+      "concept": {
+        "name": "Alb",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "330c2b812ebfdb3c0e78d253d2a7f789"
+    },
+    {
+      "bel": "p(MGI:Got1)",
+      "concept": {
+        "name": "Got1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "9ce211c0583220396ff82e9628c6aca6"
+    },
+    {
+      "bel": "p(MGI:Gpt)",
+      "concept": {
+        "name": "Gpt",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "c7bce5b2fdf1456396272cf1a96b2105"
+    },
+    {
+      "bel": "p(MGI:Havcr1)",
+      "concept": {
+        "name": "Havcr1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "e1adc05bc5a669fe269d5884609f2215"
+    },
+    {
+      "bel": "p(MGI:Hmox1)",
+      "concept": {
+        "name": "Hmox1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "fb7611ec6ea54aba146bae72045c53e6"
+    },
+    {
+      "bel": "p(MGI:Hp)",
+      "concept": {
+        "name": "Hp",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "13f5a151541d81593768f8cddf6333ad"
+    },
+    {
+      "bel": "p(MGI:Hpx)",
+      "concept": {
+        "name": "Hpx",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "31e4aedd4a04f422b4b3ddab695d1968"
+    },
+    {
+      "bel": "p(MGI:Il6)",
+      "concept": {
+        "name": "Il6",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "461076a43183c4f1e4e9b4954be313fe"
+    },
+    {
+      "bel": "p(MGI:Lcn2)",
+      "concept": {
+        "name": "Lcn2",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "edde75d9082ca611f1cfbb913a456b7d"
+    },
+    {
+      "bel": "p(MGI:Mki67)",
+      "concept": {
+        "name": "Mki67",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "1235ad822d33a72c78fb62ee5b5f382a"
+    },
+    {
+      "bel": "p(PFAM:Proteasome)",
+      "concept": {
+        "name": "Proteasome",
+        "namespace": "PFAM"
+      },
+      "function": "Protein",
+      "id": "f3342e4a469295422f64e8a218d7b0c6"
+    },
+    {
+      "bel": "path(MESH:\"Platelet Aggregation\")",
+      "concept": {
+        "name": "Platelet Aggregation",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "bb277c99766fd12c7afb38ae72c60fd1"
+    },
+    {
+      "bel": "path(MESH:Hemoglobinuria)",
+      "concept": {
+        "name": "Hemoglobinuria",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "39fa7a941922a649b5dae0f08d2b503b"
+    },
+    {
+      "bel": "path(MESH:Hemolysis)",
+      "concept": {
+        "name": "Hemolysis",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "db35e96a4ebe03cdd6b1198b498e07f0"
+    },
+    {
+      "bel": "path(MESH:Inflammation)",
+      "concept": {
+        "name": "Inflammation",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "10cd96fd4056a5e6c27264e0130e89f9"
+    },
+    {
+      "bel": "r(MGI:Lcn2)",
+      "concept": {
+        "name": "Lcn2",
+        "namespace": "MGI"
+      },
+      "function": "RNA",
+      "id": "1444838d073fddd83f1ef62cfe1fde24"
+    }
+  ]
+}

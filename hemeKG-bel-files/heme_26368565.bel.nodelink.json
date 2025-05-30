@@ -1,0 +1,2155 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_26368565.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_26368565.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "The classical findings that define PE are hypertension and proteinuria appearing after 20 weeks of gestation.",
+      "key": "76ab9241b8f8bfcfe0943e489b192ad3",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 20
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "The classical findings that define PE are hypertension and proteinuria appearing after 20 weeks of gestation.",
+      "key": "93b0bf515ea33f00da86bc77fbbb22f9",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 18
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "A 4-fold increase of the HbF concentration was seen in the PE patients (p-value 0.01) as compared to the controls.",
+      "key": "5852761594a6142a6e4c6953db54a2f8",
+      "line": 134,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "A statistically significant increase in the mean Hp-HbF concentration was observed for women with PE as compared to controls (p-value 0.018).",
+      "key": "5367bb943e0300bf0180dc50c59c77c5",
+      "line": 140,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Analysis of the Hp concentration in plasma showed a statistically significant decrease in Hp concentration in plasma samples of women with PE as compared to controls (pvalue< 0.0001).",
+      "key": "7fa3173bb2409cc4bc9ada666ef4418e",
+      "line": 147,
+      "relation": "negativeCorrelation",
+      "source": 19,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Soluble, shedded CD163, the macrophage receptor mediating elimination of the Hp-Hb complex, was analyzed in plasma [40–42]. The analysis showed a small but not statistically significant (p-value 0.37) increase in the PE group as compared to the controls (Table 3).",
+      "key": "912cd520e9c8eb37a3ca11dde434c0c7",
+      "line": 154,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Analysis of the intravascular heme-scavenger protein Hpx showed a statistically significant decrease in plasma Hpx concentration of women with PE (p-value<0.0001) as compared to the controls (Table 3).",
+      "key": "36709bc938ae16d9ba26c653c10ef351",
+      "line": 161,
+      "relation": "negativeCorrelation",
+      "source": 19,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Analysis of plasma levels of the heme- and radical scavenger A1M showed a statistically significant increase of plasma A1M concentration in women with PE (p-value 0.035) as compared to controls (Table 3).",
+      "key": "70b046f65f0d33b84c2ca8753d63e2d2",
+      "line": 168,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "In line with previously published studies [13,14] the extravascular heme- and radical scavenger A1M was significantly increased in plasma of women with PE.",
+      "key": "af0ade4697fa41f12cf390212221a5c2",
+      "line": 192,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 11
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "In line with previously published studies [13,14] the extravascular heme- and radical scavenger A1M was significantly increased in plasma of women with PE.",
+      "key": "7e67d27d0a35d2ab893f0c13154d3bbc",
+      "line": 193,
+      "relation": "positiveCorrelation",
+      "source": 19,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "The classical findings that define PE are hypertension and proteinuria appearing after 20 weeks of gestation.",
+      "key": "6022de419404544166686a142b2b951f",
+      "line": 92,
+      "relation": "positiveCorrelation",
+      "source": 20,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "The classical findings that define PE are hypertension and proteinuria appearing after 20 weeks of gestation.",
+      "key": "1fcf86560451d842ed2b8906266a9f80",
+      "line": 93,
+      "relation": "positiveCorrelation",
+      "source": 18,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "It was hypothesized that through the generation of reactive oxygen species (ROS), Hb induces oxidative damage to the placenta and a subsequent leakage over the blood-placental barrier [12].",
+      "key": "9346cca24492feeddf6ba4005ff6882c",
+      "line": 100,
+      "relation": "increases",
+      "source": 5,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "A 4-fold increase of the HbF concentration was seen in the PE patients (p-value 0.01) as compared to the controls.",
+      "key": "6f658dc5ecc00f2c866784c5fbd3a340",
+      "line": 134,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "A negative correlation was found, i.e. an increased plasma cell-free HbF concentration was associated with a decreased plasma Hp concentration, when including all individuals, controls and women with PE (r = -0.335, p-value<0.0001, n = 145)(Fig 1A).",
+      "key": "42cd39445874d4146cd4f292854f02e3",
+      "line": 176,
+      "relation": "negativeCorrelation",
+      "source": 5,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Haptoglobin (Hp) is perhaps the most well investigated Hb-clearing molecule. It binds cell-free Hb in plasma [20,21] and the resulting Hp-Hb complex is cleared from blood via binding to the macrophage receptor CD163 [22].",
+      "key": "4ba58053405fa39c239b3ad50301a544",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 14,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Analysis of the Hp concentration in plasma showed a statistically significant decrease in Hp concentration in plasma samples of women with PE as compared to controls (pvalue< 0.0001).",
+      "key": "718da6c0df87d11ba692c07dbe3c0bf5",
+      "line": 147,
+      "relation": "negativeCorrelation",
+      "source": 14,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "A negative correlation was found, i.e. an increased plasma cell-free HbF concentration was associated with a decreased plasma Hp concentration, when including all individuals, controls and women with PE (r = -0.335, p-value<0.0001, n = 145)(Fig 1A).",
+      "key": "2e668683b89fc37bfa73366c5f5cffaf",
+      "line": 176,
+      "relation": "negativeCorrelation",
+      "source": 14,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Haptoglobin (Hp) is perhaps the most well investigated Hb-clearing molecule. It binds cell-free Hb in plasma [20,21] and the resulting Hp-Hb complex is cleared from blood via binding to the macrophage receptor CD163 [22].",
+      "key": "39a1ac8adecf7befa027f8d2aa700896",
+      "line": 106,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 14
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "A statistically significant increase in the mean Hp-HbF concentration was observed for women with PE as compared to controls (p-value 0.018).",
+      "key": "6ef992fe67a11c10d70ed5fa28f9eb30",
+      "line": 140,
+      "relation": "positiveCorrelation",
+      "source": 6,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Haptoglobin (Hp) is perhaps the most well investigated Hb-clearing molecule. It binds cell-free Hb in plasma [20,21] and the resulting Hp-Hb complex is cleared from blood via binding to the macrophage receptor CD163 [22].",
+      "key": "81e7f6536def11fe3ef53cccb28c7029",
+      "line": 107,
+      "relation": "decreases",
+      "source": 12,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Soluble, shedded CD163, the macrophage receptor mediating elimination of the Hp-Hb complex, was analyzed in plasma [40–42]. The analysis showed a small but not statistically significant (p-value 0.37) increase in the PE group as compared to the controls (Table 3).",
+      "key": "54c85f84d9e925223cc3657453c2094d",
+      "line": 154,
+      "relation": "positiveCorrelation",
+      "source": 12,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Free heme in blood is sequestered by hemopexin (Hpx) [23,24] and the Hpx-heme complex is cleared from the circulation by the hepatocyte receptor CD91 [25].",
+      "key": "bc4f4d9309fe6d0e3dc45d11c2f811fe",
+      "line": 113,
+      "relation": "decreases",
+      "source": 16,
+      "target": 10
+    },
+    {
+      "key": "4258b5aaab05e26e3c2ae956d020a640",
+      "relation": "partOf",
+      "source": 3,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "In the extravascular compartment, cellular heme oxygenase (HO) is the most essential heme degrading protein, converting heme to free iron, biliverdin and CO [26,27].",
+      "key": "ff83fa72c5e958ddcede284dbd111359",
+      "line": 120,
+      "relation": "increases",
+      "source": 3,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "In line with previously published studies [13,14] the extravascular heme- and radical scavenger A1M was significantly increased in plasma of women with PE.",
+      "key": "2096ca98dc0d20a58800056490ecaf87",
+      "line": 193,
+      "relation": "positiveCorrelation",
+      "source": 3,
+      "target": 19
+    },
+    {
+      "key": "edf2096f946a3d678b54c697d63833c7",
+      "relation": "partOf",
+      "source": 15,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Analysis of the intravascular heme-scavenger protein Hpx showed a statistically significant decrease in plasma Hpx concentration of women with PE (p-value<0.0001) as compared to the controls (Table 3).",
+      "key": "fe07c5585f90398a63eafdab701945c7",
+      "line": 161,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Correlation analysis using Pearson’s correlation coefficient showed statistically significant inverse correlation between Hpx and blood pressure, both systolic (r = -0.511, pvalue< 0.00001, n = 145) and diastolic (r = -0,520, p-value<0.00001, n = 145)(Fig 3).",
+      "key": "aedfd06fee026a262d3cffbae25ee002",
+      "line": 183,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Studies of sickle cell anemia patients have reported decreased levels of Hpx following hemolysis [68].",
+      "key": "ffb9cc81deefc6402eaddacd813a40d0",
+      "line": 203,
+      "relation": "negativeCorrelation",
+      "source": 15,
+      "target": 17
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "In the extravascular compartment, cellular heme oxygenase (HO) is the most essential heme degrading protein, converting heme to free iron, biliverdin and CO [26,27].",
+      "key": "9b2ac464060d001a8ae9e1950f09c989",
+      "line": 119,
+      "relation": "increases",
+      "source": 13,
+      "target": 3,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "key": "63eb7b39658d72fa4f208a8196c7e784",
+      "relation": "partOf",
+      "source": 0,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "This could be explained by the finding that CO induces vasodilation by binding to the heme-protein guanylyl cyclase [67].",
+      "key": "3fd5cb88e4f2643df67522c693c55569",
+      "line": 198,
+      "relation": "increases",
+      "source": 0,
+      "target": 8
+    },
+    {
+      "key": "0256757871c506ceac0320e861bde961",
+      "relation": "partOf",
+      "source": 1,
+      "target": 9
+    },
+    {
+      "key": "a34987ce2aa78c278fc9699abb86f036",
+      "relation": "partOf",
+      "source": 2,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Placenta",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Furthermore, the plasmaand extravascular reductase and heme- and radical scavenger α1-microglobulin (A1M) binds and degrades free heme and can reduce metHb [28–30].",
+      "key": "585f9c5da20b0c1942d49be177d540c6",
+      "line": 126,
+      "relation": "increases",
+      "source": 11,
+      "target": 3,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Analysis of plasma levels of the heme- and radical scavenger A1M showed a statistically significant increase of plasma A1M concentration in women with PE (p-value 0.035) as compared to controls (Table 3).",
+      "key": "af5a1994f2fe291a17b5c96c4a828400",
+      "line": 168,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "In line with previously published studies [13,14] the extravascular heme- and radical scavenger A1M was significantly increased in plasma of women with PE.",
+      "key": "968ad1bafdbf085805f6beebc54fc347",
+      "line": 192,
+      "relation": "positiveCorrelation",
+      "source": 11,
+      "target": 19
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Correlation analysis using Pearson’s correlation coefficient showed statistically significant inverse correlation between Hpx and blood pressure, both systolic (r = -0.511, pvalue< 0.00001, n = 145) and diastolic (r = -0,520, p-value<0.00001, n = 145)(Fig 3).",
+      "key": "2a7e91335ecd40cb69074bad5df7f8d9",
+      "line": 183,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 15
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "hepatocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "MeSHAnatomy": [
+          {
+            "identifier": "Plasma",
+            "namespace": "MeSHAnatomy"
+          }
+        ],
+        "MeSHDisease": [
+          {
+            "identifier": "Pre-Eclampsia",
+            "namespace": "MeSHDisease"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Clinical Trial",
+        "authors": [
+          "Anderson UD",
+          "Edström-Hägerwall A",
+          "Gram M",
+          "Hansson SR",
+          "Johansson ME",
+          "Jälmby M",
+          "Larsson I",
+          "Åkerström B"
+        ],
+        "date": "2015-01-01",
+        "first": "Gram M",
+        "identifier": "26368565",
+        "journal": "PloS one",
+        "last": "Åkerström B",
+        "name": "The Human Endogenous Protection System against Cell-Free Hemoglobin and Heme Is Overwhelmed in Preeclampsia and Provides Potential Biomarkers and Clinical Indicators.",
+        "namespace": "pubmed",
+        "pages": "e0138111",
+        "volume": "10"
+      },
+      "evidence": "Studies of sickle cell anemia patients have reported decreased levels of Hpx following hemolysis [68].",
+      "key": "9eee411d30ef436f8d495aae93d7c1cd",
+      "line": 203,
+      "relation": "negativeCorrelation",
+      "source": 17,
+      "target": 15
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"carbon monoxide\")",
+      "concept": {
+        "name": "carbon monoxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "f160dbe27ee817f0b83548aff7951e0e"
+    },
+    {
+      "bel": "a(CHEBI:\"iron(2+)\")",
+      "concept": {
+        "name": "iron(2+)",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "be7ed197cc239803fafad58c7dc415ba"
+    },
+    {
+      "bel": "a(CHEBI:biliverdin)",
+      "concept": {
+        "name": "biliverdin",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "63601ebd1c1d33cb08091ef00f36a43b"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "a(HM:\"Oxidative damage\")",
+      "concept": {
+        "name": "Oxidative damage",
+        "namespace": "HM"
+      },
+      "function": "Abundance",
+      "id": "000fb64d28a9c47685fa51ba72d88bf1"
+    },
+    {
+      "bel": "a(MESH:\"Fetal Hemoglobin\")",
+      "concept": {
+        "name": "Fetal Hemoglobin",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "2ad968e5ffdc7b7204264e12363e3591"
+    },
+    {
+      "bel": "a(MESH:\"haptoglobin-hemoglobin complex\")",
+      "concept": {
+        "name": "haptoglobin-hemoglobin complex",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "9ef10404e8021d43bebc646c11e50068"
+    },
+    {
+      "bel": "bp(MESH:\"Blood Pressure\")",
+      "concept": {
+        "name": "Blood Pressure",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "fe4965bd3798a9aa6b28451e5d343b76"
+    },
+    {
+      "bel": "bp(MESH:Vasodilation)",
+      "concept": {
+        "name": "Vasodilation",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "9fb3eb6d5f51778903da1d80cf035011"
+    },
+    {
+      "bel": "complex(a(CHEBI:\"carbon monoxide\"), a(CHEBI:\"iron(2+)\"), a(CHEBI:biliverdin))",
+      "function": "Complex",
+      "id": "5c6c4b82ff94741947cd6ab1d6990488",
+      "members": [
+        {
+          "bel": "a(CHEBI:\"carbon monoxide\")",
+          "concept": {
+            "name": "carbon monoxide",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "f160dbe27ee817f0b83548aff7951e0e"
+        },
+        {
+          "bel": "a(CHEBI:\"iron(2+)\")",
+          "concept": {
+            "name": "iron(2+)",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "be7ed197cc239803fafad58c7dc415ba"
+        },
+        {
+          "bel": "a(CHEBI:biliverdin)",
+          "concept": {
+            "name": "biliverdin",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "63601ebd1c1d33cb08091ef00f36a43b"
+        }
+      ]
+    },
+    {
+      "bel": "complex(a(CHEBI:heme), p(HGNC:HPX))",
+      "function": "Complex",
+      "id": "365a30a520db1add8865c5c83078c713",
+      "members": [
+        {
+          "bel": "a(CHEBI:heme)",
+          "concept": {
+            "name": "heme",
+            "namespace": "CHEBI"
+          },
+          "function": "Abundance",
+          "id": "784587e400a7972b75c28341c34a7ccc"
+        },
+        {
+          "bel": "p(HGNC:HPX)",
+          "concept": {
+            "name": "HPX",
+            "namespace": "HGNC"
+          },
+          "function": "Protein",
+          "id": "3351b86e04a9ce9c6f90abd5dd57e219"
+        }
+      ]
+    },
+    {
+      "bel": "p(HGNC:AMBP)",
+      "concept": {
+        "name": "AMBP",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "79fa2827328c8f67a4762a9bc94f02b5"
+    },
+    {
+      "bel": "p(HGNC:CD163)",
+      "concept": {
+        "name": "CD163",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "7a4ce4552870e57e513aea99fdc5e600"
+    },
+    {
+      "bel": "p(HGNC:HMOX1)",
+      "concept": {
+        "name": "HMOX1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "d8af6078f1872edbf59623df2a9fa1c2"
+    },
+    {
+      "bel": "p(HGNC:HP)",
+      "concept": {
+        "name": "HP",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "b50c4eb6f38e0c1d3d5a1b3d5dcba1e1"
+    },
+    {
+      "bel": "p(HGNC:HPX)",
+      "concept": {
+        "name": "HPX",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "3351b86e04a9ce9c6f90abd5dd57e219"
+    },
+    {
+      "bel": "p(HGNC:LRP1)",
+      "concept": {
+        "name": "LRP1",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "068524d49458533342e2e490606d63eb"
+    },
+    {
+      "bel": "path(MESH:\"Anemia, Sickle Cell\")",
+      "concept": {
+        "name": "Anemia, Sickle Cell",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "625ad1e5d11fa30e553162f557970293"
+    },
+    {
+      "bel": "path(MESH:Hypertension)",
+      "concept": {
+        "name": "Hypertension",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "dfc5303e42570a3507bbb51f1a445664"
+    },
+    {
+      "bel": "path(MESH:Pre-Eclampsia)",
+      "concept": {
+        "name": "Pre-Eclampsia",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "91287a78692819106d16a8ae3f0ef9da"
+    },
+    {
+      "bel": "path(MESH:Proteinuria)",
+      "concept": {
+        "name": "Proteinuria",
+        "namespace": "MESH"
+      },
+      "function": "Pathology",
+      "id": "c390c8f7b1277f17f6325dbefbb54d90"
+    }
+  ]
+}

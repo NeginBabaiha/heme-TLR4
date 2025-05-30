@@ -1,0 +1,2484 @@
+{
+  "directed": true,
+  "graph": {
+    "annotation_curie": [],
+    "annotation_list": {},
+    "annotation_miriam": [],
+    "annotation_pattern": {
+      "Concentration": ".*",
+      "Species": ".*",
+      "TimePoint": ".*"
+    },
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "document_metadata": {
+      "authors": "Farah Humayun",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia.",
+      "licenses": "MIT License",
+      "name": "heme_23215741.bel",
+      "version": "1.0.0"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "HM": ".*",
+      "PUBCHEM": "^\\d+$",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$"
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "path": "heme_23215741.bel",
+    "pybel_version": "0.15.0"
+  },
+  "links": [
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "While it is clear that PRDX2 plays an important role in protecting RBCs from oxidative stress, the relative importance of PRDX2 in scavenging H2O2 in RBC has not been fully elucidated.",
+      "key": "9b05ee019b2a2c27b85e76cb0cfd735c",
+      "line": 95,
+      "relation": "negativeCorrelation",
+      "source": 9,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "TextLocation": [
+          {
+            "identifier": "Introduction",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "While it is clear that PRDX2 plays an important role in protecting RBCs from oxidative stress, the relative importance of PRDX2 in scavenging H2O2 in RBC has not been fully elucidated.",
+      "key": "bff44ba43f6f189d2c58c64c1e917341",
+      "line": 95,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 9
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "It has been shown that RBC oxidative stress that damages the membrane reduces the deformability and flexibility of cells.",
+      "key": "5e8963e26318c5faabe5f1e555c87090",
+      "line": 155,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "PRDX2 deficiency, thus, causes cells to undergo more oxidative stress during in vitro aging, even in the presence of catalase.",
+      "key": "0e3a2af302b0eeb64c82c9a97964c750",
+      "line": 172,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "PRDX2, which is able to react with low levels of H2O2 even at reduced glutathione levels, may therefore play a role in limiting the increased formation of heme degradation products in older cells.",
+      "key": "2b9a19f878d5721ead6e8c96c3dbe5f1",
+      "line": 212,
+      "relation": "negativeCorrelation",
+      "source": 8,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "These results indicate that heme degradation increases in RBCs of PRDX2 knockout mice in spite of the presence of catalase and GPx.",
+      "key": "fbec5d0adcda1533a5ef3a62d820d5b3",
+      "line": 106,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "As shown in Figure 2, the mean metHb levels were also significantly increased in PRDX2 knockout mice, but not in SOD1 knockout mice compared with control mice.",
+      "key": "82d7d0d1cc8e49f03d90248191c39040",
+      "line": 138,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "Figure 4 shows a significant decrease in the elongation index, which is a measure of deformability, for the PRDX2 knockout mice.",
+      "key": "e955888d70d980c091454eba2439471b",
+      "line": 161,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "c57ea0a8097ef74e9879ca01d170586c",
+      "line": 218,
+      "relation": "positiveCorrelation",
+      "source": 10,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "PRDX2 deficiency, thus, causes cells to undergo more oxidative stress during in vitro aging, even in the presence of catalase.",
+      "key": "1fad541ce1d3c83cc9f0e2d074085b5b",
+      "line": 172,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "PRDX2, which is able to react with low levels of H2O2 even at reduced glutathione levels, may therefore play a role in limiting the increased formation of heme degradation products in older cells.",
+      "key": "a8d47ed25c637fc18ddac4ae89481130",
+      "line": 212,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The appreciable increase in heme degradation for RBCs from PRDX2 knockout mice in the presence of azide indicates that PRDX2 plays a major role in scavenging H2O2 in the absence of catalase, even with GPx present.",
+      "key": "ed6f771f0a2bb20826baff5a9add652b",
+      "line": 179,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "6c08ea76e1e783002956eefd589cfcfa",
+      "line": 191,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The in vivo effects that we have observed for PRDX2 knockout mice (Figures 1–4) imply that PRDX2 plays an important role in neutralizing the H2O2 generated in vivo (Figure 6).",
+      "key": "fd7a4868be4b24d273646e613c3a609a",
+      "line": 206,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "ee2756569bc61a214be535fdfa702a8d",
+      "line": 192,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "e06071eaf270b5d12ebe6b1b9094be03",
+      "line": 222,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "c19012d916611bcf90660a72118f282d",
+      "line": 193,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 1
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "d78f1c6d7b47140d7125a06c33798d49",
+      "line": 194,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "0578b576ac0a852bf4ed84ad9d98cf92",
+      "line": 220,
+      "relation": "negativeCorrelation",
+      "source": 10,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "These results indicate that heme degradation increases in RBCs of PRDX2 knockout mice in spite of the presence of catalase and GPx.",
+      "key": "16ef46e5eab2c534600acb97bb73f144",
+      "line": 106,
+      "relation": "negativeCorrelation",
+      "source": 2,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The small increase in heme degradation in the absence of SOD1 may, however, be attributed to low levels of heme degradation products produced either by the increased levels of superoxide [17] or perhaps the peroxynitrite that forms due to the rapid reaction of superoxide with any NO present.",
+      "key": "ce6d0aa431ee88f88ddf9a7052e51145",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 5
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "As shown in Figure 3, the level of heme degradation is highly correlated with the level of metHb in RBCs (R = 0.6233, p < 0.0177) supporting the hypothesis that the heme degradation product formed in PRDX2 knockout mice is associated with the un-scavenged H2O2 generated during Hb autoxidation.",
+      "key": "01d746769fc38ada0b7cd158a5c75fc6",
+      "line": 149,
+      "relation": "positiveCorrelation",
+      "source": 2,
+      "source_modifier": {
+        "modifier": "Degradation"
+      },
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "These results are consistent with our earlier observations that the presence of SOD1 does not significantly inhibit or accelerate the formation of heme degradation products during in vitro autoxidation of oxyHb [18]..",
+      "key": "ebeecb3ab5ec0acc0eaf04c4c0e7be97",
+      "line": 114,
+      "relation": "causesNoChange",
+      "source": 11,
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "No significant change in the elongation index was found for the SOD1 knockout mice.",
+      "key": "7d0f081fa8dca611227c8c23532743d4",
+      "line": 166,
+      "relation": "causesNoChange",
+      "source": 11,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The small increase in heme degradation in the absence of SOD1 may, however, be attributed to low levels of heme degradation products produced either by the increased levels of superoxide [17] or perhaps the peroxynitrite that forms due to the rapid reaction of superoxide with any NO present.",
+      "key": "ed68b1af7e1355e049a148f4bb1d19e0",
+      "line": 123,
+      "relation": "positiveCorrelation",
+      "source": 5,
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "7032064e4816cea821552627f95109f8",
+      "line": 194,
+      "relation": "negativeCorrelation",
+      "source": 5,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "However, metHb levels may increase when there is an increase in Hb autoxidation and the concomitant generation of H2O2 that is not scavenged by antioxidant defense enzymes making it more difficult for metHb-reductase to keep up with the metHb produced.",
+      "key": "728a3de6d5a35b403e82a2672572baf8",
+      "line": 132,
+      "relation": "positiveCorrelation",
+      "source": 4,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "As shown in Figure 2, the mean metHb levels were also significantly increased in PRDX2 knockout mice, but not in SOD1 knockout mice compared with control mice.",
+      "key": "a379634ca0d377d4b0c5d4b73032704f",
+      "line": 138,
+      "relation": "negativeCorrelation",
+      "source": 4,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "However, metHb levels may increase when there is an increase in Hb autoxidation and the concomitant generation of H2O2 that is not scavenged by antioxidant defense enzymes making it more difficult for metHb-reductase to keep up with the metHb produced.",
+      "key": "4c7729df5760694c67eae78fa20bbc14",
+      "line": 132,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 4
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "As shown in Figure 3, the level of heme degradation is highly correlated with the level of metHb in RBCs (R = 0.6233, p < 0.0177) supporting the hypothesis that the heme degradation product formed in PRDX2 knockout mice is associated with the un-scavenged H2O2 generated during Hb autoxidation.",
+      "key": "2bfd91f8fd9747008497266dc515a213",
+      "line": 149,
+      "relation": "positiveCorrelation",
+      "source": 0,
+      "target": 2,
+      "target_modifier": {
+        "modifier": "Degradation"
+      }
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The appreciable increase in heme degradation for RBCs from PRDX2 knockout mice in the presence of azide indicates that PRDX2 plays a major role in scavenging H2O2 in the absence of catalase, even with GPx present.",
+      "key": "36a13df0d02da7f4d5bf753b590edfda",
+      "line": 179,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "ebc1577bc5c321bbe552f44f621a7823",
+      "line": 191,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The in vivo effects that we have observed for PRDX2 knockout mice (Figures 1–4) imply that PRDX2 plays an important role in neutralizing the H2O2 generated in vivo (Figure 6).",
+      "key": "512e82b7f6e65eb402e5193d63ae4163",
+      "line": 206,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "9c323199dff327271aae5846b153d618",
+      "line": 188,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The finding that GPx has a greater role in the inhibition of heme degradation products than catalase [3] is consistent with the primary role of catalase to react with the high concentrations of H2O2 coming from exogenous sources and for GPx to react with the low levels of H2O2 coming from the endogenous autoxidation of Hb [39].",
+      "key": "5315c6770fbf790c2f4f4605689f2675",
+      "line": 201,
+      "relation": "negativeCorrelation",
+      "source": 0,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "It has been shown that RBC oxidative stress that damages the membrane reduces the deformability and flexibility of cells.",
+      "key": "b792d9c399ab94b0ef8d96bbb24e4148",
+      "line": 155,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 8
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Results",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "Figure 4 shows a significant decrease in the elongation index, which is a measure of deformability, for the PRDX2 knockout mice.",
+      "key": "65089373dc885de3017029e5be1896fe",
+      "line": 161,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "1705bef450f82289d66dd047dad5b24e",
+      "line": 218,
+      "relation": "positiveCorrelation",
+      "source": 7,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "39fb835769e64b6a405ed0769fde9bc5",
+      "line": 219,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 6
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "fdb10ec044cb11ad28c51c41bb1d3010",
+      "line": 221,
+      "relation": "negativeCorrelation",
+      "source": 7,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "e5ba6ea8f3e15f7d926842ef60e31091",
+      "line": 188,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The finding that GPx has a greater role in the inhibition of heme degradation products than catalase [3] is consistent with the primary role of catalase to react with the high concentrations of H2O2 coming from exogenous sources and for GPx to react with the low levels of H2O2 coming from the endogenous autoxidation of Hb [39].",
+      "key": "96788392b7dd777ab35111f47542e3b0",
+      "line": 201,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 0
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "139e225947b86f1e812a9ce1184ebe1a",
+      "line": 189,
+      "relation": "negativeCorrelation",
+      "source": 12,
+      "target": 3
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "dffddd347a8833c4da374619a95888d0",
+      "line": 189,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 12
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "08ec78077c16333c1f451e19e527d2a9",
+      "line": 192,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "d214f748e887113b7ef9133bde80fa28",
+      "line": 222,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "b156f44f41b441d274283b06796c5aa2",
+      "line": 221,
+      "relation": "negativeCorrelation",
+      "source": 3,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "GPx removes both H2O2 and organic hydroperoxides [8,31] whereas PRDX2 removes H2O2 [2], organic hydroperoxides, lipid hydroperoxides, [32,33] peroxynitrite [34] and protein hydroperoxides [35].",
+      "key": "c27d9220efb8930e5fcf458a6d86123f",
+      "line": 193,
+      "relation": "negativeCorrelation",
+      "source": 1,
+      "target": 10
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "f69087f526be0c94cbab849ab81e2eea",
+      "line": 219,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 7
+    },
+    {
+      "annotations": {
+        "Cell": [
+          {
+            "identifier": "erythrocyte",
+            "namespace": "Cell"
+          }
+        ],
+        "Species": [
+          {
+            "identifier": "Mus musculus",
+            "namespace": "Species"
+          }
+        ],
+        "TextLocation": [
+          {
+            "identifier": "Discussion",
+            "namespace": "TextLocation"
+          }
+        ]
+      },
+      "citation": {
+        "article_type": "Journal Article",
+        "authors": [
+          "Friedman JS",
+          "Mohanty JG",
+          "Nagababu E",
+          "Rifkind JM"
+        ],
+        "date": "2013-03-01",
+        "first": "Nagababu E",
+        "identifier": "23215741",
+        "journal": "Free radical research",
+        "last": "Rifkind JM",
+        "name": "Role of peroxiredoxin-2 in protecting RBCs from hydrogen peroxide-induced oxidative stress.",
+        "namespace": "pubmed",
+        "pages": "164-71",
+        "volume": "47"
+      },
+      "evidence": "The role of PRDX2 in inhibiting impaired deformability can be attributed to both a reduction in ROS as well as a direct reaction of PRDX2 with protein hydroperoxides [52], which will inhibit the damage to cytoskeletal proteins required for impaired deformability.",
+      "key": "2b1fd5e856996f052ad648d4e96a119a",
+      "line": 220,
+      "relation": "negativeCorrelation",
+      "source": 6,
+      "target": 10
+    }
+  ],
+  "multigraph": true,
+  "nodes": [
+    {
+      "bel": "a(CHEBI:\"hydrogen peroxide\")",
+      "concept": {
+        "name": "hydrogen peroxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "2a33dd72d09a3b66f80326bcf6e3bfd6"
+    },
+    {
+      "bel": "a(CHEBI:\"lipid hydroperoxide\")",
+      "concept": {
+        "name": "lipid hydroperoxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "cda46d7dcc103092fc9c47aad2f07d04"
+    },
+    {
+      "bel": "a(CHEBI:heme)",
+      "concept": {
+        "name": "heme",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "784587e400a7972b75c28341c34a7ccc"
+    },
+    {
+      "bel": "a(CHEBI:hydroperoxide)",
+      "concept": {
+        "name": "hydroperoxide",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "69e4cf7cf09ee81e9a2b8e41ee344ae6"
+    },
+    {
+      "bel": "a(CHEBI:methemoglobin)",
+      "concept": {
+        "name": "methemoglobin",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "f7477b631e71284b5f4073769cbe705f"
+    },
+    {
+      "bel": "a(CHEBI:peroxynitrite)",
+      "concept": {
+        "name": "peroxynitrite",
+        "namespace": "CHEBI"
+      },
+      "function": "Abundance",
+      "id": "6ff782a2a0a45765b8e45c659c67e016"
+    },
+    {
+      "bel": "a(MESH:\"Reactive Oxygen Species\")",
+      "concept": {
+        "name": "Reactive Oxygen Species",
+        "namespace": "MESH"
+      },
+      "function": "Abundance",
+      "id": "dd0e798c738472fa8ffb9fa88a2eacc7"
+    },
+    {
+      "bel": "bp(MESH:\"Erythrocyte Deformability\")",
+      "concept": {
+        "name": "Erythrocyte Deformability",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "46f59d0bb24ab66e47107e38c1fe2277"
+    },
+    {
+      "bel": "bp(MESH:\"Oxidative Stress\")",
+      "concept": {
+        "name": "Oxidative Stress",
+        "namespace": "MESH"
+      },
+      "function": "BiologicalProcess",
+      "id": "9174b724412892a12c4da7cab55f893c"
+    },
+    {
+      "bel": "p(HGNC:PRDX2)",
+      "concept": {
+        "name": "PRDX2",
+        "namespace": "HGNC"
+      },
+      "function": "Protein",
+      "id": "0071e197b0e37e38b3a80f85675e859a"
+    },
+    {
+      "bel": "p(MGI:Prdx2)",
+      "concept": {
+        "name": "Prdx2",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "c8636e7c90d3910195c9afbc764f8d97"
+    },
+    {
+      "bel": "p(MGI:Sod1)",
+      "concept": {
+        "name": "Sod1",
+        "namespace": "MGI"
+      },
+      "function": "Protein",
+      "id": "0ead17b7c5c4a222fe6f9167089950df"
+    },
+    {
+      "bel": "p(PFAM:GSHPx)",
+      "concept": {
+        "name": "GSHPx",
+        "namespace": "PFAM"
+      },
+      "function": "Protein",
+      "id": "775d7e294904cea288f18c2b564ff7de"
+    }
+  ]
+}
